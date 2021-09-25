@@ -1,0 +1,363 @@
+{
+  "platform": "nextjs",
+  "code": {
+    "lang": "ts",
+    "scheme": "blackbox",
+    "reactRuntime": "classic"
+  },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
+  },
+  "images": {
+    "scheme": "public-files",
+    "publicDir": "../public",
+    "publicUrlPrefix": "/"
+  },
+  "tokens": {
+    "scheme": "theo",
+    "tokensFilePath": "plasmic-tokens.theo.json"
+  },
+  "srcDir": "components",
+  "defaultPlasmicDir": "./plasmic",
+  "projects": [
+    {
+      "projectId": "xdSnfxWCziyzb8tBiGitqa",
+      "projectName": "fantaasta",
+      "version": "latest",
+      "cssFilePath": "plasmic/fantaasta/plasmic_fantaasta.module.css",
+      "components": [
+        {
+          "id": "7MDU0cvaiUk7",
+          "name": "Homepage",
+          "type": "managed",
+          "projectId": "xdSnfxWCziyzb8tBiGitqa",
+          "renderModuleFilePath": "plasmic/fantaasta/PlasmicHomepage.tsx",
+          "importSpec": {
+            "modulePath": "../pages/index.tsx"
+          },
+          "cssFilePath": "plasmic/fantaasta/PlasmicHomepage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "oE_8Qzvao0GQ",
+          "name": "HeroSection2",
+          "type": "managed",
+          "projectId": "xdSnfxWCziyzb8tBiGitqa",
+          "renderModuleFilePath": "plasmic/fantaasta/PlasmicHeroSection2.tsx",
+          "importSpec": {
+            "modulePath": "HeroSection2.tsx"
+          },
+          "cssFilePath": "plasmic/fantaasta/PlasmicHeroSection2.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "3pqoTJs_Sosu",
+          "name": "Navigation",
+          "type": "managed",
+          "projectId": "xdSnfxWCziyzb8tBiGitqa",
+          "renderModuleFilePath": "plasmic/fantaasta/PlasmicNavigation.tsx",
+          "importSpec": {
+            "modulePath": "Navigation.tsx"
+          },
+          "cssFilePath": "plasmic/fantaasta/PlasmicNavigation.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "cTUv7R2uelNJ",
+          "name": "Logo",
+          "type": "managed",
+          "projectId": "xdSnfxWCziyzb8tBiGitqa",
+          "renderModuleFilePath": "plasmic/fantaasta/PlasmicLogo.tsx",
+          "importSpec": {
+            "modulePath": "Logo.tsx"
+          },
+          "cssFilePath": "plasmic/fantaasta/PlasmicLogo.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "ILa2cLxyoTg0",
+          "name": "Button",
+          "type": "managed",
+          "projectId": "xdSnfxWCziyzb8tBiGitqa",
+          "renderModuleFilePath": "plasmic/fantaasta/PlasmicButton.tsx",
+          "importSpec": {
+            "modulePath": "Button.tsx"
+          },
+          "cssFilePath": "plasmic/fantaasta/PlasmicButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "gQsAiY6bIFOZ",
+          "name": "Divider",
+          "type": "managed",
+          "projectId": "xdSnfxWCziyzb8tBiGitqa",
+          "renderModuleFilePath": "plasmic/fantaasta/PlasmicDivider.tsx",
+          "importSpec": {
+            "modulePath": "Divider.tsx"
+          },
+          "cssFilePath": "plasmic/fantaasta/PlasmicDivider.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "JGXUTtU5D6Eq",
+          "name": "Textinput",
+          "type": "managed",
+          "projectId": "xdSnfxWCziyzb8tBiGitqa",
+          "renderModuleFilePath": "plasmic/fantaasta/PlasmicTextinput.tsx",
+          "importSpec": {
+            "modulePath": "Textinput.tsx"
+          },
+          "cssFilePath": "plasmic/fantaasta/PlasmicTextinput.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "KUO-qHyTvy97",
+          "name": "ValuesSection3",
+          "type": "managed",
+          "projectId": "xdSnfxWCziyzb8tBiGitqa",
+          "renderModuleFilePath": "plasmic/fantaasta/PlasmicValuesSection3.tsx",
+          "importSpec": {
+            "modulePath": "ValuesSection3.tsx"
+          },
+          "cssFilePath": "plasmic/fantaasta/PlasmicValuesSection3.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "XC-0mAT2Chwv",
+          "name": "Valueprop",
+          "type": "managed",
+          "projectId": "xdSnfxWCziyzb8tBiGitqa",
+          "renderModuleFilePath": "plasmic/fantaasta/PlasmicValueprop.tsx",
+          "importSpec": {
+            "modulePath": "Valueprop.tsx"
+          },
+          "cssFilePath": "plasmic/fantaasta/PlasmicValueprop.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "TjWE54Gs_7oW",
+          "name": "ValuesSection2Dark",
+          "type": "managed",
+          "projectId": "xdSnfxWCziyzb8tBiGitqa",
+          "renderModuleFilePath": "plasmic/fantaasta/PlasmicValuesSection2Dark.tsx",
+          "importSpec": {
+            "modulePath": "ValuesSection2Dark.tsx"
+          },
+          "cssFilePath": "plasmic/fantaasta/PlasmicValuesSection2Dark.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "I5LTwhtpH7uf",
+          "name": "ListItem",
+          "type": "managed",
+          "projectId": "xdSnfxWCziyzb8tBiGitqa",
+          "renderModuleFilePath": "plasmic/fantaasta/PlasmicListItem.tsx",
+          "importSpec": {
+            "modulePath": "ListItem.tsx"
+          },
+          "cssFilePath": "plasmic/fantaasta/PlasmicListItem.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "_-jhWe0TwpxJ",
+          "name": "PricingSection3",
+          "type": "managed",
+          "projectId": "xdSnfxWCziyzb8tBiGitqa",
+          "renderModuleFilePath": "plasmic/fantaasta/PlasmicPricingSection3.tsx",
+          "importSpec": {
+            "modulePath": "PricingSection3.tsx"
+          },
+          "cssFilePath": "plasmic/fantaasta/PlasmicPricingSection3.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "p-2o_pYCpf4T",
+          "name": "ShopBanners",
+          "type": "managed",
+          "projectId": "xdSnfxWCziyzb8tBiGitqa",
+          "renderModuleFilePath": "plasmic/fantaasta/PlasmicShopBanners.tsx",
+          "importSpec": {
+            "modulePath": "ShopBanners.tsx"
+          },
+          "cssFilePath": "plasmic/fantaasta/PlasmicShopBanners.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "bPsGEjQSDQD0",
+          "name": "Banner",
+          "type": "managed",
+          "projectId": "xdSnfxWCziyzb8tBiGitqa",
+          "renderModuleFilePath": "plasmic/fantaasta/PlasmicBanner.tsx",
+          "importSpec": {
+            "modulePath": "Banner.tsx"
+          },
+          "cssFilePath": "plasmic/fantaasta/PlasmicBanner.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "MdG23ORLiPQo",
+          "name": "LogoCloudSection2",
+          "type": "managed",
+          "projectId": "xdSnfxWCziyzb8tBiGitqa",
+          "renderModuleFilePath": "plasmic/fantaasta/PlasmicLogoCloudSection2.tsx",
+          "importSpec": {
+            "modulePath": "LogoCloudSection2.tsx"
+          },
+          "cssFilePath": "plasmic/fantaasta/PlasmicLogoCloudSection2.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "wQ933wtsetKM",
+          "name": "TestimonialsSection1",
+          "type": "managed",
+          "projectId": "xdSnfxWCziyzb8tBiGitqa",
+          "renderModuleFilePath": "plasmic/fantaasta/PlasmicTestimonialsSection1.tsx",
+          "importSpec": {
+            "modulePath": "TestimonialsSection1.tsx"
+          },
+          "cssFilePath": "plasmic/fantaasta/PlasmicTestimonialsSection1.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "wTuiZggGXl-D",
+          "name": "Testimonial",
+          "type": "managed",
+          "projectId": "xdSnfxWCziyzb8tBiGitqa",
+          "renderModuleFilePath": "plasmic/fantaasta/PlasmicTestimonial.tsx",
+          "importSpec": {
+            "modulePath": "Testimonial.tsx"
+          },
+          "cssFilePath": "plasmic/fantaasta/PlasmicTestimonial.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "CFD5al1x8pOU",
+          "name": "CallToActionSection1",
+          "type": "managed",
+          "projectId": "xdSnfxWCziyzb8tBiGitqa",
+          "renderModuleFilePath": "plasmic/fantaasta/PlasmicCallToActionSection1.tsx",
+          "importSpec": {
+            "modulePath": "CallToActionSection1.tsx"
+          },
+          "cssFilePath": "plasmic/fantaasta/PlasmicCallToActionSection1.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        }
+      ],
+      "icons": [
+        {
+          "id": "Gng1eaWxMrAo",
+          "name": "IconIcon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Icon.tsx"
+        },
+        {
+          "id": "5t9BS3r8A2SR",
+          "name": "Icon6Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Icon6.tsx"
+        },
+        {
+          "id": "pXWkAvQ7tVd0",
+          "name": "Icon5Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Icon5.tsx"
+        },
+        {
+          "id": "1Sae458yn7P2",
+          "name": "Icon9Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Icon9.tsx"
+        },
+        {
+          "id": "yD18I_eEzZ3x",
+          "name": "Icon2Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Icon2.tsx"
+        },
+        {
+          "id": "ww9gPs7WhSQI",
+          "name": "Icon8Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Icon8.tsx"
+        },
+        {
+          "id": "ams_jLpuumes",
+          "name": "Icon14Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Icon14.tsx"
+        },
+        {
+          "id": "XGEWJsAsZQXH",
+          "name": "Icon17Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Icon17.tsx"
+        },
+        {
+          "id": "ZHsGtcpBsGnf",
+          "name": "Icon16Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Icon16.tsx"
+        }
+      ],
+      "images": [
+        {
+          "id": "IwDLmWnwjXO5",
+          "name": "image 13",
+          "filePath": "../public/plasmic/fantaasta/images/image13.svg"
+        },
+        {
+          "id": "mX55uiPgGx7Y",
+          "name": "loom.svg 2",
+          "filePath": "../public/plasmic/fantaasta/images/loomsvg2.svg"
+        },
+        {
+          "id": "m4naU_LJ8iVk",
+          "name": "strapi.svg 2",
+          "filePath": "../public/plasmic/fantaasta/images/strapisvg2.svg"
+        },
+        {
+          "id": "JzXDX4ugIpBt",
+          "name": "segment.svg 2",
+          "filePath": "../public/plasmic/fantaasta/images/segmentsvg2.svg"
+        },
+        {
+          "id": "ITYJBS9frWDR",
+          "name": "xstate 1.svg",
+          "filePath": "../public/plasmic/fantaasta/images/xstate1Svg.svg"
+        },
+        {
+          "id": "0P4lwVnms97C",
+          "name": "mapbox.svg 2",
+          "filePath": "../public/plasmic/fantaasta/images/mapboxsvg2.svg"
+        }
+      ],
+      "codeComponents": [],
+      "projectApiToken": "jjcddq96D5fqG5BFueFJpscT51DuNNKbVofXsvaGC26z8qfMWGD56Nhp2dLXSYPntELZxgf2P5ElpoEz8g"
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": [
+      {
+        "id": "F-KkpFIKCuog",
+        "name": "Screen",
+        "projectId": "xdSnfxWCziyzb8tBiGitqa",
+        "contextFilePath": "plasmic/fantaasta/PlasmicGlobalVariant__Screen.tsx"
+      }
+    ]
+  },
+  "nextjsConfig": {
+    "pagesDir": "../pages"
+  },
+  "cliVersion": "0.1.161",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.161/dist/plasmic.schema.json"
+}
