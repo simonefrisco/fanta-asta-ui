@@ -35,8 +35,7 @@ import {
 } from "@plasmicapp/react-web";
 import Navigation from "../../Navigation"; // plasmic-import: 3pqoTJs_Sosu/component
 import Button from "../../Button"; // plasmic-import: ILa2cLxyoTg0/component
-import Divider from "../../Divider"; // plasmic-import: gQsAiY6bIFOZ/component
-import Textinput from "../../Textinput"; // plasmic-import: JGXUTtU5D6Eq/component
+import LoginFrom from "../../LoginFrom"; // plasmic-import: p3a1HfRCrQ1/component
 
 import { useScreenVariants } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: F-KkpFIKCuog/globalVariant
 
@@ -46,8 +45,6 @@ import * as projectcss from "./plasmic_fantaasta.module.css"; // plasmic-import:
 import * as sty from "./PlasmicHeroSection2.module.css"; // plasmic-import: oE_8Qzvao0GQ/css
 
 import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: Gng1eaWxMrAo/icon
-import Icon6Icon from "./icons/PlasmicIcon__Icon6"; // plasmic-import: 5t9BS3r8A2SR/icon
-import Icon5Icon from "./icons/PlasmicIcon__Icon5"; // plasmic-import: pXWkAvQ7tVd0/icon
 
 export type PlasmicHeroSection2__VariantMembers = {};
 
@@ -261,172 +258,9 @@ function PlasmicHeroSection2__RenderFunc(props: {
                   </p.Stack>
                 </p.Stack>
 
-                <p.Stack
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(defaultcss.all, sty.freeBox___69Z4D)}
-                >
-                  <div
-                    className={classNames(defaultcss.all, sty.freeBox__q5Ck6)}
-                  >
-                    <p.Stack
-                      as={"div"}
-                      hasGap={true}
-                      className={classNames(
-                        defaultcss.all,
-                        sty.freeBox___2VrHc
-                      )}
-                    >
-                      <div
-                        className={classNames(
-                          defaultcss.all,
-                          defaultcss.__wab_text,
-                          sty.text__ePWx4
-                        )}
-                      >
-                        {"Sign up with"}
-                      </div>
-
-                      <p.Stack
-                        as={"div"}
-                        hasGap={true}
-                        className={classNames(
-                          defaultcss.all,
-                          sty.freeBox__nb6N2
-                        )}
-                      >
-                        <Button
-                          className={classNames(
-                            "__wab_instance",
-                            sty.button__bf3Bg
-                          )}
-                          ouline={"ouline" as const}
-                          slot={"Apple"}
-                          startIcon={"startIcon" as const}
-                        />
-
-                        <Button
-                          className={classNames(
-                            "__wab_instance",
-                            sty.button__v0YNt
-                          )}
-                          ouline={"ouline" as const}
-                          slot={"Google"}
-                          startIcon={"startIcon" as const}
-                        >
-                          <Icon6Icon
-                            className={classNames(
-                              defaultcss.all,
-                              sty.svg__wjZ8V
-                            )}
-                            role={"img"}
-                          />
-                        </Button>
-                      </p.Stack>
-
-                      <p.Stack
-                        as={"div"}
-                        hasGap={true}
-                        className={classNames(
-                          defaultcss.all,
-                          sty.freeBox__aAiGw
-                        )}
-                      >
-                        <Divider
-                          className={classNames(
-                            "__wab_instance",
-                            sty.divider__usoy8
-                          )}
-                        />
-
-                        <div
-                          className={classNames(
-                            defaultcss.all,
-                            defaultcss.__wab_text,
-                            sty.text__oGqe8
-                          )}
-                        >
-                          {"Or"}
-                        </div>
-
-                        <Divider
-                          className={classNames(
-                            "__wab_instance",
-                            sty.divider__bvlRe
-                          )}
-                        />
-                      </p.Stack>
-
-                      <p.Stack
-                        as={"div"}
-                        hasGap={true}
-                        className={classNames(defaultcss.all, sty.freeBox__vx3)}
-                      >
-                        <Textinput
-                          className={classNames(
-                            "__wab_instance",
-                            sty.textinput__ruJGt
-                          )}
-                        />
-
-                        <Textinput
-                          className={classNames(
-                            "__wab_instance",
-                            sty.textinput__f0M0Z
-                          )}
-                        />
-
-                        <Textinput
-                          className={classNames(
-                            "__wab_instance",
-                            sty.textinput__qCqdo
-                          )}
-                        />
-                      </p.Stack>
-
-                      <Button
-                        children2={
-                          <Icon5Icon
-                            className={classNames(
-                              defaultcss.all,
-                              sty.svg__xZkyg
-                            )}
-                            role={"img"}
-                          />
-                        }
-                        className={classNames(
-                          "__wab_instance",
-                          sty.button__ho4Hv
-                        )}
-                        colors={"indigo" as const}
-                        slot={"Start your account"}
-                      />
-                    </p.Stack>
-
-                    <Divider
-                      className={classNames(
-                        "__wab_instance",
-                        sty.divider___3UyhF
-                      )}
-                    />
-
-                    <div
-                      className={classNames(defaultcss.all, sty.freeBox__kuOlp)}
-                    >
-                      <div
-                        className={classNames(
-                          defaultcss.all,
-                          defaultcss.__wab_text,
-                          sty.text__tzdRh
-                        )}
-                      >
-                        {
-                          "A cras sagittis odio vestibulum pulvinar a eget hendrerit id vestibulum a leo sociosqu dictumst dictumst natoque magnis parturient."
-                        }
-                      </div>
-                    </div>
-                  </div>
-                </p.Stack>
+                <LoginFrom
+                  className={classNames("__wab_instance", sty.loginFrom__dLqi0)}
+                />
               </React.Fragment>
             ),
             value: args.foreground

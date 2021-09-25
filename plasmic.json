@@ -260,6 +260,19 @@
           "cssFilePath": "plasmic/fantaasta/PlasmicCallToActionSection1.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "p3a1HfRCrQ1",
+          "name": "LoginFrom",
+          "type": "managed",
+          "projectId": "xdSnfxWCziyzb8tBiGitqa",
+          "renderModuleFilePath": "plasmic/fantaasta/PlasmicLoginFrom.tsx",
+          "importSpec": {
+            "modulePath": "LoginFrom.tsx"
+          },
+          "cssFilePath": "plasmic/fantaasta/PlasmicLoginFrom.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [

@@ -35,14 +35,14 @@ import {
 } from "@plasmicapp/react-web";
 import HeroSection2 from "../../HeroSection2"; // plasmic-import: oE_8Qzvao0GQ/component
 import Button from "../../Button"; // plasmic-import: ILa2cLxyoTg0/component
-import Divider from "../../Divider"; // plasmic-import: gQsAiY6bIFOZ/component
-import Textinput from "../../Textinput"; // plasmic-import: JGXUTtU5D6Eq/component
+import LoginFrom from "../../LoginFrom"; // plasmic-import: p3a1HfRCrQ1/component
 import Navigation from "../../Navigation"; // plasmic-import: 3pqoTJs_Sosu/component
 import ValuesSection3 from "../../ValuesSection3"; // plasmic-import: KUO-qHyTvy97/component
 import Valueprop from "../../Valueprop"; // plasmic-import: XC-0mAT2Chwv/component
 import ValuesSection2Dark from "../../ValuesSection2Dark"; // plasmic-import: TjWE54Gs_7oW/component
 import ListItem from "../../ListItem"; // plasmic-import: I5LTwhtpH7uf/component
 import PricingSection3 from "../../PricingSection3"; // plasmic-import: _-jhWe0TwpxJ/component
+import Divider from "../../Divider"; // plasmic-import: gQsAiY6bIFOZ/component
 import ShopBanners from "../../ShopBanners"; // plasmic-import: p-2o_pYCpf4T/component
 import Banner from "../../Banner"; // plasmic-import: bPsGEjQSDQD0/component
 import LogoCloudSection2 from "../../LogoCloudSection2"; // plasmic-import: MdG23ORLiPQo/component
@@ -58,8 +58,6 @@ import * as projectcss from "./plasmic_fantaasta.module.css"; // plasmic-import:
 import * as sty from "./PlasmicHomepage.module.css"; // plasmic-import: 7MDU0cvaiUk7/css
 
 import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: Gng1eaWxMrAo/icon
-import Icon6Icon from "./icons/PlasmicIcon__Icon6"; // plasmic-import: 5t9BS3r8A2SR/icon
-import Icon5Icon from "./icons/PlasmicIcon__Icon5"; // plasmic-import: pXWkAvQ7tVd0/icon
 import Icon14Icon from "./icons/PlasmicIcon__Icon14"; // plasmic-import: ams_jLpuumes/icon
 import Icon8Icon from "./icons/PlasmicIcon__Icon8"; // plasmic-import: ww9gPs7WhSQI/icon
 import Icon17Icon from "./icons/PlasmicIcon__Icon17"; // plasmic-import: XGEWJsAsZQXH/icon
@@ -78,6 +76,7 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
   heroSection2?: p.Flex<typeof HeroSection2>;
+  loginFrom?: p.Flex<typeof LoginFrom>;
   navigation?: p.Flex<typeof Navigation>;
   valuesSection3?: p.Flex<typeof ValuesSection3>;
   h2?: p.Flex<"h2">;
@@ -253,166 +252,11 @@ function PlasmicHomepage__RenderFunc(props: {
                   hasGap={true}
                   className={classNames(defaultcss.all, sty.freeBox__sOvs)}
                 >
-                  <div
-                    className={classNames(defaultcss.all, sty.freeBox__mG0Jy)}
-                  >
-                    <p.Stack
-                      as={"div"}
-                      hasGap={true}
-                      className={classNames(defaultcss.all, sty.freeBox__uczKi)}
-                    >
-                      <div
-                        className={classNames(
-                          defaultcss.all,
-                          defaultcss.__wab_text,
-                          sty.text__hDsvx
-                        )}
-                      >
-                        {"Sign up with"}
-                      </div>
-
-                      <p.Stack
-                        as={"div"}
-                        hasGap={true}
-                        className={classNames(
-                          defaultcss.all,
-                          sty.freeBox__u3Fr
-                        )}
-                      >
-                        <Button
-                          className={classNames(
-                            "__wab_instance",
-                            sty.button__k3Jay
-                          )}
-                          ouline={"ouline" as const}
-                          slot={"Apple"}
-                          startIcon={"startIcon" as const}
-                        />
-
-                        <Button
-                          className={classNames(
-                            "__wab_instance",
-                            sty.button___9NGrx
-                          )}
-                          ouline={"ouline" as const}
-                          slot={"Google"}
-                          startIcon={"startIcon" as const}
-                        >
-                          <Icon6Icon
-                            className={classNames(
-                              defaultcss.all,
-                              sty.svg__hreT8
-                            )}
-                            role={"img"}
-                          />
-                        </Button>
-                      </p.Stack>
-
-                      <p.Stack
-                        as={"div"}
-                        hasGap={true}
-                        className={classNames(
-                          defaultcss.all,
-                          sty.freeBox__reDmd
-                        )}
-                      >
-                        <Divider
-                          className={classNames(
-                            "__wab_instance",
-                            sty.divider__ykvlu
-                          )}
-                        />
-
-                        <div
-                          className={classNames(
-                            defaultcss.all,
-                            defaultcss.__wab_text,
-                            sty.text___3HgL
-                          )}
-                        >
-                          {"Or"}
-                        </div>
-
-                        <Divider
-                          className={classNames(
-                            "__wab_instance",
-                            sty.divider__aWdXj
-                          )}
-                        />
-                      </p.Stack>
-
-                      <p.Stack
-                        as={"div"}
-                        hasGap={true}
-                        className={classNames(
-                          defaultcss.all,
-                          sty.freeBox__o6J5M
-                        )}
-                      >
-                        <Textinput
-                          className={classNames(
-                            "__wab_instance",
-                            sty.textinput__mBxSk
-                          )}
-                        />
-
-                        <Textinput
-                          className={classNames(
-                            "__wab_instance",
-                            sty.textinput__n4XE
-                          )}
-                        />
-
-                        <Textinput
-                          className={classNames(
-                            "__wab_instance",
-                            sty.textinput__akYf
-                          )}
-                        />
-                      </p.Stack>
-
-                      <Button
-                        children2={
-                          <Icon5Icon
-                            className={classNames(
-                              defaultcss.all,
-                              sty.svg___8Iz1L
-                            )}
-                            role={"img"}
-                          />
-                        }
-                        className={classNames(
-                          "__wab_instance",
-                          sty.button__zAk9N
-                        )}
-                        colors={"indigo" as const}
-                        slot={"Start your account"}
-                      />
-                    </p.Stack>
-
-                    <Divider
-                      className={classNames(
-                        "__wab_instance",
-                        sty.divider__z8Yms
-                      )}
-                    />
-
-                    <div
-                      className={classNames(defaultcss.all, sty.freeBox__mi381)}
-                    >
-                      <div
-                        className={classNames(
-                          defaultcss.all,
-                          defaultcss.__wab_text,
-                          sty.text__ruPqa
-                        )}
-                      >
-                        {
-                          "A cras sagittis odio vestibulum pulvinar a eget hendrerit id vestibulum a leo sociosqu dictumst dictumst natoque magnis parturient."
-                        }
-                      </div>
-                    </div>
-                  </div>
+                  <LoginFrom
+                    data-plasmic-name={"loginFrom"}
+                    data-plasmic-override={overrides.loginFrom}
+                    className={classNames("__wab_instance", sty.loginFrom)}
+                  />
                 </p.Stack>
               </React.Fragment>
             }
@@ -1688,6 +1532,7 @@ const PlasmicDescendants = {
   root: [
     "root",
     "heroSection2",
+    "loginFrom",
     "navigation",
     "valuesSection3",
     "h2",
@@ -1698,7 +1543,8 @@ const PlasmicDescendants = {
     "testimonialsSection1",
     "callToActionSection1"
   ],
-  heroSection2: ["heroSection2", "navigation"],
+  heroSection2: ["heroSection2", "loginFrom", "navigation"],
+  loginFrom: ["loginFrom"],
   navigation: ["navigation"],
   valuesSection3: ["valuesSection3", "h2"],
   h2: ["h2"],
@@ -1715,6 +1561,7 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   heroSection2: typeof HeroSection2;
+  loginFrom: typeof LoginFrom;
   navigation: typeof Navigation;
   valuesSection3: typeof ValuesSection3;
   h2: "h2";
@@ -1788,6 +1635,7 @@ export const PlasmicHomepage = Object.assign(
   {
     // Helper components rendering sub-elements
     heroSection2: makeNodeComponent("heroSection2"),
+    loginFrom: makeNodeComponent("loginFrom"),
     navigation: makeNodeComponent("navigation"),
     valuesSection3: makeNodeComponent("valuesSection3"),
     h2: makeNodeComponent("h2"),
