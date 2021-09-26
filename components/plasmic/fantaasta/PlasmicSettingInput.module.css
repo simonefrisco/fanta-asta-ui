@@ -1,0 +1,72 @@
+.root {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  min-width: 0;
+}
+.root:focus {
+  outline: none;
+}
+.freeBox__opf9F {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+.freeBox__dgZ2K {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 15px;
+  min-width: 0;
+  border-radius: 6px;
+  border: 1px solid #e5e5ea /* plasmic-token: pFkgER-AKuWb */;
+}
+.slotTargetChildren__state_completed {
+  color: #e5e5ea /* plasmic-token: pFkgER-AKuWb */;
+}
+.slotTargetChildren__state_editing > *,
+.slotTargetChildren__state_editing > .__wab_slot > *,
+.slotTargetChildren__state_editing > .__wab_slot > .__wab_slot > *,
+.slotTargetChildren__state_editing
+  > .__wab_slot
+  > .__wab_slot
+  > .__wab_slot
+  > *,
+.slotTargetChildren__state_editing > picture > img,
+.slotTargetChildren__state_editing > .__wab_slot > picture > img,
+.slotTargetChildren__state_editing > .__wab_slot > .__wab_slot > picture > img,
+.slotTargetChildren__state_editing
+  > .__wab_slot
+  > .__wab_slot
+  > .__wab_slot
+  > picture
+  > img {
+  display: none;
+}
+.textbox {
+  width: 100%;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 15px;
+  min-width: 0;
+  display: none;
+  border-radius: 6px;
+  border: 1px solid #e5e5ea /* plasmic-token: pFkgER-AKuWb */;
+}
+.textbox__state_editing {
+  display: block;
+}
+.root:focus .textbox {
+  box-shadow: 0px 0px 0px 4px #0095ff80;
+  outline: none;
+}

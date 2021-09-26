@@ -40,11 +40,18 @@ import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-i
 import * as projectcss from "./plasmic_fantaasta.module.css"; // plasmic-import: xdSnfxWCziyzb8tBiGitqa/projectcss
 import * as sty from "./PlasmicLoginFrom.module.css"; // plasmic-import: p3a1HfRCrQ1/css
 
-export type PlasmicLoginFrom__VariantMembers = {};
+export type PlasmicLoginFrom__VariantMembers = {
+  arena: "arena";
+};
 
-export type PlasmicLoginFrom__VariantsArgs = {};
+export type PlasmicLoginFrom__VariantsArgs = {
+  arena?: SingleBooleanChoiceArg<"arena">;
+};
+
 type VariantPropType = keyof PlasmicLoginFrom__VariantsArgs;
-export const PlasmicLoginFrom__VariantProps = new Array<VariantPropType>();
+export const PlasmicLoginFrom__VariantProps = new Array<VariantPropType>(
+  "arena"
+);
 
 export type PlasmicLoginFrom__ArgsType = {
   children?: React.ReactNode;
@@ -60,6 +67,7 @@ export type PlasmicLoginFrom__OverridesType = {
 
 export interface DefaultLoginFromProps {
   children?: React.ReactNode;
+  arena?: SingleBooleanChoiceArg<"arena">;
   className?: string;
 }
 
@@ -80,25 +88,58 @@ function PlasmicLoginFrom__RenderFunc(props: {
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       hasGap={true}
-      className={classNames(defaultcss.all, projectcss.root_reset, sty.root)}
+      className={classNames(defaultcss.all, projectcss.root_reset, sty.root, {
+        [sty.root__arena]: hasVariant(variants, "arena", "arena")
+      })}
     >
-      <div className={classNames(defaultcss.all, sty.freeBox__oasnn)}>
+      <div
+        className={classNames(defaultcss.all, sty.freeBox__oasnn, {
+          [sty.freeBox__arena__oasnnek1T4]: hasVariant(
+            variants,
+            "arena",
+            "arena"
+          )
+        })}
+      >
         <p.Stack
           as={"div"}
           hasGap={true}
-          className={classNames(defaultcss.all, sty.freeBox__aAo7)}
+          className={classNames(defaultcss.all, sty.freeBox__aAo7, {
+            [sty.freeBox__arena__aAo7Ek1T4]: hasVariant(
+              variants,
+              "arena",
+              "arena"
+            )
+          })}
         >
-          <div
-            className={classNames(
-              defaultcss.all,
-              defaultcss.__wab_text,
-              sty.text__cPcOo
-            )}
-          >
-            {"Sign up with"}
-          </div>
+          {(hasVariant(variants, "arena", "arena") ? true : true) ? (
+            <div
+              className={classNames(
+                defaultcss.all,
+                defaultcss.__wab_text,
+                sty.text__cPcOo,
+                {
+                  [sty.text__arena__cPcOOek1T4]: hasVariant(
+                    variants,
+                    "arena",
+                    "arena"
+                  )
+                }
+              )}
+            >
+              {"Sign up with"}
+            </div>
+          ) : null}
 
-          <div className={classNames(defaultcss.all, sty.freeBox__pGslM)}>
+          <div
+            className={classNames(defaultcss.all, sty.freeBox__pGslM, {
+              [sty.freeBox__arena__pGslMek1T4]: hasVariant(
+                variants,
+                "arena",
+                "arena"
+              )
+            })}
+          >
             {p.renderPlasmicSlot({
               defaultContents: null,
               value: args.children
@@ -112,18 +153,35 @@ function PlasmicLoginFrom__RenderFunc(props: {
           className={classNames("__wab_instance", sty.divider)}
         />
 
-        <div className={classNames(defaultcss.all, sty.freeBox__w6Xsc)}>
-          <div
-            className={classNames(
-              defaultcss.all,
-              defaultcss.__wab_text,
-              sty.text__z2OwR
-            )}
-          >
-            {
-              "A cras sagittis odio vestibulum pulvinar a eget hendrerit id vestibulum a leo sociosqu dictumst dictumst natoque magnis parturient."
-            }
-          </div>
+        <div
+          className={classNames(defaultcss.all, sty.freeBox__w6Xsc, {
+            [sty.freeBox__arena__w6Xscek1T4]: hasVariant(
+              variants,
+              "arena",
+              "arena"
+            )
+          })}
+        >
+          {(hasVariant(variants, "arena", "arena") ? true : true) ? (
+            <div
+              className={classNames(
+                defaultcss.all,
+                defaultcss.__wab_text,
+                sty.text__z2OwR,
+                {
+                  [sty.text__arena__z2OwRek1T4]: hasVariant(
+                    variants,
+                    "arena",
+                    "arena"
+                  )
+                }
+              )}
+            >
+              {
+                "A cras sagittis odio vestibulum pulvinar a eget hendrerit id vestibulum a leo sociosqu dictumst dictumst natoque magnis parturient."
+              }
+            </div>
+          ) : null}
         </div>
       </div>
     </p.Stack>

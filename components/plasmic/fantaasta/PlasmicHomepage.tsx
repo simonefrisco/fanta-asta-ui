@@ -34,9 +34,9 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import HeroSection2 from "../../HeroSection2"; // plasmic-import: oE_8Qzvao0GQ/component
+import Navigation from "../../Navigation"; // plasmic-import: 3pqoTJs_Sosu/component
 import Button from "../../Button"; // plasmic-import: ILa2cLxyoTg0/component
 import LoginFrom from "../../LoginFrom"; // plasmic-import: p3a1HfRCrQ1/component
-import Navigation from "../../Navigation"; // plasmic-import: 3pqoTJs_Sosu/component
 import ValuesSection3 from "../../ValuesSection3"; // plasmic-import: KUO-qHyTvy97/component
 import Valueprop from "../../Valueprop"; // plasmic-import: XC-0mAT2Chwv/component
 import ValuesSection2Dark from "../../ValuesSection2Dark"; // plasmic-import: TjWE54Gs_7oW/component
@@ -76,8 +76,6 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
   heroSection2?: p.Flex<typeof HeroSection2>;
-  loginFrom?: p.Flex<typeof LoginFrom>;
-  navigation?: p.Flex<typeof Navigation>;
   valuesSection3?: p.Flex<typeof ValuesSection3>;
   h2?: p.Flex<"h2">;
   valuesSection2Dark?: p.Flex<typeof ValuesSection2Dark>;
@@ -136,202 +134,16 @@ function PlasmicHomepage__RenderFunc(props: {
             sty.root
           )}
         >
-          <HeroSection2
-            data-plasmic-name={"heroSection2"}
-            data-plasmic-override={overrides.heroSection2}
-            className={classNames("__wab_instance", sty.heroSection2)}
-            foreground={
-              <React.Fragment>
-                <p.Stack
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(defaultcss.all, sty.freeBox__jit68)}
-                >
-                  <p.Stack
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(defaultcss.all, sty.freeBox__qh8D4)}
-                  >
-                    <div
-                      className={classNames(defaultcss.all, sty.freeBox__dP8Mr)}
-                    >
-                      <div
-                        className={classNames(
-                          defaultcss.all,
-                          defaultcss.__wab_text,
-                          sty.text___5Ej6W
-                        )}
-                      >
-                        {"Updated!"}
-                      </div>
-                    </div>
-
-                    <div
-                      className={classNames(
-                        defaultcss.all,
-                        defaultcss.__wab_text,
-                        sty.text__x0HnC
-                      )}
-                    >
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                      >
-                        <React.Fragment>{"Designs that "}</React.Fragment>
-                        <span
-                          className={
-                            "plasmic_default__all plasmic_default__span"
-                          }
-                          style={{ textDecoration: "underline" }}
-                        >
-                          {"adapt"}
-                        </span>
-                      </span>
-                    </div>
-
-                    <div
-                      className={classNames(
-                        defaultcss.all,
-                        defaultcss.__wab_text,
-                        sty.text__brq9D
-                      )}
-                    >
-                      {
-                        "Orci dui condimentum rutrum laoreet hac purus porta sem sem a vivamus a posuere vel molestie."
-                      }
-                    </div>
-                  </p.Stack>
-
-                  <p.Stack
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(defaultcss.all, sty.freeBox__tb2Xm)}
-                  >
-                    <Button
-                      className={classNames(
-                        "__wab_instance",
-                        sty.button__hjkFf
-                      )}
-                      darkGray={"darkGray" as const}
-                      slot={
-                        <div
-                          className={classNames(
-                            defaultcss.all,
-                            defaultcss.__wab_text,
-                            sty.text__axDwz
-                          )}
-                        >
-                          {"Start now ->"}
-                        </div>
-                      }
-                    />
-
-                    <Button
-                      bgDifference={"bgDifference" as const}
-                      className={classNames(
-                        "__wab_instance",
-                        sty.button___3FThG
-                      )}
-                      darkGray={"darkGray" as const}
-                      slot={
-                        <div
-                          className={classNames(
-                            defaultcss.all,
-                            defaultcss.__wab_text,
-                            sty.text__kmifs
-                          )}
-                        >
-                          {"Learn more…"}
-                        </div>
-                      }
-                    />
-                  </p.Stack>
-                </p.Stack>
-
-                <p.Stack
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(defaultcss.all, sty.freeBox__sOvs)}
-                >
-                  <LoginFrom
-                    data-plasmic-name={"loginFrom"}
-                    data-plasmic-override={overrides.loginFrom}
-                    className={classNames("__wab_instance", sty.loginFrom)}
-                  />
-                </p.Stack>
-              </React.Fragment>
-            }
-          >
-            <Navigation
-              data-plasmic-name={"navigation"}
-              data-plasmic-override={overrides.navigation}
-              className={classNames("__wab_instance", sty.navigation)}
-              hideCta={"hideCta" as const}
-              slot={
-                <React.Fragment>
-                  <Button
-                    className={classNames("__wab_instance", sty.button__yEoU)}
-                    link={"#services" as const}
-                    navLink={"navLink" as const}
-                    slot={"Services"}
-                  />
-
-                  <Button
-                    className={classNames("__wab_instance", sty.button__jsH3J)}
-                    link={"#features" as const}
-                    navLink={"navLink" as const}
-                    slot={"Features"}
-                  />
-
-                  <Button
-                    className={classNames("__wab_instance", sty.button__btQFy)}
-                    link={"#pricing" as const}
-                    navLink={"navLink" as const}
-                    slot={"Pricing"}
-                  />
-
-                  <Button
-                    className={classNames("__wab_instance", sty.button__siAd2)}
-                    link={"#testimonials" as const}
-                    navLink={"navLink" as const}
-                    slot={
-                      <div
-                        className={classNames(
-                          defaultcss.all,
-                          defaultcss.__wab_text,
-                          sty.text__yMmJ7
-                        )}
-                      >
-                        {"Testimonials"}
-                      </div>
-                    }
-                  />
-
-                  <Button
-                    className={classNames("__wab_instance", sty.button__cpa4L)}
-                    navLink={"navLink" as const}
-                    slot={"Log in"}
-                  />
-
-                  <Button
-                    className={classNames("__wab_instance", sty.button__ktf0B)}
-                    darkGray={"darkGray" as const}
-                    slot={"Sign up"}
-                  />
-                </React.Fragment>
-              }
-            >
-              <img
-                alt={""}
-                className={classNames(defaultcss.img, sty.img___8RcN)}
-                src={"/plasmic/fantaasta/images/image13.svg"}
-              />
-            </Navigation>
-          </HeroSection2>
-
           <div
             className={classNames(defaultcss.all, sty.freeBox__nLxLf)}
             id={"services" as const}
           >
+            <HeroSection2
+              data-plasmic-name={"heroSection2"}
+              data-plasmic-override={overrides.heroSection2}
+              className={classNames("__wab_instance", sty.heroSection2)}
+            />
+
             <ValuesSection3
               data-plasmic-name={"valuesSection3"}
               data-plasmic-override={overrides.valuesSection3}
@@ -1532,8 +1344,6 @@ const PlasmicDescendants = {
   root: [
     "root",
     "heroSection2",
-    "loginFrom",
-    "navigation",
     "valuesSection3",
     "h2",
     "valuesSection2Dark",
@@ -1543,9 +1353,7 @@ const PlasmicDescendants = {
     "testimonialsSection1",
     "callToActionSection1"
   ],
-  heroSection2: ["heroSection2", "loginFrom", "navigation"],
-  loginFrom: ["loginFrom"],
-  navigation: ["navigation"],
+  heroSection2: ["heroSection2"],
   valuesSection3: ["valuesSection3", "h2"],
   h2: ["h2"],
   valuesSection2Dark: ["valuesSection2Dark"],
@@ -1561,8 +1369,6 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   heroSection2: typeof HeroSection2;
-  loginFrom: typeof LoginFrom;
-  navigation: typeof Navigation;
   valuesSection3: typeof ValuesSection3;
   h2: "h2";
   valuesSection2Dark: typeof ValuesSection2Dark;
@@ -1635,8 +1441,6 @@ export const PlasmicHomepage = Object.assign(
   {
     // Helper components rendering sub-elements
     heroSection2: makeNodeComponent("heroSection2"),
-    loginFrom: makeNodeComponent("loginFrom"),
-    navigation: makeNodeComponent("navigation"),
     valuesSection3: makeNodeComponent("valuesSection3"),
     h2: makeNodeComponent("h2"),
     valuesSection2Dark: makeNodeComponent("valuesSection2Dark"),

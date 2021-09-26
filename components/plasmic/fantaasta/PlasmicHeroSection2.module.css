@@ -1,18 +1,23 @@
 .root {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  align-items: center;
   justify-content: flex-start;
   position: relative;
+  width: 100%;
+  min-width: 0;
 }
 .freeBox {
   display: flex;
   position: absolute;
   flex-direction: column;
-  top: 0;
-  left: 0;
-  right: 0;
+  max-width: 1200px;
+  width: 100%;
+  height: auto;
+  bottom: auto;
+  top: 0px;
   z-index: 1;
+  min-width: 0;
 }
 .navigation___460Ym:global(.__wab_instance) {
   position: relative;
@@ -31,102 +36,102 @@
 .img__srl6G > .__wab_img-spacer > img {
   object-fit: cover;
 }
-.button__g7Z5:global(.__wab_instance) {
+.button__tJz58:global(.__wab_instance) {
   position: relative;
 }
-.svg__drFrL {
+.svg__gYxTh {
   width: 24px;
   height: 24px;
   position: relative;
   object-fit: cover;
   color: #05050599 /* plasmic-token: XEy-tQANXH6D */;
 }
-.svg__wlMG {
+.svg__qAyT8 {
   width: 24px;
   height: 24px;
   position: relative;
   object-fit: cover;
   color: #05050599 /* plasmic-token: XEy-tQANXH6D */;
 }
-.button__hmQko:global(.__wab_instance) {
+.button__n6Nt9:global(.__wab_instance) {
   position: relative;
 }
-.svg__t03BX {
+.svg__sePyr {
   width: 24px;
   height: 24px;
   position: relative;
   object-fit: cover;
   color: #05050599 /* plasmic-token: XEy-tQANXH6D */;
 }
-.svg__opExX {
+.svg__z168N {
   width: 24px;
   height: 24px;
   position: relative;
   object-fit: cover;
   color: #05050599 /* plasmic-token: XEy-tQANXH6D */;
 }
-.button__e5HRz:global(.__wab_instance) {
+.button__nIg4G:global(.__wab_instance) {
   position: relative;
 }
-.svg__hyjSt {
+.svg__ccuvu {
   width: 24px;
   height: 24px;
   position: relative;
   object-fit: cover;
   color: #05050599 /* plasmic-token: XEy-tQANXH6D */;
 }
-.svg__flpeq {
+.svg__hdA3C {
   width: 24px;
   height: 24px;
   position: relative;
   object-fit: cover;
   color: #05050599 /* plasmic-token: XEy-tQANXH6D */;
 }
-.button__o7QEa:global(.__wab_instance) {
+.button__vcWiU:global(.__wab_instance) {
   position: relative;
 }
-.svg__ifF8 {
+.svg__x4Cbe {
   width: 24px;
   height: 24px;
   position: relative;
   object-fit: cover;
   color: #05050599 /* plasmic-token: XEy-tQANXH6D */;
 }
-.svg__j6Xea {
+.svg__eDzgv {
   width: 24px;
   height: 24px;
   position: relative;
   object-fit: cover;
   color: #05050599 /* plasmic-token: XEy-tQANXH6D */;
 }
-.button__prth3:global(.__wab_instance) {
+.button__tGpbP:global(.__wab_instance) {
   position: relative;
 }
-.svg__jokcA {
+.svg__vKn2P {
   width: 24px;
   height: 24px;
   position: relative;
   object-fit: cover;
   color: #05050599 /* plasmic-token: XEy-tQANXH6D */;
 }
-.svg___3R2C {
+.svg__c8Fiv {
   width: 24px;
   height: 24px;
   position: relative;
   object-fit: cover;
   color: #05050599 /* plasmic-token: XEy-tQANXH6D */;
 }
-.button__hpgUg:global(.__wab_instance) {
+.button__xomhG:global(.__wab_instance) {
   position: relative;
 }
-.svg__wjfIf {
+.svg__mC6V {
   width: 24px;
   height: 24px;
   position: relative;
   object-fit: cover;
   color: #05050599 /* plasmic-token: XEy-tQANXH6D */;
 }
-.svg__hPL7 {
+.svg__b4Olh {
   width: 24px;
   height: 24px;
   position: relative;
@@ -176,7 +181,7 @@
 .foreground {
   display: flex;
   position: relative;
-  max-width: 1920px;
+  max-width: 1200px;
 }
 .foreground > :global(.__wab_flex-container) {
   align-items: center;

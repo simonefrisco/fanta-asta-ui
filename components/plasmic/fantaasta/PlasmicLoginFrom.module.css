@@ -52,6 +52,9 @@
   > img {
   margin-top: 16px;
 }
+.text__arena__cPcOOek1T4 {
+  display: none;
+}
 .freeBox__pGslM {
   display: block;
   position: relative;
@@ -71,7 +74,13 @@
   background: #f2f2f7;
   padding: 32px;
 }
+.freeBox__arena__w6Xscek1T4 {
+  padding: 12px;
+}
 .text__z2OwR {
   position: relative;
   color: #05050599 /* plasmic-token: XEy-tQANXH6D */;
+}
+.text__arena__z2OwRek1T4 {
+  display: none;
 }

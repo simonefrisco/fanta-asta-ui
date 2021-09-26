@@ -1,0 +1,78 @@
+.root {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  width: auto;
+  height: auto;
+}
+.freeBox {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background: linear-gradient(0deg, #e5e5ea 0%, #ffffff80 100%);
+  min-width: 500px;
+  border-radius: 24px;
+  padding: 32px;
+}
+.freeBox > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: calc(0px - 6px);
+  height: calc(100% + 6px);
+}
+.freeBox > :global(.__wab_flex-container) > *,
+.freeBox > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox > :global(.__wab_flex-container) > picture > img,
+.freeBox
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 6px;
+}
+.settingInput__s2Efj:global(.__wab_instance) {
+  position: relative;
+}
+.text__bWlhn {
+  height: auto;
+}
+.settingInput___1PKpq:global(.__wab_instance) {
+  position: relative;
+}
+.settingInput__zT:global(.__wab_instance) {
+  position: relative;
+}
+.text__rjPT {
+  position: relative;
+  font-weight: 600;
+  margin-top: calc(12px + 6px) !important;
+}
+.settingInput__wkhZ:global(.__wab_instance) {
+  position: relative;
+}
+.button:global(.__wab_instance) {
+  position: relative;
+  margin-top: calc(12px + 6px) !important;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+.svg__wN5 {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  object-fit: cover;
+  color: #05050599 /* plasmic-token: XEy-tQANXH6D */;
+}
+.text__xMAzY {
+  width: auto;
+  display: inline-block;
+}
+.svg__hV3UG {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  object-fit: cover;
+  color: #05050599 /* plasmic-token: XEy-tQANXH6D */;
+}

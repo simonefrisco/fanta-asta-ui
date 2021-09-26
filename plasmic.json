@@ -106,19 +106,6 @@
           "componentType": "component"
         },
         {
-          "id": "JGXUTtU5D6Eq",
-          "name": "Textinput",
-          "type": "managed",
-          "projectId": "xdSnfxWCziyzb8tBiGitqa",
-          "renderModuleFilePath": "plasmic/fantaasta/PlasmicTextinput.tsx",
-          "importSpec": {
-            "modulePath": "Textinput.tsx"
-          },
-          "cssFilePath": "plasmic/fantaasta/PlasmicTextinput.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
           "id": "KUO-qHyTvy97",
           "name": "ValuesSection3",
           "type": "managed",
@@ -271,6 +258,84 @@
             "modulePath": "LoginFrom.tsx"
           },
           "cssFilePath": "plasmic/fantaasta/PlasmicLoginFrom.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "JGXUTtU5D6Eq",
+          "name": "SettingInput",
+          "type": "managed",
+          "projectId": "xdSnfxWCziyzb8tBiGitqa",
+          "renderModuleFilePath": "plasmic/fantaasta/PlasmicSettingInput.tsx",
+          "importSpec": {
+            "modulePath": "SettingInput.tsx"
+          },
+          "cssFilePath": "plasmic/fantaasta/PlasmicSettingInput.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "ZPtvWtdss9",
+          "name": "Arenahome",
+          "type": "managed",
+          "projectId": "xdSnfxWCziyzb8tBiGitqa",
+          "renderModuleFilePath": "plasmic/fantaasta/PlasmicArenahome.tsx",
+          "importSpec": {
+            "modulePath": "../pages/arena/home.tsx"
+          },
+          "cssFilePath": "plasmic/fantaasta/PlasmicArenahome.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "Uev3p9VZayM",
+          "name": "HeroSectionArena",
+          "type": "managed",
+          "projectId": "xdSnfxWCziyzb8tBiGitqa",
+          "renderModuleFilePath": "plasmic/fantaasta/PlasmicHeroSectionArena.tsx",
+          "importSpec": {
+            "modulePath": "HeroSectionArena.tsx"
+          },
+          "cssFilePath": "plasmic/fantaasta/PlasmicHeroSectionArena.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "TXm06OyomR",
+          "name": "AstaForm",
+          "type": "managed",
+          "projectId": "xdSnfxWCziyzb8tBiGitqa",
+          "renderModuleFilePath": "plasmic/fantaasta/PlasmicAstaForm.tsx",
+          "importSpec": {
+            "modulePath": "AstaForm.tsx"
+          },
+          "cssFilePath": "plasmic/fantaasta/PlasmicAstaForm.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "wfDe24iI-Nf",
+          "name": "NewAstaForm",
+          "type": "managed",
+          "projectId": "xdSnfxWCziyzb8tBiGitqa",
+          "renderModuleFilePath": "plasmic/fantaasta/PlasmicNewAstaForm.tsx",
+          "importSpec": {
+            "modulePath": "NewAstaForm.tsx"
+          },
+          "cssFilePath": "plasmic/fantaasta/PlasmicNewAstaForm.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "7aFEpfg1e-",
+          "name": "AstaItem",
+          "type": "managed",
+          "projectId": "xdSnfxWCziyzb8tBiGitqa",
+          "renderModuleFilePath": "plasmic/fantaasta/PlasmicAstaItem.tsx",
+          "importSpec": {
+            "modulePath": "AstaItem.tsx"
+          },
+          "cssFilePath": "plasmic/fantaasta/PlasmicAstaItem.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         }

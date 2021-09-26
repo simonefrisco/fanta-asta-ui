@@ -156,8 +156,9 @@ function PlasmicNavigation__RenderFunc(props: {
               <React.Fragment>
                 <Button
                   className={classNames("__wab_instance", sty.button__z8ErL)}
+                  link={"/arena/home" as const}
                   navLink={"navLink" as const}
-                  slot={"Services"}
+                  slot={"Arena"}
                 />
 
                 <Button

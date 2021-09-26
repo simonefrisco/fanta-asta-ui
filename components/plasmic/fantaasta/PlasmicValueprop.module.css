@@ -39,7 +39,7 @@
 }
 .root__card {
   box-shadow: 0px 1px 1px 1px #0000001a;
-  background: #ffffff;
+  background: #f2f2f7;
   border-radius: 16px;
   padding: 24px;
 }
@@ -105,7 +105,7 @@
   object-fit: cover;
   width: 24px;
   height: 24px;
-  color: #ffffff /* plasmic-token: WVCnb5gEJt38 */;
+  color: #f2f2f7 /* plasmic-token: WVCnb5gEJt38 */;
   flex-shrink: 0;
 }
 .freeBox__xYdJ {
