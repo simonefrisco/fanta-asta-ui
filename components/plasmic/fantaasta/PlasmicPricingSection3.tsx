@@ -16,6 +16,7 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 
 import {
   hasVariant,
@@ -38,12 +39,11 @@ import Valueprop from "../../Valueprop"; // plasmic-import: XC-0mAT2Chwv/compone
 import Button from "../../Button"; // plasmic-import: ILa2cLxyoTg0/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
-import * as projectcss from "./plasmic_fantaasta.module.css"; // plasmic-import: xdSnfxWCziyzb8tBiGitqa/projectcss
-import * as sty from "./PlasmicPricingSection3.module.css"; // plasmic-import: _-jhWe0TwpxJ/css
+
+import projectcss from "./plasmic_fantaasta.module.css"; // plasmic-import: xdSnfxWCziyzb8tBiGitqa/projectcss
+import sty from "./PlasmicPricingSection3.module.css"; // plasmic-import: _-jhWe0TwpxJ/css
 
 import Icon14Icon from "./icons/PlasmicIcon__Icon14"; // plasmic-import: ams_jLpuumes/icon
-import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: Gng1eaWxMrAo/icon
 
 export type PlasmicPricingSection3__VariantMembers = {};
 
@@ -76,10 +76,10 @@ function PlasmicPricingSection3__RenderFunc(props: {
   variants: PlasmicPricingSection3__VariantsArgs;
   args: PlasmicPricingSection3__ArgsType;
   overrides: PlasmicPricingSection3__OverridesType;
-  dataFetches?: PlasmicPricingSection3__Fetches;
+
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode, dataFetches } = props;
+  const { variants, args, overrides, forNode } = props;
 
   return (
     <div
@@ -87,12 +87,19 @@ function PlasmicPricingSection3__RenderFunc(props: {
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
-      className={classNames(defaultcss.all, projectcss.root_reset, sty.root)}
+      className={classNames(
+        projectcss.all,
+        projectcss.root_reset,
+        projectcss.plasmic_default_styles,
+        projectcss.plasmic_mixins,
+        projectcss.plasmic_tokens,
+        sty.root
+      )}
     >
       <div
         data-plasmic-name={"freeBox"}
         data-plasmic-override={overrides.freeBox}
-        className={classNames(defaultcss.all, sty.freeBox)}
+        className={classNames(projectcss.all, sty.freeBox)}
       />
 
       <p.Stack
@@ -100,7 +107,7 @@ function PlasmicPricingSection3__RenderFunc(props: {
         data-plasmic-name={"foreground"}
         data-plasmic-override={overrides.foreground}
         hasGap={true}
-        className={classNames(defaultcss.all, sty.foreground)}
+        className={classNames(projectcss.all, sty.foreground)}
       >
         {p.renderPlasmicSlot({
           defaultContents: (
@@ -108,13 +115,13 @@ function PlasmicPricingSection3__RenderFunc(props: {
               <p.Stack
                 as={"div"}
                 hasGap={true}
-                className={classNames(defaultcss.all, sty.freeBox__dGbNn)}
+                className={classNames(projectcss.all, sty.freeBox__dGbNn)}
               >
-                <div className={classNames(defaultcss.all, sty.freeBox__lhnOp)}>
+                <div className={classNames(projectcss.all, sty.freeBox__lhnOp)}>
                   <div
                     className={classNames(
-                      defaultcss.all,
-                      defaultcss.__wab_text,
+                      projectcss.all,
+                      projectcss.__wab_text,
                       sty.text__vuSc6
                     )}
                   >
@@ -124,8 +131,8 @@ function PlasmicPricingSection3__RenderFunc(props: {
 
                 <div
                   className={classNames(
-                    defaultcss.all,
-                    defaultcss.__wab_text,
+                    projectcss.all,
+                    projectcss.__wab_text,
                     sty.text___8QiB
                   )}
                 >
@@ -135,19 +142,19 @@ function PlasmicPricingSection3__RenderFunc(props: {
                 </div>
               </p.Stack>
 
-              <div className={classNames(defaultcss.all, sty.freeBox__aOiFo)}>
+              <div className={classNames(projectcss.all, sty.freeBox__aOiFo)}>
                 <div
-                  className={classNames(defaultcss.all, sty.freeBox___8W2No)}
+                  className={classNames(projectcss.all, sty.freeBox___8W2No)}
                 >
                   <p.Stack
                     as={"div"}
                     hasGap={true}
-                    className={classNames(defaultcss.all, sty.freeBox__sVm4O)}
+                    className={classNames(projectcss.all, sty.freeBox__sVm4O)}
                   >
                     <div
                       className={classNames(
-                        defaultcss.all,
-                        defaultcss.__wab_text,
+                        projectcss.all,
+                        projectcss.__wab_text,
                         sty.text___8Wv3
                       )}
                     >
@@ -157,18 +164,18 @@ function PlasmicPricingSection3__RenderFunc(props: {
                     <p.Stack
                       as={"div"}
                       hasGap={true}
-                      className={classNames(defaultcss.all, sty.freeBox__cFwog)}
+                      className={classNames(projectcss.all, sty.freeBox__cFwog)}
                     >
                       <div
                         className={classNames(
-                          defaultcss.all,
+                          projectcss.all,
                           sty.freeBox__wyWha
                         )}
                       >
                         <div
                           className={classNames(
-                            defaultcss.all,
-                            defaultcss.__wab_text,
+                            projectcss.all,
+                            projectcss.__wab_text,
                             sty.text___4Rzka
                           )}
                         >
@@ -177,8 +184,8 @@ function PlasmicPricingSection3__RenderFunc(props: {
 
                         <div
                           className={classNames(
-                            defaultcss.all,
-                            defaultcss.__wab_text,
+                            projectcss.all,
+                            projectcss.__wab_text,
                             sty.text__blOqZ
                           )}
                         >
@@ -188,8 +195,8 @@ function PlasmicPricingSection3__RenderFunc(props: {
 
                       <div
                         className={classNames(
-                          defaultcss.all,
-                          defaultcss.__wab_text,
+                          projectcss.all,
+                          projectcss.__wab_text,
                           sty.text__g9Cxz
                         )}
                       >
@@ -205,27 +212,27 @@ function PlasmicPricingSection3__RenderFunc(props: {
                   <p.Stack
                     as={"div"}
                     hasGap={true}
-                    className={classNames(defaultcss.all, sty.freeBox__nsZyh)}
+                    className={classNames(projectcss.all, sty.freeBox__nsZyh)}
                   >
                     <p.Stack
                       as={"div"}
                       hasGap={true}
-                      className={classNames(defaultcss.all, sty.freeBox__oMmu4)}
+                      className={classNames(projectcss.all, sty.freeBox__oMmu4)}
                     >
                       <Valueprop
                         className={classNames(
                           "__wab_instance",
                           sty.valueprop__oii4G
                         )}
-                        flatIcon={"flatIcon" as const}
-                        justDescription={"justDescription" as const}
+                        flatIcon={true}
+                        justDescription={true}
                         slot={
                           "Vestibulum mollis odio dictum ultrices facilisis molestie vestibulum"
                         }
                         slot2={
                           <Icon14Icon
                             className={classNames(
-                              defaultcss.all,
+                              projectcss.all,
                               sty.svg__jla4M
                             )}
                             role={"img"}
@@ -234,7 +241,7 @@ function PlasmicPricingSection3__RenderFunc(props: {
                         slot22={
                           <Icon14Icon
                             className={classNames(
-                              defaultcss.all,
+                              projectcss.all,
                               sty.svg__p2SQi
                             )}
                             role={"img"}
@@ -247,13 +254,13 @@ function PlasmicPricingSection3__RenderFunc(props: {
                           "__wab_instance",
                           sty.valueprop__pid5L
                         )}
-                        flatIcon={"flatIcon" as const}
-                        justDescription={"justDescription" as const}
+                        flatIcon={true}
+                        justDescription={true}
                         slot={"Mus consequat a justo"}
                         slot2={
                           <Icon14Icon
                             className={classNames(
-                              defaultcss.all,
+                              projectcss.all,
                               sty.svg__ustYf
                             )}
                             role={"img"}
@@ -262,7 +269,7 @@ function PlasmicPricingSection3__RenderFunc(props: {
                         slot22={
                           <Icon14Icon
                             className={classNames(
-                              defaultcss.all,
+                              projectcss.all,
                               sty.svg__nyj6B
                             )}
                             role={"img"}
@@ -272,35 +279,46 @@ function PlasmicPricingSection3__RenderFunc(props: {
                     </p.Stack>
 
                     <Button
+                      children2={
+                        <svg
+                          className={classNames(projectcss.all, sty.svg__sokZp)}
+                          role={"img"}
+                        />
+                      }
                       colors={"white" as const}
-                      extraSmallShadow={"extraSmallShadow" as const}
+                      extraSmallShadow={true}
                       slot={
                         <div
                           className={classNames(
-                            defaultcss.all,
-                            defaultcss.__wab_text,
+                            projectcss.all,
+                            projectcss.__wab_text,
                             sty.text__xF1R
                           )}
                         >
                           {"Buy starter"}
                         </div>
                       }
-                    />
+                    >
+                      <svg
+                        className={classNames(projectcss.all, sty.svg__xHTe)}
+                        role={"img"}
+                      />
+                    </Button>
                   </p.Stack>
                 </div>
 
                 <div
-                  className={classNames(defaultcss.all, sty.freeBox___2H86J)}
+                  className={classNames(projectcss.all, sty.freeBox___2H86J)}
                 >
                   <p.Stack
                     as={"div"}
                     hasGap={true}
-                    className={classNames(defaultcss.all, sty.freeBox___0Sd0M)}
+                    className={classNames(projectcss.all, sty.freeBox___0Sd0M)}
                   >
                     <div
                       className={classNames(
-                        defaultcss.all,
-                        defaultcss.__wab_text,
+                        projectcss.all,
+                        projectcss.__wab_text,
                         sty.text___6Flsy
                       )}
                     >
@@ -310,18 +328,18 @@ function PlasmicPricingSection3__RenderFunc(props: {
                     <p.Stack
                       as={"div"}
                       hasGap={true}
-                      className={classNames(defaultcss.all, sty.freeBox__anZkU)}
+                      className={classNames(projectcss.all, sty.freeBox__anZkU)}
                     >
                       <div
                         className={classNames(
-                          defaultcss.all,
+                          projectcss.all,
                           sty.freeBox__aizvq
                         )}
                       >
                         <div
                           className={classNames(
-                            defaultcss.all,
-                            defaultcss.__wab_text,
+                            projectcss.all,
+                            projectcss.__wab_text,
                             sty.text__vU36N
                           )}
                         >
@@ -330,8 +348,8 @@ function PlasmicPricingSection3__RenderFunc(props: {
 
                         <div
                           className={classNames(
-                            defaultcss.all,
-                            defaultcss.__wab_text,
+                            projectcss.all,
+                            projectcss.__wab_text,
                             sty.text__qtsnC
                           )}
                         >
@@ -341,8 +359,8 @@ function PlasmicPricingSection3__RenderFunc(props: {
 
                       <div
                         className={classNames(
-                          defaultcss.all,
-                          defaultcss.__wab_text,
+                          projectcss.all,
+                          projectcss.__wab_text,
                           sty.text__ehZza
                         )}
                       >
@@ -358,27 +376,27 @@ function PlasmicPricingSection3__RenderFunc(props: {
                   <p.Stack
                     as={"div"}
                     hasGap={true}
-                    className={classNames(defaultcss.all, sty.freeBox__muSna)}
+                    className={classNames(projectcss.all, sty.freeBox__muSna)}
                   >
                     <p.Stack
                       as={"div"}
                       hasGap={true}
-                      className={classNames(defaultcss.all, sty.freeBox__t8KQe)}
+                      className={classNames(projectcss.all, sty.freeBox__t8KQe)}
                     >
                       <Valueprop
                         className={classNames(
                           "__wab_instance",
                           sty.valueprop__ki6Ox
                         )}
-                        flatIcon={"flatIcon" as const}
-                        justDescription={"justDescription" as const}
+                        flatIcon={true}
+                        justDescription={true}
                         slot={
                           "Ligula primis mollis sem dignissim semper lectus parturient"
                         }
                         slot2={
                           <Icon14Icon
                             className={classNames(
-                              defaultcss.all,
+                              projectcss.all,
                               sty.svg__iZj3I
                             )}
                             role={"img"}
@@ -387,7 +405,7 @@ function PlasmicPricingSection3__RenderFunc(props: {
                         slot22={
                           <Icon14Icon
                             className={classNames(
-                              defaultcss.all,
+                              projectcss.all,
                               sty.svg__e5CrN
                             )}
                             role={"img"}
@@ -400,13 +418,13 @@ function PlasmicPricingSection3__RenderFunc(props: {
                           "__wab_instance",
                           sty.valueprop__aJa0K
                         )}
-                        flatIcon={"flatIcon" as const}
-                        justDescription={"justDescription" as const}
+                        flatIcon={true}
+                        justDescription={true}
                         slot={
                           <div
                             className={classNames(
-                              defaultcss.all,
-                              defaultcss.__wab_text,
+                              projectcss.all,
+                              projectcss.__wab_text,
                               sty.text__q6KJ
                             )}
                           >
@@ -416,7 +434,7 @@ function PlasmicPricingSection3__RenderFunc(props: {
                         slot2={
                           <Icon14Icon
                             className={classNames(
-                              defaultcss.all,
+                              projectcss.all,
                               sty.svg__iF5Kb
                             )}
                             role={"img"}
@@ -425,7 +443,7 @@ function PlasmicPricingSection3__RenderFunc(props: {
                         slot22={
                           <Icon14Icon
                             className={classNames(
-                              defaultcss.all,
+                              projectcss.all,
                               sty.svg___4QxmW
                             )}
                             role={"img"}
@@ -438,15 +456,15 @@ function PlasmicPricingSection3__RenderFunc(props: {
                           "__wab_instance",
                           sty.valueprop__dVrjk
                         )}
-                        flatIcon={"flatIcon" as const}
-                        justDescription={"justDescription" as const}
+                        flatIcon={true}
+                        justDescription={true}
                         slot={
                           "Condimentum diam a et sapien praesent potenti torquent a eros"
                         }
                         slot2={
                           <Icon14Icon
                             className={classNames(
-                              defaultcss.all,
+                              projectcss.all,
                               sty.svg___3Jmg2
                             )}
                             role={"img"}
@@ -455,7 +473,7 @@ function PlasmicPricingSection3__RenderFunc(props: {
                         slot22={
                           <Icon14Icon
                             className={classNames(
-                              defaultcss.all,
+                              projectcss.all,
                               sty.svg__do40Q
                             )}
                             role={"img"}
@@ -468,13 +486,13 @@ function PlasmicPricingSection3__RenderFunc(props: {
                           "__wab_instance",
                           sty.valueprop__xK8M5
                         )}
-                        flatIcon={"flatIcon" as const}
-                        justDescription={"justDescription" as const}
+                        flatIcon={true}
+                        justDescription={true}
                         slot={
                           <div
                             className={classNames(
-                              defaultcss.all,
-                              defaultcss.__wab_text,
+                              projectcss.all,
+                              projectcss.__wab_text,
                               sty.text___8GbqQ
                             )}
                           >
@@ -484,7 +502,7 @@ function PlasmicPricingSection3__RenderFunc(props: {
                         slot2={
                           <Icon14Icon
                             className={classNames(
-                              defaultcss.all,
+                              projectcss.all,
                               sty.svg___7R3Pf
                             )}
                             role={"img"}
@@ -493,7 +511,7 @@ function PlasmicPricingSection3__RenderFunc(props: {
                         slot22={
                           <Icon14Icon
                             className={classNames(
-                              defaultcss.all,
+                              projectcss.all,
                               sty.svg__envTx
                             )}
                             role={"img"}
@@ -503,33 +521,47 @@ function PlasmicPricingSection3__RenderFunc(props: {
                     </p.Stack>
 
                     <Button
+                      children2={
+                        <svg
+                          className={classNames(
+                            projectcss.all,
+                            sty.svg___1XrWe
+                          )}
+                          role={"img"}
+                        />
+                      }
                       colors={"green" as const}
-                      extraSmallShadow={"extraSmallShadow" as const}
+                      extraSmallShadow={true}
                       slot={
                         <div
                           className={classNames(
-                            defaultcss.all,
-                            defaultcss.__wab_text,
+                            projectcss.all,
+                            projectcss.__wab_text,
                             sty.text__rgd82
                           )}
                         >
                           {"Buy pro"}
                         </div>
                       }
-                    />
+                    >
+                      <svg
+                        className={classNames(projectcss.all, sty.svg__cyUh8)}
+                        role={"img"}
+                      />
+                    </Button>
                   </p.Stack>
                 </div>
 
-                <div className={classNames(defaultcss.all, sty.freeBox__mEsju)}>
+                <div className={classNames(projectcss.all, sty.freeBox__mEsju)}>
                   <p.Stack
                     as={"div"}
                     hasGap={true}
-                    className={classNames(defaultcss.all, sty.freeBox__hEfV)}
+                    className={classNames(projectcss.all, sty.freeBox__hEfV)}
                   >
                     <div
                       className={classNames(
-                        defaultcss.all,
-                        defaultcss.__wab_text,
+                        projectcss.all,
+                        projectcss.__wab_text,
                         sty.text__z0NUp
                       )}
                     >
@@ -539,18 +571,18 @@ function PlasmicPricingSection3__RenderFunc(props: {
                     <p.Stack
                       as={"div"}
                       hasGap={true}
-                      className={classNames(defaultcss.all, sty.freeBox__vcRu6)}
+                      className={classNames(projectcss.all, sty.freeBox__vcRu6)}
                     >
                       <div
                         className={classNames(
-                          defaultcss.all,
+                          projectcss.all,
                           sty.freeBox__vzM6X
                         )}
                       >
                         <div
                           className={classNames(
-                            defaultcss.all,
-                            defaultcss.__wab_text,
+                            projectcss.all,
+                            projectcss.__wab_text,
                             sty.text__ohPpU
                           )}
                         >
@@ -559,8 +591,8 @@ function PlasmicPricingSection3__RenderFunc(props: {
 
                         <div
                           className={classNames(
-                            defaultcss.all,
-                            defaultcss.__wab_text,
+                            projectcss.all,
+                            projectcss.__wab_text,
                             sty.text___3DPya
                           )}
                         >
@@ -570,8 +602,8 @@ function PlasmicPricingSection3__RenderFunc(props: {
 
                       <div
                         className={classNames(
-                          defaultcss.all,
-                          defaultcss.__wab_text,
+                          projectcss.all,
+                          projectcss.__wab_text,
                           sty.text__igs9Y
                         )}
                       >
@@ -590,31 +622,31 @@ function PlasmicPricingSection3__RenderFunc(props: {
                   <p.Stack
                     as={"div"}
                     hasGap={true}
-                    className={classNames(defaultcss.all, sty.freeBox__pDqc6)}
+                    className={classNames(projectcss.all, sty.freeBox__pDqc6)}
                   >
                     <p.Stack
                       as={"div"}
                       hasGap={true}
-                      className={classNames(defaultcss.all, sty.freeBox__rkuH4)}
+                      className={classNames(projectcss.all, sty.freeBox__rkuH4)}
                     >
                       <Valueprop
                         className={classNames(
                           "__wab_instance",
                           sty.valueprop__skJka
                         )}
-                        flatIcon={"flatIcon" as const}
-                        justDescription={"justDescription" as const}
+                        flatIcon={true}
+                        justDescription={true}
                         slot={"Ad nam curae a potenti platea"}
                         slot2={
                           <Icon14Icon
-                            className={classNames(defaultcss.all, sty.svg__jWU)}
+                            className={classNames(projectcss.all, sty.svg__jWU)}
                             role={"img"}
                           />
                         }
                         slot22={
                           <Icon14Icon
                             className={classNames(
-                              defaultcss.all,
+                              projectcss.all,
                               sty.svg__k5Qop
                             )}
                             role={"img"}
@@ -627,15 +659,15 @@ function PlasmicPricingSection3__RenderFunc(props: {
                           "__wab_instance",
                           sty.valueprop__z7613
                         )}
-                        flatIcon={"flatIcon" as const}
-                        justDescription={"justDescription" as const}
+                        flatIcon={true}
+                        justDescription={true}
                         slot={
                           "A adipiscing scelerisque pretium consectetur sem"
                         }
                         slot2={
                           <Icon14Icon
                             className={classNames(
-                              defaultcss.all,
+                              projectcss.all,
                               sty.svg__bvV6C
                             )}
                             role={"img"}
@@ -644,7 +676,7 @@ function PlasmicPricingSection3__RenderFunc(props: {
                         slot22={
                           <Icon14Icon
                             className={classNames(
-                              defaultcss.all,
+                              projectcss.all,
                               sty.svg___1RRy2
                             )}
                             role={"img"}
@@ -654,20 +686,31 @@ function PlasmicPricingSection3__RenderFunc(props: {
                     </p.Stack>
 
                     <Button
+                      children2={
+                        <svg
+                          className={classNames(projectcss.all, sty.svg__hroj1)}
+                          role={"img"}
+                        />
+                      }
                       colors={"white" as const}
-                      extraSmallShadow={"extraSmallShadow" as const}
+                      extraSmallShadow={true}
                       slot={
                         <div
                           className={classNames(
-                            defaultcss.all,
-                            defaultcss.__wab_text,
+                            projectcss.all,
+                            projectcss.__wab_text,
                             sty.text__waXdE
                           )}
                         >
                           {"Buy team"}
                         </div>
                       }
-                    />
+                    >
+                      <svg
+                        className={classNames(projectcss.all, sty.svg__fteEk)}
+                        role={"img"}
+                      />
+                    </Button>
                   </p.Stack>
                 </div>
               </div>
@@ -705,7 +748,6 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicPricingSection3__VariantsArgs;
     args?: PlasmicPricingSection3__ArgsType;
     overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicPricingSection3__Fetches;
   } & Omit<PlasmicPricingSection3__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     // Specify args directly as props
     Omit<PlasmicPricingSection3__ArgsType, ReservedPropsType> &
@@ -732,13 +774,10 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       internalVariantPropNames: PlasmicPricingSection3__VariantProps
     });
 
-    const { dataFetches } = props;
-
     return PlasmicPricingSection3__RenderFunc({
       variants,
       args,
       overrides,
-      dataFetches,
       forNode: nodeName
     });
   };

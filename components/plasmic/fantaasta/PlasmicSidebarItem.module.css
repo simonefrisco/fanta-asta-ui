@@ -1,0 +1,249 @@
+.root {
+  width: 100%;
+  height: 42px;
+  display: flex;
+  overflow: hidden;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition-property: all;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
+  border-radius: 12px;
+}
+.rootitemName {
+  align-items: center;
+  justify-content: space-between;
+}
+.freeBox__ehzqU {
+  display: block;
+  position: absolute;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  background: #f8f8f8;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+  min-width: 0;
+  min-height: 0;
+}
+.freeBoxisActive__ehzqUkj45A {
+  background: var(--token-kPXOjzMciXSX);
+}
+.root:hover .freeBox__ehzqU {
+  background: var(--token-WVCnb5gEJt38);
+  opacity: 0.5;
+}
+.root:active .freeBox__ehzqU {
+  background: var(--token-8t6AQVZzHEf6);
+}
+.freeBox___3LmQx {
+  position: absolute;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  background: #f8f8f88a;
+  left: 5%;
+  top: auto;
+  width: 12px;
+  height: 32px;
+  z-index: 0;
+  transition-property: all;
+  transition-duration: 1s;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+  border-radius: 12px;
+}
+.root:hover .freeBox___3LmQx {
+  background: var(--token-8t6AQVZzHEf6);
+  display: block;
+}
+.freeBox__mXkCs {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  align-self: center;
+}
+.freeBoxitemName__mXkCsPvz1T {
+  display: none;
+}
+.freeBox___9R8E0 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-self: center;
+}
+.slotTargetIconslotisActive {
+  color: var(--token-WVCnb5gEJt38);
+}
+.svg__kl7Ie {
+  position: relative;
+  object-fit: cover;
+  width: 24px;
+  height: 24px;
+  align-self: auto;
+  flex-shrink: 0;
+}
+.freeBox__oZvVf {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: auto;
+  left: auto;
+  z-index: 10;
+  align-self: center;
+  width: 50%;
+}
+.freeBox__qxrpj {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+}
+.freeBoxitemName__qxrpjPvz1T {
+  justify-content: center;
+  align-items: flex-start;
+}
+.slotTargetName {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(93, 87, 114, 1);
+  line-height: 24px;
+  letter-spacing: 0px;
+}
+.slotTargetNameisActive {
+  color: var(--token-WVCnb5gEJt38);
+}
+.badge2 {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 0;
+}
+.badge2itemName {
+  display: none;
+}
+.primary {
+  width: 24px;
+  height: 20px;
+  position: relative;
+  top: auto;
+  left: auto;
+  overflow: visible;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  display: none;
+}
+.primarywithBadge {
+  display: flex;
+}
+._32Shape02BadgeLableRound {
+  width: 83.33%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  top: auto;
+  left: auto;
+  overflow: visible;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.shadow2 {
+  box-shadow: 0px 0px 10px 0px #7266ef;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: visible;
+  border-radius: 12px;
+}
+.background3 {
+  background: rgba(114, 102, 239, 1);
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 21px;
+}
+.background3withBadge {
+  background: var(--token-xzKF_3ytGZEP);
+}
+.freeBox__lcqpI {
+  position: absolute;
+  left: auto;
+  top: 0px;
+  z-index: 1;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  right: auto;
+  height: 100%;
+  min-height: 0;
+}
+.slotTargetBadgenum {
+  font-size: 12px;
+  color: var(--token-pFkgER-AKuWb);
+}
+.text__aoIqz {
+  position: relative;
+  left: auto;
+  top: auto;
+}
+.freeBox__shXiS {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  align-self: center;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.svg {
+  position: relative;
+  object-fit: cover;
+  width: 24px;
+  height: 24px;
+  align-self: center;
+  color: var(--token-oNQSCRm6FxBI);
+  flex-shrink: 0;
+}
+.svgmode_standard {
+  display: none;
+}
+.svgitemName {
+  align-self: center;
+  margin-right: 16px;
+}
+.svgisActive {
+  color: var(--token-WVCnb5gEJt38);
+}

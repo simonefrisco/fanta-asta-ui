@@ -16,6 +16,7 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 
 import {
   hasVariant,
@@ -35,43 +36,54 @@ import {
 } from "@plasmicapp/react-web";
 
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
-import * as projectcss from "./plasmic_fantaasta.module.css"; // plasmic-import: xdSnfxWCziyzb8tBiGitqa/projectcss
-import * as sty from "./PlasmicSettingInput.module.css"; // plasmic-import: JGXUTtU5D6Eq/css
+
+import projectcss from "./plasmic_fantaasta.module.css"; // plasmic-import: xdSnfxWCziyzb8tBiGitqa/projectcss
+import sty from "./PlasmicSettingInput.module.css"; // plasmic-import: JGXUTtU5D6Eq/css
 
 export type PlasmicSettingInput__VariantMembers = {
   state: "completed" | "editing";
+  isDisabled: "isDisabled";
 };
 
 export type PlasmicSettingInput__VariantsArgs = {
   state?: MultiChoiceArg<"completed" | "editing">;
+  isDisabled?: SingleBooleanChoiceArg<"isDisabled">;
 };
 
 type VariantPropType = keyof PlasmicSettingInput__VariantsArgs;
 export const PlasmicSettingInput__VariantProps = new Array<VariantPropType>(
-  "state"
+  "state",
+  "isDisabled"
 );
 
 export type PlasmicSettingInput__ArgsType = {
-  children?: React.ReactNode;
-  slot?: React.ReactNode;
+  namesetting?: React.ReactNode;
+  value?: any;
+  placeholder?: string;
+  disabled?: boolean;
 };
 
 type ArgPropType = keyof PlasmicSettingInput__ArgsType;
 export const PlasmicSettingInput__ArgProps = new Array<ArgPropType>(
-  "children",
-  "slot"
+  "namesetting",
+  "value",
+  "placeholder",
+  "disabled"
 );
 
 export type PlasmicSettingInput__OverridesType = {
   root?: p.Flex<"div">;
-  textbox?: p.Flex<"input">;
+  freeBox?: p.Flex<"div">;
+  textinput?: p.Flex<"input">;
 };
 
 export interface DefaultSettingInputProps {
-  children?: React.ReactNode;
-  slot?: React.ReactNode;
+  namesetting?: React.ReactNode;
+  value?: any;
+  placeholder?: string;
+  disabled?: boolean;
   state?: MultiChoiceArg<"completed" | "editing">;
+  isDisabled?: SingleBooleanChoiceArg<"isDisabled">;
   className?: string;
 }
 
@@ -79,10 +91,10 @@ function PlasmicSettingInput__RenderFunc(props: {
   variants: PlasmicSettingInput__VariantsArgs;
   args: PlasmicSettingInput__ArgsType;
   overrides: PlasmicSettingInput__OverridesType;
-  dataFetches?: PlasmicSettingInput__Fetches;
+
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode, dataFetches } = props;
+  const { variants, args, overrides, forNode } = props;
 
   return (
     <div
@@ -90,53 +102,88 @@ function PlasmicSettingInput__RenderFunc(props: {
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
-      className={classNames(defaultcss.all, projectcss.root_reset, sty.root, {
-        [sty.root__state_completed]: hasVariant(variants, "state", "completed"),
-        [sty.root__state_editing]: hasVariant(variants, "state", "editing")
-      })}
+      className={classNames(
+        projectcss.all,
+        projectcss.root_reset,
+        projectcss.plasmic_default_styles,
+        projectcss.plasmic_mixins,
+        projectcss.plasmic_tokens,
+        sty.root,
+        {
+          [sty.rootisDisabled]: hasVariant(
+            variants,
+            "isDisabled",
+            "isDisabled"
+          ),
+          [sty.rootstate_completed]: hasVariant(variants, "state", "completed"),
+          [sty.rootstate_editing]: hasVariant(variants, "state", "editing")
+        }
+      )}
     >
       {p.renderPlasmicSlot({
         defaultContents: "Name Setting",
-        value: args.slot
+        value: args.namesetting,
+        className: classNames(sty.slotTargetNamesetting, {
+          [sty.slotTargetNamesettingisDisabled]: hasVariant(
+            variants,
+            "isDisabled",
+            "isDisabled"
+          ),
+          [sty.slotTargetNamesettingstate_editing]: hasVariant(
+            variants,
+            "state",
+            "editing"
+          )
+        })
       })}
 
-      <div className={classNames(defaultcss.all, sty.freeBox__opf9F)}>
-        <div className={classNames(defaultcss.all, sty.freeBox__dgZ2K)}>
-          {(hasVariant(variants, "state", "editing") ? true : true)
-            ? p.renderPlasmicSlot({
-                defaultContents: "Enter some text",
-                value: args.children,
-                className: classNames(sty.slotTargetChildren, {
-                  [sty.slotTargetChildren__state_completed]: hasVariant(
-                    variants,
-                    "state",
-                    "completed"
-                  ),
-                  [sty.slotTargetChildren__state_editing]: hasVariant(
-                    variants,
-                    "state",
-                    "editing"
-                  )
-                })
-              })
-            : null}
-        </div>
-
+      <div
+        data-plasmic-name={"freeBox"}
+        data-plasmic-override={overrides.freeBox}
+        className={classNames(projectcss.all, sty.freeBox, {
+          [sty.freeBoxisDisabled]: hasVariant(
+            variants,
+            "isDisabled",
+            "isDisabled"
+          ),
+          [sty.freeBoxstate_completed]: hasVariant(
+            variants,
+            "state",
+            "completed"
+          ),
+          [sty.freeBoxstate_editing]: hasVariant(variants, "state", "editing")
+        })}
+      >
         {(hasVariant(variants, "state", "editing") ? true : true) ? (
           <input
-            data-plasmic-name={"textbox"}
-            data-plasmic-override={overrides.textbox}
-            className={classNames(defaultcss.input, sty.textbox, {
-              [sty.textbox__state_editing]: hasVariant(
-                variants,
-                "state",
-                "editing"
-              )
-            })}
-            placeholder={"Some placeholder" as const}
+            data-plasmic-name={"textinput"}
+            data-plasmic-override={overrides.textinput}
+            className={classNames(
+              projectcss.all,
+              projectcss.input,
+              sty.textinput,
+              {
+                [sty.textinputisDisabled]: hasVariant(
+                  variants,
+                  "isDisabled",
+                  "isDisabled"
+                ),
+                [sty.textinputstate_editing]: hasVariant(
+                  variants,
+                  "state",
+                  "editing"
+                )
+              }
+            )}
+            disabled={
+              hasVariant(variants, "isDisabled", "isDisabled")
+                ? true
+                : undefined
+            }
+            placeholder={args.placeholder}
             size={1 as const}
             type={"text" as const}
-            value={"Some value" as const}
+            value={args.value}
           />
         ) : null}
       </div>
@@ -145,15 +192,17 @@ function PlasmicSettingInput__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "textbox"],
-  textbox: ["textbox"]
+  root: ["root", "freeBox", "textinput"],
+  freeBox: ["freeBox", "textinput"],
+  textinput: ["textinput"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  textbox: "input";
+  freeBox: "div";
+  textinput: "input";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -167,7 +216,6 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicSettingInput__VariantsArgs;
     args?: PlasmicSettingInput__ArgsType;
     overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicSettingInput__Fetches;
   } & Omit<PlasmicSettingInput__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     // Specify args directly as props
     Omit<PlasmicSettingInput__ArgsType, ReservedPropsType> &
@@ -194,13 +242,10 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       internalVariantPropNames: PlasmicSettingInput__VariantProps
     });
 
-    const { dataFetches } = props;
-
     return PlasmicSettingInput__RenderFunc({
       variants,
       args,
       overrides,
-      dataFetches,
       forNode: nodeName
     });
   };
@@ -217,7 +262,8 @@ export const PlasmicSettingInput = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    textbox: makeNodeComponent("textbox"),
+    freeBox: makeNodeComponent("freeBox"),
+    textinput: makeNodeComponent("textinput"),
 
     // Metadata about props expected for PlasmicSettingInput
     internalVariantProps: PlasmicSettingInput__VariantProps,

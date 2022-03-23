@@ -5,33 +5,36 @@
 import React from "react";
 import { classNames } from "@plasmicapp/react-web";
 
-export type Icon9IconProps = React.ComponentProps<"svg"> & {
+export type Path27IconProps = React.ComponentProps<"svg"> & {
   title?: string;
 };
 
-export function Icon9Icon(props: Icon9IconProps) {
+export function Path27Icon(props: Path27IconProps) {
   const { className, style, title, ...restProps } = props;
   return (
     <svg
       xmlns={"http://www.w3.org/2000/svg"}
-      viewBox={"0 0 24 24"}
+      fill={"none"}
+      viewBox={"0 0 2 6"}
       height={"1em"}
       width={"1em"}
+      style={{
+        fill: "currentcolor",
+
+        ...(style || {}),
+      }}
       className={classNames("plasmic-default__svg", className)}
-      style={style}
       {...restProps}
     >
       {title && <title>{title}</title>}
 
       <path
+        d={"M2 5a1 1 0 01-2 0V1a1 1 0 012 0v4z"}
         fill={"currentColor"}
-        d={
-          "M2.5 19h19v2h-19v-2m19.57-9.36c-.21-.8-1.04-1.28-1.84-1.06L14.92 10 8 3.57l-1.91.51 4.14 7.17-4.97 1.33-1.97-1.54-1.45.39 1.82 3.16.77 1.33 1.6-.42 5.31-1.43 4.35-1.16L21 11.5c.81-.24 1.28-1.06 1.07-1.86z"
-        }
       ></path>
     </svg>
   );
 }
 
-export default Icon9Icon;
+export default Path27Icon;
 /* prettier-ignore-end */

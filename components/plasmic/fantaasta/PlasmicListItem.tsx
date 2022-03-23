@@ -16,6 +16,7 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 
 import {
   hasVariant,
@@ -35,9 +36,9 @@ import {
 } from "@plasmicapp/react-web";
 
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
-import * as projectcss from "./plasmic_fantaasta.module.css"; // plasmic-import: xdSnfxWCziyzb8tBiGitqa/projectcss
-import * as sty from "./PlasmicListItem.module.css"; // plasmic-import: I5LTwhtpH7uf/css
+
+import projectcss from "./plasmic_fantaasta.module.css"; // plasmic-import: xdSnfxWCziyzb8tBiGitqa/projectcss
+import sty from "./PlasmicListItem.module.css"; // plasmic-import: I5LTwhtpH7uf/css
 
 import Icon16Icon from "./icons/PlasmicIcon__Icon16"; // plasmic-import: ZHsGtcpBsGnf/icon
 
@@ -84,10 +85,10 @@ function PlasmicListItem__RenderFunc(props: {
   variants: PlasmicListItem__VariantsArgs;
   args: PlasmicListItem__ArgsType;
   overrides: PlasmicListItem__OverridesType;
-  dataFetches?: PlasmicListItem__Fetches;
+
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode, dataFetches } = props;
+  const { variants, args, overrides, forNode } = props;
 
   return (
     <p.Stack
@@ -97,19 +98,27 @@ function PlasmicListItem__RenderFunc(props: {
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       hasGap={true}
-      className={classNames(defaultcss.all, projectcss.root_reset, sty.root, {
-        [sty.root__bottomBorder_dark]: hasVariant(
-          variants,
-          "bottomBorder",
-          "dark"
-        ),
-        [sty.root__bottomBorder_light]: hasVariant(
-          variants,
-          "bottomBorder",
-          "light"
-        ),
-        [sty.root__leftCheck]: hasVariant(variants, "leftCheck", "leftCheck")
-      })}
+      className={classNames(
+        projectcss.all,
+        projectcss.root_reset,
+        projectcss.plasmic_default_styles,
+        projectcss.plasmic_mixins,
+        projectcss.plasmic_tokens,
+        sty.root,
+        {
+          [sty.rootbottomBorder_dark]: hasVariant(
+            variants,
+            "bottomBorder",
+            "dark"
+          ),
+          [sty.rootbottomBorder_light]: hasVariant(
+            variants,
+            "bottomBorder",
+            "light"
+          ),
+          [sty.rootleftCheck]: hasVariant(variants, "leftCheck", "leftCheck")
+        }
+      )}
     >
       {p.renderPlasmicSlot({
         defaultContents: "Something amazing",
@@ -120,7 +129,7 @@ function PlasmicListItem__RenderFunc(props: {
       {p.renderPlasmicSlot({
         defaultContents: (
           <Icon16Icon
-            className={classNames(defaultcss.all, sty.svg__vyQWx)}
+            className={classNames(projectcss.all, sty.svg__vyQWx)}
             role={"img"}
           />
         ),
@@ -152,7 +161,6 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicListItem__VariantsArgs;
     args?: PlasmicListItem__ArgsType;
     overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicListItem__Fetches;
   } & Omit<PlasmicListItem__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     // Specify args directly as props
     Omit<PlasmicListItem__ArgsType, ReservedPropsType> &
@@ -179,13 +187,10 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       internalVariantPropNames: PlasmicListItem__VariantProps
     });
 
-    const { dataFetches } = props;
-
     return PlasmicListItem__RenderFunc({
       variants,
       args,
       overrides,
-      dataFetches,
       forNode: nodeName
     });
   };

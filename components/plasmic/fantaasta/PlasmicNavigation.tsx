@@ -16,6 +16,7 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 
 import {
   hasVariant,
@@ -36,14 +37,12 @@ import {
 import Logo from "../../Logo"; // plasmic-import: cTUv7R2uelNJ/component
 import Button from "../../Button"; // plasmic-import: ILa2cLxyoTg0/component
 
-import { useScreenVariants } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: F-KkpFIKCuog/globalVariant
+import { useScreenVariants as useScreenVariantsfKkpFikCuog } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: F-KkpFIKCuog/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
-import * as projectcss from "./plasmic_fantaasta.module.css"; // plasmic-import: xdSnfxWCziyzb8tBiGitqa/projectcss
-import * as sty from "./PlasmicNavigation.module.css"; // plasmic-import: 3pqoTJs_Sosu/css
 
-import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: Gng1eaWxMrAo/icon
+import projectcss from "./plasmic_fantaasta.module.css"; // plasmic-import: xdSnfxWCziyzb8tBiGitqa/projectcss
+import sty from "./PlasmicNavigation.module.css"; // plasmic-import: 3pqoTJs_Sosu/css
 
 export type PlasmicNavigation__VariantMembers = {
   dark: "dark";
@@ -96,13 +95,13 @@ function PlasmicNavigation__RenderFunc(props: {
   variants: PlasmicNavigation__VariantsArgs;
   args: PlasmicNavigation__ArgsType;
   overrides: PlasmicNavigation__OverridesType;
-  dataFetches?: PlasmicNavigation__Fetches;
+
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode, dataFetches } = props;
+  const { variants, args, overrides, forNode } = props;
 
   const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariants()
+    screen: useScreenVariantsfKkpFikCuog()
   });
 
   return (
@@ -113,23 +112,36 @@ function PlasmicNavigation__RenderFunc(props: {
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       hasGap={true}
-      className={classNames(defaultcss.all, projectcss.root_reset, sty.root, {
-        [sty.root__centered]: hasVariant(variants, "centered", "centered"),
-        [sty.root__dark]: hasVariant(variants, "dark", "dark"),
-        [sty.root__hideCta]: hasVariant(variants, "hideCta", "hideCta"),
-        [sty.root__lightBg]: hasVariant(variants, "lightBg", "lightBg")
-      })}
+      className={classNames(
+        projectcss.all,
+        projectcss.root_reset,
+        projectcss.plasmic_default_styles,
+        projectcss.plasmic_mixins,
+        projectcss.plasmic_tokens,
+        sty.root,
+        {
+          [sty.rootcentered]: hasVariant(variants, "centered", "centered"),
+          [sty.rootdark]: hasVariant(variants, "dark", "dark"),
+          [sty.roothideCta]: hasVariant(variants, "hideCta", "hideCta"),
+          [sty.rootlightBg]: hasVariant(variants, "lightBg", "lightBg")
+        }
+      )}
     >
       <p.Stack
         as={"div"}
         hasGap={true}
-        className={classNames(defaultcss.all, sty.freeBox__a7Wis, {
-          [sty.freeBox__centered__a7Wis4TMo]: hasVariant(
+        className={classNames(projectcss.all, sty.freeBox__a7Wis, {
+          [sty.freeBoxcentered__a7Wis4TMo]: hasVariant(
             variants,
             "centered",
             "centered"
           ),
-          [sty.freeBox__dark__a7Wis3YpJc]: hasVariant(variants, "dark", "dark")
+          [sty.freeBoxdark__a7Wis3YpJc]: hasVariant(variants, "dark", "dark"),
+          [sty.freeBoxhideCta__a7WisNwqn]: hasVariant(
+            variants,
+            "hideCta",
+            "hideCta"
+          )
         })}
       >
         {p.renderPlasmicSlot({
@@ -143,53 +155,138 @@ function PlasmicNavigation__RenderFunc(props: {
         <p.Stack
           as={"div"}
           hasGap={true}
-          className={classNames(defaultcss.all, sty.freeBox__vLx5W, {
-            [sty.freeBox__centered__vLx5W4TMo]: hasVariant(
+          className={classNames(projectcss.all, sty.freeBox__vLx5W, {
+            [sty.freeBoxcentered__vLx5W4TMo]: hasVariant(
               variants,
               "centered",
               "centered"
+            ),
+            [sty.freeBoxhideCta__vLx5WNwqn]: hasVariant(
+              variants,
+              "hideCta",
+              "hideCta"
             )
           })}
         >
           {p.renderPlasmicSlot({
             defaultContents: (
               <React.Fragment>
+                <p.PlasmicLink
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    sty.link__yKvJl
+                  )}
+                  component={Link}
+                  href={"/app/home" as const}
+                  platform={"nextjs"}
+                >
+                  {"Asta Home"}
+                </p.PlasmicLink>
+
                 <Button
+                  children2={
+                    <svg
+                      className={classNames(projectcss.all, sty.svg__maWqZ)}
+                      role={"img"}
+                    />
+                  }
                   className={classNames("__wab_instance", sty.button__z8ErL)}
-                  link={"/arena/home" as const}
-                  navLink={"navLink" as const}
+                  link={"/app/home" as const}
+                  navLink={true}
                   slot={"Arena"}
-                />
+                >
+                  <svg
+                    className={classNames(projectcss.all, sty.svg__mw3Rz)}
+                    role={"img"}
+                  />
+                </Button>
 
                 <Button
+                  children2={
+                    <svg
+                      className={classNames(projectcss.all, sty.svg__glbD7)}
+                      role={"img"}
+                    />
+                  }
                   className={classNames("__wab_instance", sty.button__hhPz)}
-                  navLink={"navLink" as const}
+                  navLink={true}
                   slot={"Features"}
-                />
+                >
+                  <svg
+                    className={classNames(projectcss.all, sty.svg__jTeOt)}
+                    role={"img"}
+                  />
+                </Button>
 
                 <Button
+                  children2={
+                    <svg
+                      className={classNames(projectcss.all, sty.svg___3YwLi)}
+                      role={"img"}
+                    />
+                  }
                   className={classNames("__wab_instance", sty.button__se7Hq)}
-                  navLink={"navLink" as const}
+                  navLink={true}
                   slot={"Company"}
-                />
+                >
+                  <svg
+                    className={classNames(projectcss.all, sty.svg__yAjy)}
+                    role={"img"}
+                  />
+                </Button>
 
                 <Button
+                  children2={
+                    <svg
+                      className={classNames(projectcss.all, sty.svg__bWter)}
+                      role={"img"}
+                    />
+                  }
                   className={classNames("__wab_instance", sty.button__uawCz)}
-                  navLink={"navLink" as const}
+                  navLink={true}
                   slot={"Contact"}
-                />
+                >
+                  <svg
+                    className={classNames(projectcss.all, sty.svg__wKxsi)}
+                    role={"img"}
+                  />
+                </Button>
 
                 <Button
+                  children2={
+                    <svg
+                      className={classNames(projectcss.all, sty.svg__j0Tu)}
+                      role={"img"}
+                    />
+                  }
                   className={classNames("__wab_instance", sty.button__drwbJ)}
-                  navLink={"navLink" as const}
+                  navLink={true}
                   slot={"Log in"}
-                />
+                >
+                  <svg
+                    className={classNames(projectcss.all, sty.svg___0OnP4)}
+                    role={"img"}
+                  />
+                </Button>
 
                 <Button
+                  children2={
+                    <svg
+                      className={classNames(projectcss.all, sty.svg__ulTAx)}
+                      role={"img"}
+                    />
+                  }
                   className={classNames("__wab_instance", sty.button__tH5U)}
-                  darkGray={"darkGray" as const}
+                  darkGray={true}
                   slot={"Sign up"}
-                />
+                >
+                  <svg
+                    className={classNames(projectcss.all, sty.svg__dZekF)}
+                    role={"img"}
+                  />
+                </Button>
               </React.Fragment>
             ),
             value: args.slot
@@ -198,8 +295,8 @@ function PlasmicNavigation__RenderFunc(props: {
 
         {(hasVariant(variants, "centered", "centered") ? true : false) ? (
           <div
-            className={classNames(defaultcss.all, sty.freeBox__aslRl, {
-              [sty.freeBox__centered__aslRl4TMo]: hasVariant(
+            className={classNames(projectcss.all, sty.freeBox__aslRl, {
+              [sty.freeBoxcentered__aslRl4TMo]: hasVariant(
                 variants,
                 "centered",
                 "centered"
@@ -209,16 +306,17 @@ function PlasmicNavigation__RenderFunc(props: {
             {(hasVariant(variants, "centered", "centered") ? false : true) ? (
               <button
                 className={classNames(
-                  defaultcss.button,
-                  defaultcss.__wab_text,
+                  projectcss.all,
+                  projectcss.button,
+                  projectcss.__wab_text,
                   sty.button__n6XRf,
                   {
-                    [sty.button__centered__n6XRf4TMo]: hasVariant(
+                    [sty.buttoncentered__n6XRf4TMo]: hasVariant(
                       variants,
                       "centered",
                       "centered"
                     ),
-                    [sty.button__dark__n6XRf3YpJc]: hasVariant(
+                    [sty.buttondark__n6XRf3YpJc]: hasVariant(
                       variants,
                       "dark",
                       "dark"
@@ -231,21 +329,28 @@ function PlasmicNavigation__RenderFunc(props: {
             ) : null}
 
             <Button
+              children2={
+                <svg
+                  className={classNames(projectcss.all, sty.svg___8JFht)}
+                  role={"img"}
+                />
+              }
               className={classNames("__wab_instance", sty.button__oaZRb, {
-                [sty.button__dark__oaZRb3YpJc]: hasVariant(
+                [sty.buttondark__oaZRb3YpJc]: hasVariant(
                   variants,
                   "dark",
                   "dark"
                 )
               })}
-              dark={
-                hasVariant(variants, "dark", "dark")
-                  ? ("dark" as const)
-                  : undefined
-              }
-              navLink={"navLink" as const}
+              dark={hasVariant(variants, "dark", "dark") ? true : undefined}
+              navLink={true}
               slot={"Log in"}
-            />
+            >
+              <svg
+                className={classNames(projectcss.all, sty.svg__jms4Y)}
+                role={"img"}
+              />
+            </Button>
           </div>
         ) : null}
       </p.Stack>
@@ -274,7 +379,6 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicNavigation__VariantsArgs;
     args?: PlasmicNavigation__ArgsType;
     overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicNavigation__Fetches;
   } & Omit<PlasmicNavigation__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     // Specify args directly as props
     Omit<PlasmicNavigation__ArgsType, ReservedPropsType> &
@@ -301,13 +405,10 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       internalVariantPropNames: PlasmicNavigation__VariantProps
     });
 
-    const { dataFetches } = props;
-
     return PlasmicNavigation__RenderFunc({
       variants,
       args,
       overrides,
-      dataFetches,
       forNode: nodeName
     });
   };

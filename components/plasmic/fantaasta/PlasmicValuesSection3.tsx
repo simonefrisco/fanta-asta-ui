@@ -16,6 +16,7 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 
 import {
   hasVariant,
@@ -36,9 +37,9 @@ import {
 import Valueprop from "../../Valueprop"; // plasmic-import: XC-0mAT2Chwv/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
-import * as projectcss from "./plasmic_fantaasta.module.css"; // plasmic-import: xdSnfxWCziyzb8tBiGitqa/projectcss
-import * as sty from "./PlasmicValuesSection3.module.css"; // plasmic-import: KUO-qHyTvy97/css
+
+import projectcss from "./plasmic_fantaasta.module.css"; // plasmic-import: xdSnfxWCziyzb8tBiGitqa/projectcss
+import sty from "./PlasmicValuesSection3.module.css"; // plasmic-import: KUO-qHyTvy97/css
 
 import Icon14Icon from "./icons/PlasmicIcon__Icon14"; // plasmic-import: ams_jLpuumes/icon
 import Icon8Icon from "./icons/PlasmicIcon__Icon8"; // plasmic-import: ww9gPs7WhSQI/icon
@@ -72,10 +73,10 @@ function PlasmicValuesSection3__RenderFunc(props: {
   variants: PlasmicValuesSection3__VariantsArgs;
   args: PlasmicValuesSection3__ArgsType;
   overrides: PlasmicValuesSection3__OverridesType;
-  dataFetches?: PlasmicValuesSection3__Fetches;
+
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode, dataFetches } = props;
+  const { variants, args, overrides, forNode } = props;
 
   return (
     <section
@@ -83,14 +84,21 @@ function PlasmicValuesSection3__RenderFunc(props: {
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
-      className={classNames(defaultcss.all, projectcss.root_reset, sty.root)}
+      className={classNames(
+        projectcss.all,
+        projectcss.root_reset,
+        projectcss.plasmic_default_styles,
+        projectcss.plasmic_mixins,
+        projectcss.plasmic_tokens,
+        sty.root
+      )}
     >
       <p.Stack
         as={"div"}
         data-plasmic-name={"foreground"}
         data-plasmic-override={overrides.foreground}
         hasGap={true}
-        className={classNames(defaultcss.all, sty.foreground)}
+        className={classNames(projectcss.all, sty.foreground)}
       >
         {p.renderPlasmicSlot({
           defaultContents: (
@@ -98,13 +106,14 @@ function PlasmicValuesSection3__RenderFunc(props: {
               <p.Stack
                 as={"div"}
                 hasGap={true}
-                className={classNames(defaultcss.all, sty.freeBox__vzlr4)}
+                className={classNames(projectcss.all, sty.freeBox__vzlr4)}
               >
-                <div className={classNames(defaultcss.all, sty.freeBox__oasTd)}>
+                <div className={classNames(projectcss.all, sty.freeBox__oasTd)}>
                   <h2
                     className={classNames(
-                      defaultcss.h2,
-                      defaultcss.__wab_text,
+                      projectcss.all,
+                      projectcss.h2,
+                      projectcss.__wab_text,
                       sty.h2___2VrUe
                     )}
                   >
@@ -114,8 +123,8 @@ function PlasmicValuesSection3__RenderFunc(props: {
 
                 <div
                   className={classNames(
-                    defaultcss.all,
-                    defaultcss.__wab_text,
+                    projectcss.all,
+                    projectcss.__wab_text,
                     sty.text__o2Q2L
                   )}
                 >
@@ -128,25 +137,25 @@ function PlasmicValuesSection3__RenderFunc(props: {
               <p.Stack
                 as={"div"}
                 hasGap={true}
-                className={classNames(defaultcss.all, sty.freeBox__n7VnX)}
+                className={classNames(projectcss.all, sty.freeBox__n7VnX)}
               >
                 <p.Stack
                   as={"div"}
                   hasGap={true}
-                  className={classNames(defaultcss.all, sty.freeBox__t9BTk)}
+                  className={classNames(projectcss.all, sty.freeBox__t9BTk)}
                 >
                   <Valueprop
                     className={classNames(
                       "__wab_instance",
                       sty.valueprop__jwv1N
                     )}
-                    flat={"flat" as const}
+                    flat={true}
                     slot={
                       "Nulla odio mauris enim parturient adipiscing vestibulum inceptos."
                     }
                     slot2={
                       <Icon14Icon
-                        className={classNames(defaultcss.all, sty.svg__nPgYx)}
+                        className={classNames(projectcss.all, sty.svg__nPgYx)}
                         role={"img"}
                       />
                     }
@@ -159,11 +168,11 @@ function PlasmicValuesSection3__RenderFunc(props: {
                       "__wab_instance",
                       sty.valueprop___1GYpQ
                     )}
-                    flat={"flat" as const}
+                    flat={true}
                     slot={"Consequat scelerisque a eros taciti nisl a sodales."}
                     slot2={
                       <Icon14Icon
-                        className={classNames(defaultcss.all, sty.svg__lXiDm)}
+                        className={classNames(projectcss.all, sty.svg__lXiDm)}
                         role={"img"}
                       />
                     }
@@ -176,11 +185,11 @@ function PlasmicValuesSection3__RenderFunc(props: {
                       "__wab_instance",
                       sty.valueprop__qy3Io
                     )}
-                    flat={"flat" as const}
+                    flat={true}
                     slot={"At ut condimentum amet adipiscing ac diam a."}
                     slot2={
                       <Icon14Icon
-                        className={classNames(defaultcss.all, sty.svg__wzhYr)}
+                        className={classNames(projectcss.all, sty.svg__wzhYr)}
                         role={"img"}
                       />
                     }
@@ -193,21 +202,21 @@ function PlasmicValuesSection3__RenderFunc(props: {
                       "__wab_instance",
                       sty.valueprop___8Nj0A
                     )}
-                    flat={"flat" as const}
+                    flat={true}
                     slot={
                       "Donec purus nec vestibulum volutpat vivamus vulputate suspendisse."
                     }
                     slot2={
                       <Icon14Icon
-                        className={classNames(defaultcss.all, sty.svg__lKmMi)}
+                        className={classNames(projectcss.all, sty.svg__lKmMi)}
                         role={"img"}
                       />
                     }
                   >
                     <div
                       className={classNames(
-                        defaultcss.all,
-                        defaultcss.__wab_text,
+                        projectcss.all,
+                        projectcss.__wab_text,
                         sty.text__qDpos
                       )}
                     >
@@ -220,31 +229,31 @@ function PlasmicValuesSection3__RenderFunc(props: {
               <p.Stack
                 as={"div"}
                 hasGap={true}
-                className={classNames(defaultcss.all, sty.freeBox__jxQ8S)}
+                className={classNames(projectcss.all, sty.freeBox__jxQ8S)}
               >
                 <p.Stack
                   as={"div"}
                   hasGap={true}
-                  className={classNames(defaultcss.all, sty.freeBox__ti6Ks)}
+                  className={classNames(projectcss.all, sty.freeBox__ti6Ks)}
                 >
                   <Valueprop
                     className={classNames(
                       "__wab_instance",
                       sty.valueprop__ueEYs
                     )}
-                    flat={"flat" as const}
+                    flat={true}
                     slot={"Commodo pretium himenaeos nisi potenti ad in ante."}
                     slot2={
                       <Icon14Icon
-                        className={classNames(defaultcss.all, sty.svg__qYnJc)}
+                        className={classNames(projectcss.all, sty.svg__qYnJc)}
                         role={"img"}
                       />
                     }
                   >
                     <div
                       className={classNames(
-                        defaultcss.all,
-                        defaultcss.__wab_text,
+                        projectcss.all,
+                        projectcss.__wab_text,
                         sty.text___0Uica
                       )}
                     >
@@ -257,11 +266,11 @@ function PlasmicValuesSection3__RenderFunc(props: {
                       "__wab_instance",
                       sty.valueprop__chR8W
                     )}
-                    flat={"flat" as const}
+                    flat={true}
                     slot={"Magna ullamcorper ut arcu nisi a per facilisis."}
                     slot2={
                       <Icon14Icon
-                        className={classNames(defaultcss.all, sty.svg__adQgQ)}
+                        className={classNames(projectcss.all, sty.svg__adQgQ)}
                         role={"img"}
                       />
                     }
@@ -274,13 +283,13 @@ function PlasmicValuesSection3__RenderFunc(props: {
                       "__wab_instance",
                       sty.valueprop__jhSV
                     )}
-                    flat={"flat" as const}
+                    flat={true}
                     slot={
                       "Ac lobortis praesent sagittis dictumst fermentum vestibulum nunc."
                     }
                     slot2={
                       <Icon14Icon
-                        className={classNames(defaultcss.all, sty.svg___4KcPr)}
+                        className={classNames(projectcss.all, sty.svg___4KcPr)}
                         role={"img"}
                       />
                     }
@@ -293,11 +302,11 @@ function PlasmicValuesSection3__RenderFunc(props: {
                       "__wab_instance",
                       sty.valueprop__vtLBw
                     )}
-                    flat={"flat" as const}
+                    flat={true}
                     slot={"A parturient mi suspendisse nisl inceptos nullam a."}
                     slot2={
                       <Icon14Icon
-                        className={classNames(defaultcss.all, sty.svg__fo3UB)}
+                        className={classNames(projectcss.all, sty.svg__fo3UB)}
                         role={"img"}
                       />
                     }
@@ -338,7 +347,6 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicValuesSection3__VariantsArgs;
     args?: PlasmicValuesSection3__ArgsType;
     overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicValuesSection3__Fetches;
   } & Omit<PlasmicValuesSection3__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     // Specify args directly as props
     Omit<PlasmicValuesSection3__ArgsType, ReservedPropsType> &
@@ -365,13 +373,10 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       internalVariantPropNames: PlasmicValuesSection3__VariantProps
     });
 
-    const { dataFetches } = props;
-
     return PlasmicValuesSection3__RenderFunc({
       variants,
       args,
       overrides,
-      dataFetches,
       forNode: nodeName
     });
   };

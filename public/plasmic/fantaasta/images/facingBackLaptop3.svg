@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 68 29">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.384 27.832c0-.492.4-.892.892-.892h62.799a.892.892 0 010 1.784H4.276a.892.892 0 01-.892-.892z" fill="#8C81FF"/>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M45.927 27.832c0-.492.4-.892.892-.892h20.256a.892.892 0 010 1.784H46.819a.892.892 0 01-.892-.892zM.523 4.06A3.6 3.6 0 014.093 0h36.6a3.6 3.6 0 013.57 3.14l2.553 19.817a3.6 3.6 0 01-3.57 4.06h-36.6a3.6 3.6 0 01-3.57-3.14L.523 4.06z" fill="#7367F0"/>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M.523 4.06A3.6 3.6 0 014.093 0H39.3a3.6 3.6 0 013.57 3.14l2.553 19.817a3.6 3.6 0 01-3.57 4.06H6.647a3.6 3.6 0 01-3.57-3.14L.522 4.06z" fill="url(#8IGXIHxcosUna)"/>
+  <ellipse rx="2.765" ry="3.012" transform="rotate(-37 31.958 -26.292)" fill="#fff"/>
+  <defs>
+    <linearGradient id="8IGXIHxcosUna" x1="-3.622" y1="-14.348" x2="-3.622" y2="27.017" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7367F0"/>
+      <stop offset="1" stop-color="#8CA5FF"/>
+    </linearGradient>
+  </defs>
+</svg>

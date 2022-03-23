@@ -16,6 +16,7 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 
 import {
   hasVariant,
@@ -35,11 +36,9 @@ import {
 } from "@plasmicapp/react-web";
 
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
-import * as projectcss from "./plasmic_fantaasta.module.css"; // plasmic-import: xdSnfxWCziyzb8tBiGitqa/projectcss
-import * as sty from "./PlasmicButton.module.css"; // plasmic-import: ILa2cLxyoTg0/css
 
-import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: Gng1eaWxMrAo/icon
+import projectcss from "./plasmic_fantaasta.module.css"; // plasmic-import: xdSnfxWCziyzb8tBiGitqa/projectcss
+import sty from "./PlasmicButton.module.css"; // plasmic-import: ILa2cLxyoTg0/css
 
 export type PlasmicButton__VariantMembers = {
   startIcon: "startIcon";
@@ -57,6 +56,7 @@ export type PlasmicButton__VariantMembers = {
   flat: "flat";
   noGap: "noGap";
   extraSmallShadow: "extraSmallShadow";
+  tab: "tabBase" | "tabSelected";
 };
 
 export type PlasmicButton__VariantsArgs = {
@@ -75,6 +75,7 @@ export type PlasmicButton__VariantsArgs = {
   flat?: SingleBooleanChoiceArg<"flat">;
   noGap?: SingleBooleanChoiceArg<"noGap">;
   extraSmallShadow?: SingleBooleanChoiceArg<"extraSmallShadow">;
+  tab?: MultiChoiceArg<"tabBase" | "tabSelected">;
 };
 
 type VariantPropType = keyof PlasmicButton__VariantsArgs;
@@ -93,14 +94,15 @@ export const PlasmicButton__VariantProps = new Array<VariantPropType>(
   "large",
   "flat",
   "noGap",
-  "extraSmallShadow"
+  "extraSmallShadow",
+  "tab"
 );
 
 export type PlasmicButton__ArgsType = {
   children?: React.ReactNode;
   slot?: React.ReactNode;
   children2?: React.ReactNode;
-  link?: string | PageHref;
+  link?: string;
 };
 
 type ArgPropType = keyof PlasmicButton__ArgsType;
@@ -119,7 +121,7 @@ export interface DefaultButtonProps {
   children?: React.ReactNode;
   slot?: React.ReactNode;
   children2?: React.ReactNode;
-  link?: string | PageHref;
+  link?: string;
   startIcon?: SingleBooleanChoiceArg<"startIcon">;
   endIcon?: SingleBooleanChoiceArg<"endIcon">;
   noLabel?: SingleBooleanChoiceArg<"noLabel">;
@@ -135,6 +137,7 @@ export interface DefaultButtonProps {
   flat?: SingleBooleanChoiceArg<"flat">;
   noGap?: SingleBooleanChoiceArg<"noGap">;
   extraSmallShadow?: SingleBooleanChoiceArg<"extraSmallShadow">;
+  tab?: MultiChoiceArg<"tabBase" | "tabSelected">;
   className?: string;
 }
 
@@ -142,10 +145,10 @@ function PlasmicButton__RenderFunc(props: {
   variants: PlasmicButton__VariantsArgs;
   args: PlasmicButton__ArgsType;
   overrides: PlasmicButton__OverridesType;
-  dataFetches?: PlasmicButton__Fetches;
+
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode, dataFetches } = props;
+  const { variants, args, overrides, forNode } = props;
 
   return (
     <p.Stack
@@ -155,36 +158,46 @@ function PlasmicButton__RenderFunc(props: {
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       hasGap={true}
-      className={classNames(defaultcss.all, projectcss.root_reset, sty.root, {
-        [sty.root__bgDifference]: hasVariant(
-          variants,
-          "bgDifference",
-          "bgDifference"
-        ),
-        [sty.root__colors_blue]: hasVariant(variants, "colors", "blue"),
-        [sty.root__colors_green]: hasVariant(variants, "colors", "green"),
-        [sty.root__colors_indigo]: hasVariant(variants, "colors", "indigo"),
-        [sty.root__colors_red]: hasVariant(variants, "colors", "red"),
-        [sty.root__colors_white]: hasVariant(variants, "colors", "white"),
-        [sty.root__darkGray]: hasVariant(variants, "darkGray", "darkGray"),
-        [sty.root__endIcon]: hasVariant(variants, "endIcon", "endIcon"),
-        [sty.root__extraSmallShadow]: hasVariant(
-          variants,
-          "extraSmallShadow",
-          "extraSmallShadow"
-        ),
-        [sty.root__flat]: hasVariant(variants, "flat", "flat"),
-        [sty.root__large]: hasVariant(variants, "large", "large"),
-        [sty.root__linkLabel]: hasVariant(variants, "linkLabel", "linkLabel"),
-        [sty.root__navLink]: hasVariant(variants, "navLink", "navLink"),
-        [sty.root__noGap]: hasVariant(variants, "noGap", "noGap"),
-        [sty.root__noLabel]: hasVariant(variants, "noLabel", "noLabel"),
-        [sty.root__ouline]: hasVariant(variants, "ouline", "ouline"),
-        [sty.root__round]: hasVariant(variants, "round", "round"),
-        [sty.root__startIcon]: hasVariant(variants, "startIcon", "startIcon")
-      })}
+      className={classNames(
+        projectcss.all,
+        projectcss.a,
+        projectcss.root_reset,
+        projectcss.plasmic_default_styles,
+        projectcss.plasmic_mixins,
+        projectcss.plasmic_tokens,
+        sty.root,
+        {
+          [sty.rootbgDifference]: hasVariant(
+            variants,
+            "bgDifference",
+            "bgDifference"
+          ),
+          [sty.rootcolors_blue]: hasVariant(variants, "colors", "blue"),
+          [sty.rootcolors_green]: hasVariant(variants, "colors", "green"),
+          [sty.rootcolors_indigo]: hasVariant(variants, "colors", "indigo"),
+          [sty.rootcolors_red]: hasVariant(variants, "colors", "red"),
+          [sty.rootcolors_white]: hasVariant(variants, "colors", "white"),
+          [sty.rootdarkGray]: hasVariant(variants, "darkGray", "darkGray"),
+          [sty.rootendIcon]: hasVariant(variants, "endIcon", "endIcon"),
+          [sty.rootextraSmallShadow]: hasVariant(
+            variants,
+            "extraSmallShadow",
+            "extraSmallShadow"
+          ),
+          [sty.rootflat]: hasVariant(variants, "flat", "flat"),
+          [sty.rootlarge]: hasVariant(variants, "large", "large"),
+          [sty.rootlinkLabel]: hasVariant(variants, "linkLabel", "linkLabel"),
+          [sty.rootnavLink]: hasVariant(variants, "navLink", "navLink"),
+          [sty.rootnoGap]: hasVariant(variants, "noGap", "noGap"),
+          [sty.rootnoLabel]: hasVariant(variants, "noLabel", "noLabel"),
+          [sty.rootouline]: hasVariant(variants, "ouline", "ouline"),
+          [sty.rootround]: hasVariant(variants, "round", "round"),
+          [sty.rootstartIcon]: hasVariant(variants, "startIcon", "startIcon"),
+          [sty.roottab_tabBase]: hasVariant(variants, "tab", "tabBase"),
+          [sty.roottab_tabSelected]: hasVariant(variants, "tab", "tabSelected")
+        }
+      )}
       component={Link}
-      href={args.link}
       platform={"nextjs"}
     >
       {(
@@ -196,8 +209,8 @@ function PlasmicButton__RenderFunc(props: {
       )
         ? p.renderPlasmicSlot({
             defaultContents: (
-              <IconIcon
-                className={classNames(defaultcss.all, sty.svg___3632F)}
+              <svg
+                className={classNames(projectcss.all, sty.svg___3632F)}
                 role={"img"}
               />
             ),
@@ -210,66 +223,72 @@ function PlasmicButton__RenderFunc(props: {
             defaultContents: "Label",
             value: args.slot,
             className: classNames(sty.slotTargetSlot, {
-              [sty.slotTargetSlot__bgDifference]: hasVariant(
+              [sty.slotTargetSlotbgDifference]: hasVariant(
                 variants,
                 "bgDifference",
                 "bgDifference"
               ),
-              [sty.slotTargetSlot__colors_blue]: hasVariant(
+              [sty.slotTargetSlotcolors_blue]: hasVariant(
                 variants,
                 "colors",
                 "blue"
               ),
-              [sty.slotTargetSlot__colors_green]: hasVariant(
+              [sty.slotTargetSlotcolors_green]: hasVariant(
                 variants,
                 "colors",
                 "green"
               ),
-              [sty.slotTargetSlot__colors_indigo]: hasVariant(
+              [sty.slotTargetSlotcolors_indigo]: hasVariant(
                 variants,
                 "colors",
                 "indigo"
               ),
-              [sty.slotTargetSlot__colors_red]: hasVariant(
+              [sty.slotTargetSlotcolors_red]: hasVariant(
                 variants,
                 "colors",
                 "red"
               ),
-              [sty.slotTargetSlot__darkGray]: hasVariant(
+              [sty.slotTargetSlotdarkGray]: hasVariant(
                 variants,
                 "darkGray",
                 "darkGray"
               ),
-              [sty.slotTargetSlot__dark]: hasVariant(variants, "dark", "dark"),
-              [sty.slotTargetSlot__endIcon]: hasVariant(
+              [sty.slotTargetSlotdark]: hasVariant(variants, "dark", "dark"),
+              [sty.slotTargetSlotendIcon]: hasVariant(
                 variants,
                 "endIcon",
                 "endIcon"
               ),
-              [sty.slotTargetSlot__large]: hasVariant(
-                variants,
-                "large",
-                "large"
-              ),
-              [sty.slotTargetSlot__linkLabel]: hasVariant(
+              [sty.slotTargetSlotlarge]: hasVariant(variants, "large", "large"),
+              [sty.slotTargetSlotlinkLabel]: hasVariant(
                 variants,
                 "linkLabel",
                 "linkLabel"
               ),
-              [sty.slotTargetSlot__navLink]: hasVariant(
+              [sty.slotTargetSlotnavLink]: hasVariant(
                 variants,
                 "navLink",
                 "navLink"
               ),
-              [sty.slotTargetSlot__noLabel]: hasVariant(
+              [sty.slotTargetSlotnoLabel]: hasVariant(
                 variants,
                 "noLabel",
                 "noLabel"
               ),
-              [sty.slotTargetSlot__startIcon]: hasVariant(
+              [sty.slotTargetSlotstartIcon]: hasVariant(
                 variants,
                 "startIcon",
                 "startIcon"
+              ),
+              [sty.slotTargetSlottab_tabBase]: hasVariant(
+                variants,
+                "tab",
+                "tabBase"
+              ),
+              [sty.slotTargetSlottab_tabSelected]: hasVariant(
+                variants,
+                "tab",
+                "tabSelected"
               )
             })
           })
@@ -285,8 +304,8 @@ function PlasmicButton__RenderFunc(props: {
       )
         ? p.renderPlasmicSlot({
             defaultContents: (
-              <IconIcon
-                className={classNames(defaultcss.all, sty.svg__eDLr)}
+              <svg
+                className={classNames(projectcss.all, sty.svg__eDLr)}
                 role={"img"}
               />
             ),
@@ -319,7 +338,6 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicButton__VariantsArgs;
     args?: PlasmicButton__ArgsType;
     overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicButton__Fetches;
   } & Omit<PlasmicButton__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     // Specify args directly as props
     Omit<PlasmicButton__ArgsType, ReservedPropsType> &
@@ -346,13 +364,10 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       internalVariantPropNames: PlasmicButton__VariantProps
     });
 
-    const { dataFetches } = props;
-
     return PlasmicButton__RenderFunc({
       variants,
       args,
       overrides,
-      dataFetches,
       forNode: nodeName
     });
   };

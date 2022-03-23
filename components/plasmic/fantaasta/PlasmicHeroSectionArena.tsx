@@ -16,6 +16,7 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 
 import {
   hasVariant,
@@ -34,54 +35,63 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Navigation from "../../Navigation"; // plasmic-import: 3pqoTJs_Sosu/component
+import Logo from "../../Logo"; // plasmic-import: cTUv7R2uelNJ/component
 import Button from "../../Button"; // plasmic-import: ILa2cLxyoTg0/component
-import LoginFrom from "../../LoginFrom"; // plasmic-import: p3a1HfRCrQ1/component
-import NewAstaForm from "../../NewAstaForm"; // plasmic-import: wfDe24iI-Nf/component
+import AstaForm from "../../AstaForm"; // plasmic-import: TXm06OyomR/component
 
-import { useScreenVariants } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: F-KkpFIKCuog/globalVariant
+import { useScreenVariants as useScreenVariantsfKkpFikCuog } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: F-KkpFIKCuog/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
-import * as projectcss from "./plasmic_fantaasta.module.css"; // plasmic-import: xdSnfxWCziyzb8tBiGitqa/projectcss
-import * as sty from "./PlasmicHeroSectionArena.module.css"; // plasmic-import: Uev3p9VZayM/css
 
-import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: Gng1eaWxMrAo/icon
+import projectcss from "./plasmic_fantaasta.module.css"; // plasmic-import: xdSnfxWCziyzb8tBiGitqa/projectcss
+import sty from "./PlasmicHeroSectionArena.module.css"; // plasmic-import: Uev3p9VZayM/css
 
-export type PlasmicHeroSectionArena__VariantMembers = {};
+import Icon15Icon from "./icons/PlasmicIcon__Icon15"; // plasmic-import: Sae6eXYvAd/icon
 
-export type PlasmicHeroSectionArena__VariantsArgs = {};
-type VariantPropType = keyof PlasmicHeroSectionArena__VariantsArgs;
-export const PlasmicHeroSectionArena__VariantProps =
-  new Array<VariantPropType>();
-
-export type PlasmicHeroSectionArena__ArgsType = {
-  foreground?: React.ReactNode;
-  children?: React.ReactNode;
+export type PlasmicHeroSectionArena__VariantMembers = {
+  dashboardActive: "dashboardActive";
+  general: "noAste" | "withAste" | "chooseAsta" | "createAsta";
 };
 
-type ArgPropType = keyof PlasmicHeroSectionArena__ArgsType;
-export const PlasmicHeroSectionArena__ArgProps = new Array<ArgPropType>(
-  "foreground",
-  "children"
+export type PlasmicHeroSectionArena__VariantsArgs = {
+  dashboardActive?: SingleBooleanChoiceArg<"dashboardActive">;
+  general?: SingleChoiceArg<
+    "noAste" | "withAste" | "chooseAsta" | "createAsta"
+  >;
+};
+
+type VariantPropType = keyof PlasmicHeroSectionArena__VariantsArgs;
+export const PlasmicHeroSectionArena__VariantProps = new Array<VariantPropType>(
+  "dashboardActive",
+  "general"
 );
+
+export type PlasmicHeroSectionArena__ArgsType = {};
+type ArgPropType = keyof PlasmicHeroSectionArena__ArgsType;
+export const PlasmicHeroSectionArena__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHeroSectionArena__OverridesType = {
   root?: p.Flex<"div">;
-  hero3?: p.Flex<"div">;
-  img?: p.Flex<"img">;
-  background3?: p.Flex<"div">;
-  foreground?: p.Flex<"div">;
-  pulsantiTab?: p.Flex<"div">;
-  form?: p.Flex<"div">;
-  newAstaForm?: p.Flex<typeof NewAstaForm>;
-  table?: p.Flex<"div">;
+  navigation?: p.Flex<typeof Navigation>;
+  imgBg?: p.Flex<typeof p.PlasmicImg>;
+  layerBg?: p.Flex<"div">;
   header?: p.Flex<"div">;
-  asteContainer?: p.Flex<"div">;
+  nuovaAstaButton?: p.Flex<"button">;
+  form?: p.Flex<"div">;
+  closeFormButton?: p.Flex<"button">;
+  svg?: p.Flex<"svg">;
+  astaForm?: p.Flex<typeof AstaForm>;
+  startButtons?: p.Flex<"div">;
+  creaAstaButton?: p.Flex<"button">;
+  partecipaAstaButton?: p.Flex<"button">;
+  asteBoard?: p.Flex<"div">;
 };
 
 export interface DefaultHeroSectionArenaProps {
-  foreground?: React.ReactNode;
-  children?: React.ReactNode;
+  dashboardActive?: SingleBooleanChoiceArg<"dashboardActive">;
+  general?: SingleChoiceArg<
+    "noAste" | "withAste" | "chooseAsta" | "createAsta"
+  >;
   className?: string;
 }
 
@@ -89,13 +99,13 @@ function PlasmicHeroSectionArena__RenderFunc(props: {
   variants: PlasmicHeroSectionArena__VariantsArgs;
   args: PlasmicHeroSectionArena__ArgsType;
   overrides: PlasmicHeroSectionArena__OverridesType;
-  dataFetches?: PlasmicHeroSectionArena__Fetches;
+
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode, dataFetches } = props;
+  const { variants, args, overrides, forNode } = props;
 
   const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariants()
+    screen: useScreenVariantsfKkpFikCuog()
   });
 
   return (
@@ -104,237 +114,372 @@ function PlasmicHeroSectionArena__RenderFunc(props: {
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
-      className={classNames(defaultcss.all, projectcss.root_reset, sty.root)}
+      className={classNames(
+        projectcss.all,
+        projectcss.root_reset,
+        projectcss.plasmic_default_styles,
+        projectcss.plasmic_mixins,
+        projectcss.plasmic_tokens,
+        sty.root
+      )}
     >
-      <div className={classNames(defaultcss.all, sty.freeBox__p2Ac)}>
-        {p.renderPlasmicSlot({
-          defaultContents: (
-            <Navigation
-              className={classNames("__wab_instance", sty.navigation__iyf6A)}
-              hideCta={"hideCta" as const}
-            >
-              <img
-                alt={""}
-                className={classNames(defaultcss.img, sty.img___4FOwv)}
-                src={"/plasmic/fantaasta/images/image13.svg"}
-              />
-            </Navigation>
-          ),
-
-          value: args.children
-        })}
-      </div>
-
-      <div
-        data-plasmic-name={"hero3"}
-        data-plasmic-override={overrides.hero3}
-        className={classNames(defaultcss.all, sty.hero3)}
-      >
-        <img
-          data-plasmic-name={"img"}
-          data-plasmic-override={overrides.img}
-          alt={""}
-          className={classNames(defaultcss.img, sty.img)}
-          src={
-            "https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1834&q=80" as const
-          }
+      <div className={classNames(projectcss.all, sty.freeBox__eoNo8)}>
+        <Navigation
+          data-plasmic-name={"navigation"}
+          data-plasmic-override={overrides.navigation}
+          className={classNames("__wab_instance", sty.navigation)}
         />
 
-        <div
-          data-plasmic-name={"background3"}
-          data-plasmic-override={overrides.background3}
-          className={classNames(defaultcss.all, sty.background3)}
-        />
-
-        <p.Stack
-          as={"div"}
-          hasGap={true}
-          className={classNames(defaultcss.all, sty.freeBox__fAlT)}
-        >
+        {true ? (
+          <p.PlasmicImg
+            data-plasmic-name={"imgBg"}
+            data-plasmic-override={overrides.imgBg}
+            alt={""}
+            className={classNames(sty.imgBg)}
+            displayHeight={"3331px" as const}
+            displayMaxHeight={"none" as const}
+            displayMaxWidth={"none" as const}
+            displayMinHeight={"0" as const}
+            displayMinWidth={"0" as const}
+            displayWidth={"100%" as const}
+            src={
+              "https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1834&q=80" as const
+            }
+          />
+        ) : null}
+        {true ? (
+          <div
+            data-plasmic-name={"layerBg"}
+            data-plasmic-override={overrides.layerBg}
+            className={classNames(projectcss.all, sty.layerBg)}
+          />
+        ) : null}
+        {true ? (
           <p.Stack
             as={"div"}
-            data-plasmic-name={"foreground"}
-            data-plasmic-override={overrides.foreground}
             hasGap={true}
-            className={classNames(defaultcss.all, sty.foreground)}
+            className={classNames(projectcss.all, sty.freeBox__fAlT, {
+              [sty.freeBoxdashboardActive__fAlTa8RUg]: hasVariant(
+                variants,
+                "dashboardActive",
+                "dashboardActive"
+              ),
+              [sty.freeBoxgeneral_chooseAsta__fAlTLzJQp]: hasVariant(
+                variants,
+                "general",
+                "chooseAsta"
+              ),
+              [sty.freeBoxgeneral_createAsta__fAlT3Ojo3]: hasVariant(
+                variants,
+                "general",
+                "createAsta"
+              ),
+              [sty.freeBoxgeneral_withAste__fAlTlin3D]: hasVariant(
+                variants,
+                "general",
+                "withAste"
+              )
+            })}
           >
-            {p.renderPlasmicSlot({
-              defaultContents: (
-                <React.Fragment>
-                  <p.Stack
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(defaultcss.all, sty.freeBox__cMkAi)}
+            {(
+              hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+            ) ? (
+              <div
+                data-plasmic-name={"header"}
+                data-plasmic-override={overrides.header}
+                className={classNames(projectcss.all, sty.header)}
+              >
+                <div className={classNames(projectcss.all, sty.column__qkxSj)}>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___3WGzC
+                    )}
                   >
-                    <p.Stack
-                      as={"div"}
-                      hasGap={true}
-                      className={classNames(defaultcss.all, sty.freeBox__hPl9N)}
+                    {"Le mie Aste"}
+                  </div>
+                </div>
+
+                <div
+                  className={classNames(projectcss.all, sty.column__i6SuP)}
+                />
+
+                <div
+                  className={classNames(projectcss.all, sty.column___3DH6X)}
+                />
+
+                <div
+                  className={classNames(projectcss.all, sty.column__n2RFm)}
+                />
+
+                <div className={classNames(projectcss.all, sty.column__oc3G)}>
+                  {true ? (
+                    <button
+                      data-plasmic-name={"nuovaAstaButton"}
+                      data-plasmic-override={overrides.nuovaAstaButton}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.button,
+                        projectcss.__wab_text,
+                        sty.nuovaAstaButton
+                      )}
+                      type={"button" as const}
                     >
-                      <div
+                      {"Nuova Asta"}
+                    </button>
+                  ) : null}
+                </div>
+              </div>
+            ) : null}
+            {(
+              hasVariant(variants, "general", "createAsta")
+                ? true
+                : hasVariant(variants, "general", "chooseAsta")
+                ? true
+                : hasVariant(variants, "general", "withAste")
+                ? true
+                : true
+            ) ? (
+              <div
+                className={classNames(projectcss.all, sty.freeBox__tqa0N, {
+                  [sty.freeBoxdashboardActive__tqa0Na8RUg]: hasVariant(
+                    variants,
+                    "dashboardActive",
+                    "dashboardActive"
+                  ),
+                  [sty.freeBoxgeneral_chooseAsta__tqa0NLzJQp]: hasVariant(
+                    variants,
+                    "general",
+                    "chooseAsta"
+                  ),
+                  [sty.freeBoxgeneral_createAsta__tqa0N3Ojo3]: hasVariant(
+                    variants,
+                    "general",
+                    "createAsta"
+                  ),
+                  [sty.freeBoxgeneral_noAste__tqa0NvUu5]: hasVariant(
+                    variants,
+                    "general",
+                    "noAste"
+                  ),
+                  [sty.freeBoxgeneral_withAste__tqa0NLin3D]: hasVariant(
+                    variants,
+                    "general",
+                    "withAste"
+                  )
+                })}
+              >
+                {(
+                  hasVariant(variants, "general", "createAsta")
+                    ? true
+                    : hasVariant(variants, "general", "chooseAsta")
+                    ? true
+                    : true
+                ) ? (
+                  <div
+                    data-plasmic-name={"form"}
+                    data-plasmic-override={overrides.form}
+                    className={classNames(projectcss.all, sty.form, {
+                      [sty.formgeneral_chooseAsta]: hasVariant(
+                        variants,
+                        "general",
+                        "chooseAsta"
+                      ),
+                      [sty.formgeneral_createAsta]: hasVariant(
+                        variants,
+                        "general",
+                        "createAsta"
+                      )
+                    })}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        sty.freeBox___1IOwY,
+                        {
+                          [sty.freeBoxgeneral_createAsta___1IOwY3Ojo3]:
+                            hasVariant(variants, "general", "createAsta")
+                        }
+                      )}
+                    >
+                      <button
+                        data-plasmic-name={"closeFormButton"}
+                        data-plasmic-override={overrides.closeFormButton}
                         className={classNames(
-                          defaultcss.all,
-                          defaultcss.__wab_text,
-                          sty.text__brYd7
+                          projectcss.all,
+                          projectcss.button,
+                          sty.closeFormButton
                         )}
                       >
-                        <span
-                          className={
-                            "plasmic_default__all plasmic_default__span"
+                        <Icon15Icon
+                          data-plasmic-name={"svg"}
+                          data-plasmic-override={overrides.svg}
+                          className={classNames(projectcss.all, sty.svg)}
+                          role={"img"}
+                        />
+                      </button>
+                    </div>
+
+                    {(
+                      hasVariant(variants, "general", "createAsta")
+                        ? true
+                        : true
+                    ) ? (
+                      <AstaForm
+                        data-plasmic-name={"astaForm"}
+                        data-plasmic-override={overrides.astaForm}
+                        className={classNames("__wab_instance", sty.astaForm, {
+                          [sty.astaFormgeneral_createAsta]: hasVariant(
+                            variants,
+                            "general",
+                            "createAsta"
+                          )
+                        })}
+                        steps={["first"]}
+                      />
+                    ) : null}
+                    {(
+                      hasVariant(variants, "general", "createAsta")
+                        ? true
+                        : true
+                    ) ? (
+                      <p.Stack
+                        as={"div"}
+                        data-plasmic-name={"startButtons"}
+                        data-plasmic-override={overrides.startButtons}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          sty.startButtons,
+                          {
+                            [sty.startButtonsgeneral_createAsta]: hasVariant(
+                              variants,
+                              "general",
+                              "createAsta"
+                            )
                           }
+                        )}
+                      >
+                        <button
+                          data-plasmic-name={"creaAstaButton"}
+                          data-plasmic-override={overrides.creaAstaButton}
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.button,
+                            projectcss.__wab_text,
+                            sty.creaAstaButton
+                          )}
+                          type={"button" as const}
                         >
-                          <span
-                            className={
-                              "plasmic_default__all plasmic_default__span"
-                            }
-                            style={{ textDecoration: "underline" }}
-                          >
-                            {"Arena"}
-                          </span>
-                        </span>
-                      </div>
-                    </p.Stack>
-                  </p.Stack>
+                          {"Crea Asta"}
+                        </button>
 
-                  <LoginFrom
-                    arena={"arena" as const}
+                        <button
+                          data-plasmic-name={"partecipaAstaButton"}
+                          data-plasmic-override={overrides.partecipaAstaButton}
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.button,
+                            projectcss.__wab_text,
+                            sty.partecipaAstaButton
+                          )}
+                          type={"button" as const}
+                        >
+                          {"Partecipa Asta"}
+                        </button>
+                      </p.Stack>
+                    ) : null}
+                  </div>
+                ) : null}
+                {(
+                  hasVariant(variants, "general", "createAsta")
+                    ? true
+                    : hasVariant(variants, "general", "chooseAsta")
+                    ? true
+                    : hasVariant(variants, "general", "withAste")
+                    ? true
+                    : true
+                ) ? (
+                  <div
                     className={classNames(
-                      "__wab_instance",
-                      sty.loginFrom__sZfNj
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__ei3Rx,
+                      {
+                        [sty.textdashboardActive__ei3RXa8RUg]: hasVariant(
+                          variants,
+                          "dashboardActive",
+                          "dashboardActive"
+                        ),
+                        [sty.textgeneral_chooseAsta__ei3RxLzJQp]: hasVariant(
+                          variants,
+                          "general",
+                          "chooseAsta"
+                        ),
+                        [sty.textgeneral_createAsta__ei3Rx3Ojo3]: hasVariant(
+                          variants,
+                          "general",
+                          "createAsta"
+                        ),
+                        [sty.textgeneral_withAste__ei3Rxlin3D]: hasVariant(
+                          variants,
+                          "general",
+                          "withAste"
+                        )
+                      }
                     )}
+                  >
+                    {"Non ci sono aste"}
+                  </div>
+                ) : null}
+                {(
+                  hasVariant(variants, "general", "createAsta")
+                    ? true
+                    : hasVariant(variants, "general", "chooseAsta")
+                    ? true
+                    : hasVariant(variants, "general", "withAste")
+                    ? true
+                    : false
+                ) ? (
+                  <p.Stack
+                    as={"div"}
+                    data-plasmic-name={"asteBoard"}
+                    data-plasmic-override={overrides.asteBoard}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.asteBoard, {
+                      [sty.asteBoarddashboardActive]: hasVariant(
+                        variants,
+                        "dashboardActive",
+                        "dashboardActive"
+                      ),
+                      [sty.asteBoardgeneral_chooseAsta]: hasVariant(
+                        variants,
+                        "general",
+                        "chooseAsta"
+                      ),
+                      [sty.asteBoardgeneral_createAsta]: hasVariant(
+                        variants,
+                        "general",
+                        "createAsta"
+                      ),
+                      [sty.asteBoardgeneral_noAste]: hasVariant(
+                        variants,
+                        "general",
+                        "noAste"
+                      ),
+                      [sty.asteBoardgeneral_withAste]: hasVariant(
+                        variants,
+                        "general",
+                        "withAste"
+                      )
+                    })}
                   />
-                </React.Fragment>
-              ),
-              value: args.foreground
-            })}
+                ) : null}
+              </div>
+            ) : null}
           </p.Stack>
-
-          <div
-            data-plasmic-name={"pulsantiTab"}
-            data-plasmic-override={overrides.pulsantiTab}
-            className={classNames(defaultcss.all, sty.pulsantiTab)}
-          >
-            <p.Stack
-              as={"div"}
-              hasGap={true}
-              className={classNames(defaultcss.all, sty.freeBox__tzlo)}
-            >
-              <Button
-                className={classNames("__wab_instance", sty.button___0STW)}
-                colors={"blue" as const}
-                slot={
-                  <div
-                    className={classNames(
-                      defaultcss.all,
-                      defaultcss.__wab_text,
-                      sty.text__ctiS3
-                    )}
-                  >
-                    {"Crea Asta"}
-                  </div>
-                }
-              />
-
-              <Button
-                className={classNames("__wab_instance", sty.button__ikBtr)}
-                colors={"blue" as const}
-                slot={
-                  <div
-                    className={classNames(
-                      defaultcss.all,
-                      defaultcss.__wab_text,
-                      sty.text___60LZi
-                    )}
-                  >
-                    {"Partecipa Asta"}
-                  </div>
-                }
-              />
-            </p.Stack>
-          </div>
-
-          <div
-            data-plasmic-name={"form"}
-            data-plasmic-override={overrides.form}
-            className={classNames(defaultcss.all, sty.form)}
-          >
-            <NewAstaForm
-              data-plasmic-name={"newAstaForm"}
-              data-plasmic-override={overrides.newAstaForm}
-              className={classNames("__wab_instance", sty.newAstaForm)}
-            />
-          </div>
-
-          <div
-            data-plasmic-name={"table"}
-            data-plasmic-override={overrides.table}
-            className={classNames(defaultcss.all, sty.table)}
-          >
-            <div
-              data-plasmic-name={"header"}
-              data-plasmic-override={overrides.header}
-              className={classNames(defaultcss.all, sty.header)}
-            >
-              <div className={classNames(defaultcss.all, sty.column___8Gl1O)}>
-                <div
-                  className={classNames(
-                    defaultcss.all,
-                    defaultcss.__wab_text,
-                    sty.text__wkoHf
-                  )}
-                >
-                  {"Nome Asta"}
-                </div>
-              </div>
-
-              <div className={classNames(defaultcss.all, sty.column__fri9N)}>
-                <div
-                  className={classNames(
-                    defaultcss.all,
-                    defaultcss.__wab_text,
-                    sty.text__c3HjO
-                  )}
-                >
-                  {"Amministratore"}
-                </div>
-              </div>
-
-              <div className={classNames(defaultcss.all, sty.column___69WF)}>
-                <div
-                  className={classNames(
-                    defaultcss.all,
-                    defaultcss.__wab_text,
-                    sty.text__rugVy
-                  )}
-                >
-                  {"Numero Partecipanti"}
-                </div>
-              </div>
-
-              <div className={classNames(defaultcss.all, sty.column___9BKRi)}>
-                <div
-                  className={classNames(
-                    defaultcss.all,
-                    defaultcss.__wab_text,
-                    sty.text__uPqVm
-                  )}
-                >
-                  {"Budget Iniziale"}
-                </div>
-              </div>
-
-              <div className={classNames(defaultcss.all, sty.column__mAnJc)} />
-            </div>
-
-            <p.Stack
-              as={"div"}
-              data-plasmic-name={"asteContainer"}
-              data-plasmic-override={overrides.asteContainer}
-              hasGap={true}
-              className={classNames(defaultcss.all, sty.asteContainer)}
-            />
-          </div>
-        </p.Stack>
+        ) : null}
       </div>
     </div>
   ) as React.ReactElement | null;
@@ -343,54 +488,60 @@ function PlasmicHeroSectionArena__RenderFunc(props: {
 const PlasmicDescendants = {
   root: [
     "root",
-    "hero3",
-    "img",
-    "background3",
-    "foreground",
-    "pulsantiTab",
-    "form",
-    "newAstaForm",
-    "table",
+    "navigation",
+    "imgBg",
+    "layerBg",
     "header",
-    "asteContainer"
-  ],
-  hero3: [
-    "hero3",
-    "img",
-    "background3",
-    "foreground",
-    "pulsantiTab",
+    "nuovaAstaButton",
     "form",
-    "newAstaForm",
-    "table",
-    "header",
-    "asteContainer"
+    "closeFormButton",
+    "svg",
+    "astaForm",
+    "startButtons",
+    "creaAstaButton",
+    "partecipaAstaButton",
+    "asteBoard"
   ],
-  img: ["img"],
-  background3: ["background3"],
-  foreground: ["foreground"],
-  pulsantiTab: ["pulsantiTab"],
-  form: ["form", "newAstaForm"],
-  newAstaForm: ["newAstaForm"],
-  table: ["table", "header", "asteContainer"],
-  header: ["header"],
-  asteContainer: ["asteContainer"]
+  navigation: ["navigation"],
+  imgBg: ["imgBg"],
+  layerBg: ["layerBg"],
+  header: ["header", "nuovaAstaButton"],
+  nuovaAstaButton: ["nuovaAstaButton"],
+  form: [
+    "form",
+    "closeFormButton",
+    "svg",
+    "astaForm",
+    "startButtons",
+    "creaAstaButton",
+    "partecipaAstaButton"
+  ],
+  closeFormButton: ["closeFormButton", "svg"],
+  svg: ["svg"],
+  astaForm: ["astaForm"],
+  startButtons: ["startButtons", "creaAstaButton", "partecipaAstaButton"],
+  creaAstaButton: ["creaAstaButton"],
+  partecipaAstaButton: ["partecipaAstaButton"],
+  asteBoard: ["asteBoard"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  hero3: "div";
-  img: "img";
-  background3: "div";
-  foreground: "div";
-  pulsantiTab: "div";
-  form: "div";
-  newAstaForm: typeof NewAstaForm;
-  table: "div";
+  navigation: typeof Navigation;
+  imgBg: typeof p.PlasmicImg;
+  layerBg: "div";
   header: "div";
-  asteContainer: "div";
+  nuovaAstaButton: "button";
+  form: "div";
+  closeFormButton: "button";
+  svg: "svg";
+  astaForm: typeof AstaForm;
+  startButtons: "div";
+  creaAstaButton: "button";
+  partecipaAstaButton: "button";
+  asteBoard: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -404,7 +555,6 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicHeroSectionArena__VariantsArgs;
     args?: PlasmicHeroSectionArena__ArgsType;
     overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicHeroSectionArena__Fetches;
   } & Omit<PlasmicHeroSectionArena__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     // Specify args directly as props
     Omit<PlasmicHeroSectionArena__ArgsType, ReservedPropsType> &
@@ -431,13 +581,10 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       internalVariantPropNames: PlasmicHeroSectionArena__VariantProps
     });
 
-    const { dataFetches } = props;
-
     return PlasmicHeroSectionArena__RenderFunc({
       variants,
       args,
       overrides,
-      dataFetches,
       forNode: nodeName
     });
   };
@@ -454,16 +601,19 @@ export const PlasmicHeroSectionArena = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    hero3: makeNodeComponent("hero3"),
-    img: makeNodeComponent("img"),
-    background3: makeNodeComponent("background3"),
-    foreground: makeNodeComponent("foreground"),
-    pulsantiTab: makeNodeComponent("pulsantiTab"),
-    form: makeNodeComponent("form"),
-    newAstaForm: makeNodeComponent("newAstaForm"),
-    table: makeNodeComponent("table"),
+    navigation: makeNodeComponent("navigation"),
+    imgBg: makeNodeComponent("imgBg"),
+    layerBg: makeNodeComponent("layerBg"),
     header: makeNodeComponent("header"),
-    asteContainer: makeNodeComponent("asteContainer"),
+    nuovaAstaButton: makeNodeComponent("nuovaAstaButton"),
+    form: makeNodeComponent("form"),
+    closeFormButton: makeNodeComponent("closeFormButton"),
+    svg: makeNodeComponent("svg"),
+    astaForm: makeNodeComponent("astaForm"),
+    startButtons: makeNodeComponent("startButtons"),
+    creaAstaButton: makeNodeComponent("creaAstaButton"),
+    partecipaAstaButton: makeNodeComponent("partecipaAstaButton"),
+    asteBoard: makeNodeComponent("asteBoard"),
 
     // Metadata about props expected for PlasmicHeroSectionArena
     internalVariantProps: PlasmicHeroSectionArena__VariantProps,

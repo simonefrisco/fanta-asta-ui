@@ -16,6 +16,7 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 
 import {
   hasVariant,
@@ -35,12 +36,12 @@ import {
 } from "@plasmicapp/react-web";
 import Testimonial from "../../Testimonial"; // plasmic-import: wTuiZggGXl-D/component
 
-import { useScreenVariants } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: F-KkpFIKCuog/globalVariant
+import { useScreenVariants as useScreenVariantsfKkpFikCuog } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: F-KkpFIKCuog/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
-import * as projectcss from "./plasmic_fantaasta.module.css"; // plasmic-import: xdSnfxWCziyzb8tBiGitqa/projectcss
-import * as sty from "./PlasmicTestimonialsSection1.module.css"; // plasmic-import: wQ933wtsetKM/css
+
+import projectcss from "./plasmic_fantaasta.module.css"; // plasmic-import: xdSnfxWCziyzb8tBiGitqa/projectcss
+import sty from "./PlasmicTestimonialsSection1.module.css"; // plasmic-import: wQ933wtsetKM/css
 
 export type PlasmicTestimonialsSection1__VariantMembers = {};
 
@@ -72,13 +73,13 @@ function PlasmicTestimonialsSection1__RenderFunc(props: {
   variants: PlasmicTestimonialsSection1__VariantsArgs;
   args: PlasmicTestimonialsSection1__ArgsType;
   overrides: PlasmicTestimonialsSection1__OverridesType;
-  dataFetches?: PlasmicTestimonialsSection1__Fetches;
+
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode, dataFetches } = props;
+  const { variants, args, overrides, forNode } = props;
 
   const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariants()
+    screen: useScreenVariantsfKkpFikCuog()
   });
 
   return (
@@ -87,14 +88,21 @@ function PlasmicTestimonialsSection1__RenderFunc(props: {
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
-      className={classNames(defaultcss.all, projectcss.root_reset, sty.root)}
+      className={classNames(
+        projectcss.all,
+        projectcss.root_reset,
+        projectcss.plasmic_default_styles,
+        projectcss.plasmic_mixins,
+        projectcss.plasmic_tokens,
+        sty.root
+      )}
     >
       <p.Stack
         as={"div"}
         data-plasmic-name={"freeBox"}
         data-plasmic-override={overrides.freeBox}
         hasGap={true}
-        className={classNames(defaultcss.all, sty.freeBox)}
+        className={classNames(projectcss.all, sty.freeBox)}
       >
         {p.renderPlasmicSlot({
           defaultContents: (
@@ -102,9 +110,15 @@ function PlasmicTestimonialsSection1__RenderFunc(props: {
               <Testimonial
                 className={classNames("__wab_instance", sty.testimonial__dlS4O)}
                 slot={
-                  <img
+                  <p.PlasmicImg
                     alt={""}
-                    className={classNames(defaultcss.img, sty.img___8RG32)}
+                    className={classNames(sty.img___8RG32)}
+                    displayHeight={"64px" as const}
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={"none" as const}
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={"64px" as const}
                     src={
                       "https://www.caa.com/sites/default/files/styles/headshot_500x500/public/speaker-headshots/Morgan_CAAspeakers_Heashot_Web.jpg?itok=WCOhQ1Hj" as const
                     }
@@ -115,9 +129,15 @@ function PlasmicTestimonialsSection1__RenderFunc(props: {
               <Testimonial
                 className={classNames("__wab_instance", sty.testimonial__mysJf)}
                 slot={
-                  <img
+                  <p.PlasmicImg
                     alt={""}
-                    className={classNames(defaultcss.img, sty.img__pe3QM)}
+                    className={classNames(sty.img__pe3QM)}
+                    displayHeight={"64px" as const}
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={"none" as const}
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={"64px" as const}
                     src={
                       "https://tv-fanatic-res.cloudinary.com/iu/s--eXCbHIe1--/t_teaser_wide/cs_srgb,f_auto,fl_strip_profile.lossy,q_auto:420/v1371156342/elaine-benes-picture.png" as const
                     }
@@ -128,8 +148,8 @@ function PlasmicTestimonialsSection1__RenderFunc(props: {
               >
                 <div
                   className={classNames(
-                    defaultcss.all,
-                    defaultcss.__wab_text,
+                    projectcss.all,
+                    projectcss.__wab_text,
                     sty.text__jnOye
                   )}
                 >
@@ -138,8 +158,8 @@ function PlasmicTestimonialsSection1__RenderFunc(props: {
 
                 <div
                   className={classNames(
-                    defaultcss.all,
-                    defaultcss.__wab_text,
+                    projectcss.all,
+                    projectcss.__wab_text,
                     sty.text__nz8Tw
                   )}
                 >
@@ -152,9 +172,15 @@ function PlasmicTestimonialsSection1__RenderFunc(props: {
               <Testimonial
                 className={classNames("__wab_instance", sty.testimonial__nsNyg)}
                 slot={
-                  <img
+                  <p.PlasmicImg
                     alt={""}
-                    className={classNames(defaultcss.img, sty.img__nC9Q)}
+                    className={classNames(sty.img__nC9Q)}
+                    displayHeight={"auto" as const}
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={"none" as const}
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={"64px" as const}
                     src={
                       "https://i.pinimg.com/originals/87/d7/7d/87d77d68368fe5361d535b51cc5af09a.jpg" as const
                     }
@@ -163,8 +189,8 @@ function PlasmicTestimonialsSection1__RenderFunc(props: {
                 slot2={
                   <div
                     className={classNames(
-                      defaultcss.all,
-                      defaultcss.__wab_text,
+                      projectcss.all,
+                      projectcss.__wab_text,
                       sty.text___2OvbF
                     )}
                   >
@@ -174,8 +200,8 @@ function PlasmicTestimonialsSection1__RenderFunc(props: {
                 slot3={
                   <div
                     className={classNames(
-                      defaultcss.all,
-                      defaultcss.__wab_text,
+                      projectcss.all,
+                      projectcss.__wab_text,
                       sty.text__qv5G
                     )}
                   >
@@ -191,9 +217,15 @@ function PlasmicTestimonialsSection1__RenderFunc(props: {
               <Testimonial
                 className={classNames("__wab_instance", sty.testimonial__o8LgC)}
                 slot={
-                  <img
+                  <p.PlasmicImg
                     alt={""}
-                    className={classNames(defaultcss.img, sty.img__bp06N)}
+                    className={classNames(sty.img__bp06N)}
+                    displayHeight={"64px" as const}
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={"none" as const}
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={"64px" as const}
                     src={
                       "https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters_opt/p-fresh-randall-park.jpg" as const
                     }
@@ -203,8 +235,8 @@ function PlasmicTestimonialsSection1__RenderFunc(props: {
                 slot3={
                   <div
                     className={classNames(
-                      defaultcss.all,
-                      defaultcss.__wab_text,
+                      projectcss.all,
+                      projectcss.__wab_text,
                       sty.text___3SRfC
                     )}
                   >
@@ -248,7 +280,6 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicTestimonialsSection1__VariantsArgs;
     args?: PlasmicTestimonialsSection1__ArgsType;
     overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicTestimonialsSection1__Fetches;
   } & Omit<PlasmicTestimonialsSection1__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     // Specify args directly as props
     Omit<PlasmicTestimonialsSection1__ArgsType, ReservedPropsType> &
@@ -275,13 +306,10 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       internalVariantPropNames: PlasmicTestimonialsSection1__VariantProps
     });
 
-    const { dataFetches } = props;
-
     return PlasmicTestimonialsSection1__RenderFunc({
       variants,
       args,
       overrides,
-      dataFetches,
       forNode: nodeName
     });
   };

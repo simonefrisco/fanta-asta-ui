@@ -16,6 +16,7 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 
 import {
   hasVariant,
@@ -35,9 +36,9 @@ import {
 } from "@plasmicapp/react-web";
 
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
-import * as projectcss from "./plasmic_fantaasta.module.css"; // plasmic-import: xdSnfxWCziyzb8tBiGitqa/projectcss
-import * as sty from "./PlasmicDivider.module.css"; // plasmic-import: gQsAiY6bIFOZ/css
+
+import projectcss from "./plasmic_fantaasta.module.css"; // plasmic-import: xdSnfxWCziyzb8tBiGitqa/projectcss
+import sty from "./PlasmicDivider.module.css"; // plasmic-import: gQsAiY6bIFOZ/css
 
 export type PlasmicDivider__VariantMembers = {};
 
@@ -61,10 +62,10 @@ function PlasmicDivider__RenderFunc(props: {
   variants: PlasmicDivider__VariantsArgs;
   args: PlasmicDivider__ArgsType;
   overrides: PlasmicDivider__OverridesType;
-  dataFetches?: PlasmicDivider__Fetches;
+
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode, dataFetches } = props;
+  const { variants, args, overrides, forNode } = props;
 
   return (
     <div
@@ -72,7 +73,14 @@ function PlasmicDivider__RenderFunc(props: {
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
-      className={classNames(defaultcss.all, projectcss.root_reset, sty.root)}
+      className={classNames(
+        projectcss.all,
+        projectcss.root_reset,
+        projectcss.plasmic_default_styles,
+        projectcss.plasmic_mixins,
+        projectcss.plasmic_tokens,
+        sty.root
+      )}
     />
   ) as React.ReactElement | null;
 }
@@ -98,7 +106,6 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicDivider__VariantsArgs;
     args?: PlasmicDivider__ArgsType;
     overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicDivider__Fetches;
   } & Omit<PlasmicDivider__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     // Specify args directly as props
     Omit<PlasmicDivider__ArgsType, ReservedPropsType> &
@@ -125,13 +132,10 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       internalVariantPropNames: PlasmicDivider__VariantProps
     });
 
-    const { dataFetches } = props;
-
     return PlasmicDivider__RenderFunc({
       variants,
       args,
       overrides,
-      dataFetches,
       forNode: nodeName
     });
   };

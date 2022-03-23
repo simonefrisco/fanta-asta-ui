@@ -1,13 +1,53 @@
 {
   "props": [
     {
+      "name": "Base Font",
+      "type": "fontfamily",
+      "value": "Open Sans",
+      "category": "fontfamily",
+      "meta": {
+        "projectId": "xdSnfxWCziyzb8tBiGitqa",
+        "id": "SrK0oRRgW"
+      }
+    },
+    {
       "name": "Blue",
       "type": "color",
-      "value": "#007AFF",
+      "value": "#007AFF8A",
       "category": "color",
       "meta": {
         "projectId": "xdSnfxWCziyzb8tBiGitqa",
         "id": "8t6AQVZzHEf6"
+      }
+    },
+    {
+      "name": "Dashboard Element Shadow",
+      "type": "color",
+      "value": "#0000001E",
+      "category": "color",
+      "meta": {
+        "projectId": "xdSnfxWCziyzb8tBiGitqa",
+        "id": "6-YL6dHn0"
+      }
+    },
+    {
+      "name": "Main Colum Width",
+      "type": "spacing",
+      "value": "1200px",
+      "category": "spacing",
+      "meta": {
+        "projectId": "xdSnfxWCziyzb8tBiGitqa",
+        "id": "LYR95agRw"
+      }
+    },
+    {
+      "name": "Top Bar Height",
+      "type": "spacing",
+      "value": "64px",
+      "category": "spacing",
+      "meta": {
+        "projectId": "xdSnfxWCziyzb8tBiGitqa",
+        "id": "Tvc5RIBwx"
       }
     },
     {
@@ -93,7 +133,7 @@
     {
       "name": "light/gray/06",
       "type": "color",
-      "value": "#F2F2F7",
+      "value": "#FFFFFF",
       "category": "color",
       "meta": {
         "projectId": "xdSnfxWCziyzb8tBiGitqa",
@@ -153,7 +193,7 @@
     {
       "name": "white",
       "type": "color",
-      "value": "#F2F2F7",
+      "value": "#FFFFFF",
       "category": "color",
       "meta": {
         "projectId": "xdSnfxWCziyzb8tBiGitqa",

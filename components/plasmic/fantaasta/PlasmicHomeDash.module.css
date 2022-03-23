@@ -1,0 +1,1075 @@
+.home {
+  background: rgba(247, 247, 247, 1);
+  filter: drop-shadow(0px 1px 0.5px rgba(0, 0, 0, 0.079))
+    drop-shadow(0px 2px 0.5px rgba(0, 0, 0, 0.059))
+    drop-shadow(0px 1px 1.5px rgba(0, 0, 0, 0.1));
+  display: block;
+  padding-right: 0px;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  border-radius: 8px;
+}
+.searchBar {
+  width: 744px;
+  height: 40px;
+  display: block;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.right4 {
+  width: 32px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  overflow: hidden;
+}
+.svg___6Boau {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #e8e8e8;
+  width: 20px;
+  height: 20px;
+  display: block;
+  top: 10px;
+  right: 12px;
+}
+.left {
+  height: 40px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 32px;
+  overflow: hidden;
+}
+.svg__wUlco {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #969696;
+  width: 20px;
+  height: 20px;
+  display: block;
+  top: 10px;
+  left: 12px;
+}
+.textState {
+  display: block;
+  position: absolute;
+  top: 8px;
+  left: 40px;
+  right: 0px;
+  bottom: 8px;
+}
+.text__uoEp3 {
+  display: block;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(149, 149, 149, 1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+}
+.frame71 {
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+.frame71 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 24px);
+  width: calc(100% + 24px);
+}
+.frame71 > :global(.__wab_flex-container) > *,
+.frame71 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.frame71 > :global(.__wab_flex-container) > picture > img,
+.frame71
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 24px;
+}
+.group10 {
+  width: 28px;
+  height: 24px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+}
+.svg__l3KAv {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #969696;
+  width: 24px;
+  height: 24px;
+  display: block;
+  top: 0px;
+  left: 0px;
+}
+.counter {
+  background: rgba(232, 44, 44, 1);
+  width: auto;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 0px;
+  left: 13px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-radius: 96px;
+}
+.text__s6ZK {
+  display: block;
+  font-size: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 1);
+  position: relative;
+}
+.frame7 {
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+}
+.frame7 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.frame7 > :global(.__wab_flex-container) > *,
+.frame7 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.frame7 > :global(.__wab_flex-container) > picture > img,
+.frame7
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 8px;
+}
+.avatar {
+  background: url("/plasmic/fantaasta/images/avatar.jpeg") center center / cover no-repeat;
+  box-shadow: inset 0px 0px 0px 1px rgba(231, 231, 231, 1);
+  width: 32px;
+  height: 32px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+  border-radius: 256px;
+}
+.status {
+  background: rgba(0, 132, 255, 1);
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 1);
+  width: 25%;
+  height: 25%;
+  display: block;
+  position: absolute;
+  top: 75%;
+  left: 75%;
+  overflow: hidden;
+  border-radius: 100px;
+}
+.svg__bMnGt {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #969696;
+  width: 24px;
+  height: 24px;
+  display: block;
+  flex-shrink: 0;
+}
+.frame6 {
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+}
+.frame6 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.frame6 > :global(.__wab_flex-container) > *,
+.frame6 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.frame6 > :global(.__wab_flex-container) > picture > img,
+.frame6
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 8px;
+}
+.avatarOneLine {
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+}
+.avatarOneLine > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.avatarOneLine > :global(.__wab_flex-container) > *,
+.avatarOneLine > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.avatarOneLine > :global(.__wab_flex-container) > picture > img,
+.avatarOneLine
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 8px;
+}
+.avatar2 {
+  background: linear-gradient(rgba(0, 132, 255, 0.1), rgba(0, 132, 255, 0.1)),
+    rgba(255, 255, 255, 1);
+  width: 32px;
+  height: 32px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+  border-radius: 256px;
+}
+.kk {
+  display: block;
+  font-size: 13px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 20px;
+  color: rgba(0, 132, 255, 1);
+  position: absolute;
+  top: 6px;
+  left: 12px;
+}
+.statusDot {
+  background: rgba(0, 132, 255, 1);
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 1);
+  width: 25%;
+  height: 25%;
+  display: block;
+  position: absolute;
+  top: 75%;
+  left: 75%;
+  overflow: hidden;
+  border-radius: 100px;
+}
+.mikeBrown {
+  display: block;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(27, 27, 27, 1);
+  position: relative;
+}
+.svg__ohEgc {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #969696;
+  width: 24px;
+  height: 24px;
+  display: block;
+  flex-shrink: 0;
+}
+.text__ov8E5 {
+  display: block;
+  font-size: 36px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 48px;
+  color: rgba(27, 27, 27, 1);
+  position: absolute;
+  top: 88px;
+  left: 24px;
+}
+.text__jH8Db {
+  display: block;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 28px;
+  color: rgba(149, 149, 149, 1);
+  position: absolute;
+  top: 144px;
+  left: 24px;
+}
+.frame108 {
+  background: rgba(247, 247, 247, 1);
+  width: 1216px;
+  height: 60px;
+  display: block;
+  position: absolute;
+  top: 185px;
+  left: 36px;
+  overflow: hidden;
+}
+.svg___7PfdL {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #e8e8e8;
+  width: 1440px;
+  height: 1px;
+  display: block;
+  top: 71px;
+  left: 0px;
+}
+.frame109 {
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 24px;
+  left: 44px;
+}
+.frame109 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: calc(0px - 44px);
+  width: calc(100% + 44px);
+}
+.frame109 > :global(.__wab_flex-container) > *,
+.frame109 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.frame109 > :global(.__wab_flex-container) > picture > img,
+.frame109
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 44px;
+}
+.text__ocbIb {
+  display: block;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(87, 86, 86, 1);
+  position: relative;
+}
+.text__isq95 {
+  display: block;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(0, 132, 255, 1);
+  position: relative;
+}
+.text__t53V4 {
+  display: block;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(87, 86, 86, 1);
+  position: relative;
+}
+.text__lUcH {
+  display: block;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(87, 86, 86, 1);
+  position: relative;
+}
+.svg___23IAb {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #0085ff;
+  width: 61px;
+  height: 4px;
+  display: block;
+  top: 68px;
+  left: 153px;
+}
+.frame111 {
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 10px;
+  left: 823px;
+}
+.frame111 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: calc(0px - 32px);
+  width: calc(100% + 32px);
+}
+.frame111 > :global(.__wab_flex-container) > *,
+.frame111 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.frame111 > :global(.__wab_flex-container) > picture > img,
+.frame111
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 32px;
+}
+.button {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.button2 {
+  flex-direction: row;
+  background: rgba(0, 132, 255, 1);
+  filter: drop-shadow(0px 1px 0.5px rgba(0, 0, 0, 0.079))
+    drop-shadow(0px 2px 0.5px rgba(0, 0, 0, 0.059))
+    drop-shadow(0px 1px 1.5px rgba(0, 0, 0, 0.1));
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+.button2 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.button2 > :global(.__wab_flex-container) > *,
+.button2 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.button2 > :global(.__wab_flex-container) > picture > img,
+.button2
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 8px;
+}
+.svg__gOzuN {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  display: block;
+  flex-shrink: 0;
+}
+.text2 {
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 1);
+  position: relative;
+}
+.counter2 {
+  background: rgba(255, 255, 255, 1);
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-radius: 96px;
+}
+.text__wRsYx {
+  display: block;
+  font-size: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 16px;
+  color: rgba(27, 27, 27, 1);
+  position: relative;
+}
+.svg___1QdUz {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  display: block;
+  flex-shrink: 0;
+}
+.frame110 {
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+}
+.frame110 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 4px);
+  width: calc(100% + 4px);
+}
+.frame110 > :global(.__wab_flex-container) > *,
+.frame110 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.frame110 > :global(.__wab_flex-container) > picture > img,
+.frame110
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 4px;
+}
+.avatarOneLine2 {
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+}
+.avatarOneLine2 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.avatarOneLine2 > :global(.__wab_flex-container) > *,
+.avatarOneLine2 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.avatarOneLine2 > :global(.__wab_flex-container) > picture > img,
+.avatarOneLine2
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 8px;
+}
+.avatar3 {
+  background: url("/plasmic/fantaasta/images/avatar2.jpeg") center center / cover no-repeat;
+  box-shadow: inset 0px 0px 0px 1px rgba(231, 231, 231, 1);
+  width: 32px;
+  height: 32px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+  border-radius: 256px;
+}
+.status2 {
+  background: rgba(0, 185, 52, 1);
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 1);
+  width: 25%;
+  height: 25%;
+  display: block;
+  position: absolute;
+  top: 75%;
+  left: 75%;
+  overflow: hidden;
+  border-radius: 100px;
+}
+.mikeBrown2 {
+  display: block;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(27, 27, 27, 1);
+  position: relative;
+}
+.svg__cKtYx {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #969696;
+  width: 24px;
+  height: 24px;
+  display: block;
+  flex-shrink: 0;
+}
+.text__owq7I {
+  mix-blend-mode: normal;
+  display: block;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 338px;
+  left: 36px;
+  width: 552px;
+  height: 24px;
+}
+.frame114 {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: inset 0px 0px 0px 2px rgba(0, 132, 255, 1);
+  filter: drop-shadow(0px 1px 0.5px rgba(0, 0, 0, 0.079))
+    drop-shadow(0px 2px 0.5px rgba(0, 0, 0, 0.059))
+    drop-shadow(0px 1px 1.5px rgba(0, 0, 0, 0.1));
+  width: 264px;
+  height: 123px;
+  display: block;
+  position: absolute;
+  top: 532px;
+  left: 36px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.avatarOneLine3 {
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+.avatarOneLine3 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.avatarOneLine3 > :global(.__wab_flex-container) > *,
+.avatarOneLine3 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.avatarOneLine3 > :global(.__wab_flex-container) > picture > img,
+.avatarOneLine3
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 8px;
+}
+.avatar4 {
+  background: url("/plasmic/fantaasta/images/avatar3.png") center center / cover no-repeat;
+  box-shadow: inset 0px 0px 0px 1px rgba(231, 231, 231, 1);
+  width: 32px;
+  height: 32px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+  border-radius: 256px;
+}
+.statusDot2 {
+  background: rgba(0, 132, 255, 1);
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 1);
+  width: 25%;
+  height: 25%;
+  display: block;
+  position: absolute;
+  top: 75%;
+  left: 75%;
+  overflow: hidden;
+  border-radius: 100px;
+}
+.text___0T9 {
+  display: block;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(27, 27, 27, 1);
+  position: relative;
+}
+.svg___16XV {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #e8e8e8;
+  width: 232px;
+  height: 1px;
+  display: block;
+  top: 60px;
+  left: 16px;
+}
+.badge {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 73px;
+  left: 16px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.xBaseBadge {
+  flex-direction: row;
+  background: linear-gradient(rgba(255, 149, 26, 0.1), rgba(255, 149, 26, 0.1)),
+    rgba(255, 255, 255, 1);
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  padding: 2px 6px;
+}
+.xBaseBadge > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 4px);
+  width: calc(100% + 4px);
+}
+.xBaseBadge > :global(.__wab_flex-container) > *,
+.xBaseBadge > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.xBaseBadge > :global(.__wab_flex-container) > picture > img,
+.xBaseBadge
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 4px;
+}
+.svg__fdnvB {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #f98600;
+  width: 12px;
+  height: 12px;
+  display: block;
+  flex-shrink: 0;
+}
+.text3 {
+  display: block;
+  font-size: 13px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 20px;
+  color: rgba(248, 134, 0, 1);
+  position: relative;
+}
+.svg__boiBl {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #969696;
+  width: 12px;
+  height: 12px;
+  display: block;
+  flex-shrink: 0;
+}
+.text__ipFh6 {
+  display: block;
+  font-size: 16px;
+  text-align: right;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(87, 86, 86, 1);
+  position: absolute;
+  top: 73px;
+  right: 16px;
+}
+.frame115 {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: inset 0px 0px 0px 2px rgba(0, 132, 255, 1);
+  filter: drop-shadow(0px 1px 0.5px rgba(0, 0, 0, 0.079))
+    drop-shadow(0px 2px 0.5px rgba(0, 0, 0, 0.059))
+    drop-shadow(0px 1px 1.5px rgba(0, 0, 0, 0.1));
+  width: 264px;
+  height: 113px;
+  display: block;
+  position: absolute;
+  top: 395px;
+  left: 36px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.avatarOneLine4 {
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+.avatarOneLine4 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.avatarOneLine4 > :global(.__wab_flex-container) > *,
+.avatarOneLine4 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.avatarOneLine4 > :global(.__wab_flex-container) > picture > img,
+.avatarOneLine4
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 8px;
+}
+.avatar5 {
+  background: url("/plasmic/fantaasta/images/avatar3.png") center center / cover no-repeat;
+  box-shadow: inset 0px 0px 0px 1px rgba(231, 231, 231, 1);
+  width: 32px;
+  height: 32px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+  border-radius: 256px;
+}
+.statusDot3 {
+  background: rgba(0, 132, 255, 1);
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 1);
+  width: 25%;
+  height: 25%;
+  display: block;
+  position: absolute;
+  top: 75%;
+  left: 75%;
+  overflow: hidden;
+  border-radius: 100px;
+}
+.text__l5Eg8 {
+  display: block;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(27, 27, 27, 1);
+  position: relative;
+}
+.svg__lbyyE {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #e8e8e8;
+  width: 232px;
+  height: 1px;
+  display: block;
+  top: 60px;
+  left: 16px;
+}
+.badge2 {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 73px;
+  left: 16px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.xBaseBadge2 {
+  flex-direction: row;
+  background: linear-gradient(rgba(255, 149, 26, 0.1), rgba(255, 149, 26, 0.1)),
+    rgba(255, 255, 255, 1);
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  padding: 2px 6px;
+}
+.xBaseBadge2 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 4px);
+  width: calc(100% + 4px);
+}
+.xBaseBadge2 > :global(.__wab_flex-container) > *,
+.xBaseBadge2 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.xBaseBadge2 > :global(.__wab_flex-container) > picture > img,
+.xBaseBadge2
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 4px;
+}
+.svg__pTfMb {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #f98600;
+  width: 12px;
+  height: 12px;
+  display: block;
+  flex-shrink: 0;
+}
+.text4 {
+  display: block;
+  font-size: 13px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 20px;
+  color: rgba(248, 134, 0, 1);
+  position: relative;
+}
+.svg___7UVz {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #969696;
+  width: 12px;
+  height: 12px;
+  display: block;
+  flex-shrink: 0;
+}
+.text__r2Vuo {
+  display: block;
+  font-size: 16px;
+  text-align: right;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(87, 86, 86, 1);
+  position: absolute;
+  top: 73px;
+  right: 16px;
+}
+.ilClassicoGiocoDelFantacalcioArricchitoDallaPossibilitaDiGiocareConModuliPersonalizzabiliPerLegaEDiImpostareNumeroDiPanchinariEOrdinePanchinaSecondoLePropriePreferenzeInsiemeACentinaiaDiAltreOpzioni {
+  display: block;
+  font-size: 13px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 398px;
+  left: 436px;
+  width: 449px;
+  height: 110px;
+}
+.text__xj9C {
+  display: block;
+  font-size: 13px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 535px;
+  left: 436px;
+  width: 442px;
+  height: 129px;
+}
+.text__ujkP {
+  display: block;
+  font-size: 18px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 343px;
+  left: 929px;
+  width: 287px;
+  height: 38px;
+}
+.text__wZaBu {
+  display: block;
+  font-size: 14px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 394px;
+  left: 917px;
+  width: 324px;
+  height: 456px;
+}
+.text__zp9Cp {
+  display: block;
+  font-size: 14px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  letter-spacing: 0em;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 688px;
+  left: 130px;
+  width: 758px;
+  height: 202px;
+}

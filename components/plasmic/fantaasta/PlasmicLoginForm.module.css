@@ -1,0 +1,87 @@
+.root {
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  max-width: 640px;
+  background: #ffffff;
+  position: relative;
+  min-width: 0;
+  border-radius: 16px;
+}
+.root > :global(.__wab_flex-container) {
+  flex-direction: column;
+  min-width: 0;
+  margin-top: calc(0px - 8px);
+  height: calc(100% + 8px);
+}
+.root > :global(.__wab_flex-container) > *,
+.root > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.root > :global(.__wab_flex-container) > picture > img,
+.root > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
+  margin-top: 8px;
+}
+.freeBox__oasnn {
+  box-shadow: 0px 10px 10px 0px #00000026;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  overflow: hidden;
+  border-radius: 16px;
+}
+.freeBox__aAo7 {
+  flex-direction: column;
+  display: flex;
+  position: relative;
+  padding: 32px;
+}
+.freeBox__aAo7 > :global(.__wab_flex-container) {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin-top: calc(0px - 16px);
+  height: calc(100% + 16px);
+}
+.freeBox__aAo7 > :global(.__wab_flex-container) > *,
+.freeBox__aAo7 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox__aAo7 > :global(.__wab_flex-container) > picture > img,
+.freeBox__aAo7
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 16px;
+}
+.textarena__cPcOOek1T4 {
+  display: none;
+}
+.freeBox__pGslM {
+  display: block;
+  position: relative;
+  max-width: 600px;
+  align-self: stretch;
+}
+.divider:global(.__wab_instance) {
+  position: relative;
+  flex-shrink: 0;
+}
+.freeBox__w6Xsc {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  background: var(--token-Vfp7jZr9FOgh);
+  padding: 32px;
+}
+.freeBoxarena__w6Xscek1T4 {
+  padding: 12px;
+}
+.text__z2OwR {
+  position: relative;
+  color: var(--token-XEy-tQANXH6D);
+}
+.textarena__z2OwRek1T4 {
+  display: none;
+}

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 28 28">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 14C0 6.268 6.268 0 14 0s14 6.268 14 14-6.268 14-14 14S0 21.732 0 14zm7 0c0 5.477 3.395 9.917 7.583 9.917 4.188 0 7.584-4.44 7.584-9.917 0-5.477-3.396-9.917-7.584-9.917S7 8.523 7 14z" fill="#EE3124"/>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 14C0 6.268 6.268 0 14 0s14 6.268 14 14-6.268 14-14 14S0 21.732 0 14zm7 0c0 5.477 3.395 9.917 7.583 9.917 4.188 0 7.584-4.44 7.584-9.917 0-5.477-3.396-9.917-7.584-9.917S7 8.523 7 14z" fill="url(#WAFViGlXl5va)"/>
+  <path d="M18.868 25.667c-6.513 0-11.793-5.224-11.793-11.667s5.28-11.667 11.793-11.667c1.456 0 2.844.274 4.132.751A14.178 14.178 0 0014.151 0C6.336 0 0 6.268 0 14s6.336 14 14.151 14c3.35 0 6.425-1.158 8.849-3.084a11.852 11.852 0 01-4.132.75z" fill="#EE3124"/>
+  <path d="M18.868 25.667c-6.513 0-11.793-5.224-11.793-11.667s5.28-11.667 11.793-11.667c1.456 0 2.844.274 4.132.751A14.178 14.178 0 0014.151 0C6.336 0 0 6.268 0 14s6.336 14 14.151 14c3.35 0 6.425-1.158 8.849-3.084a11.852 11.852 0 01-4.132.75z" fill="url(#WAFViGlXl5vb)"/>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 14C0 6.268 6.268 0 14 0s14 6.268 14 14-6.268 14-14 14S0 21.732 0 14zm7 0c0 5.477 3.395 9.917 7.583 9.917 4.188 0 7.584-4.44 7.584-9.917 0-5.477-3.396-9.917-7.584-9.917S7 8.523 7 14z" fill="url(#WAFViGlXl5vc)"/>
+  <defs>
+    <linearGradient id="WAFViGlXl5va" x1="25.917" y1="21.575" x2="20.91" y2="3.249" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2F2F2" stop-opacity=".1"/>
+      <stop offset=".341" stop-color="#969696" stop-opacity=".168"/>
+      <stop offset=".663" stop-color="#454545" stop-opacity=".233"/>
+      <stop offset=".889" stop-color="#131313" stop-opacity=".278"/>
+      <stop offset="1" stop-opacity=".3"/>
+    </linearGradient>
+    <linearGradient id="WAFViGlXl5vb" x1="2.054" y1="6.667" x2="8.534" y2="26.039" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff" stop-opacity=".1"/>
+      <stop offset="1" stop-opacity=".3"/>
+    </linearGradient>
+    <linearGradient id="WAFViGlXl5vc" x1="-4.609" y1="20.773" x2="20.773" y2="32.609" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#fff" stop-opacity=".01"/>
+    </linearGradient>
+  </defs>
+</svg>

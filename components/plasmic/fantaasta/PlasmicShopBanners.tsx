@@ -16,6 +16,7 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 
 import {
   hasVariant,
@@ -37,11 +38,9 @@ import Banner from "../../Banner"; // plasmic-import: bPsGEjQSDQD0/component
 import Button from "../../Button"; // plasmic-import: ILa2cLxyoTg0/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
-import * as projectcss from "./plasmic_fantaasta.module.css"; // plasmic-import: xdSnfxWCziyzb8tBiGitqa/projectcss
-import * as sty from "./PlasmicShopBanners.module.css"; // plasmic-import: p-2o_pYCpf4T/css
 
-import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: Gng1eaWxMrAo/icon
+import projectcss from "./plasmic_fantaasta.module.css"; // plasmic-import: xdSnfxWCziyzb8tBiGitqa/projectcss
+import sty from "./PlasmicShopBanners.module.css"; // plasmic-import: p-2o_pYCpf4T/css
 
 export type PlasmicShopBanners__VariantMembers = {};
 
@@ -69,10 +68,10 @@ function PlasmicShopBanners__RenderFunc(props: {
   variants: PlasmicShopBanners__VariantsArgs;
   args: PlasmicShopBanners__ArgsType;
   overrides: PlasmicShopBanners__OverridesType;
-  dataFetches?: PlasmicShopBanners__Fetches;
+
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode, dataFetches } = props;
+  const { variants, args, overrides, forNode } = props;
 
   return (
     <p.Stack
@@ -82,26 +81,138 @@ function PlasmicShopBanners__RenderFunc(props: {
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       hasGap={true}
-      className={classNames(defaultcss.all, projectcss.root_reset, sty.root)}
+      className={classNames(
+        projectcss.all,
+        projectcss.root_reset,
+        projectcss.plasmic_default_styles,
+        projectcss.plasmic_mixins,
+        projectcss.plasmic_tokens,
+        sty.root
+      )}
     >
       {p.renderPlasmicSlot({
         defaultContents: (
           <React.Fragment>
             <Banner
               className={classNames("__wab_instance", sty.banner___6Z0U)}
+              left={
+                <React.Fragment>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__yLqZc
+                    )}
+                  >
+                    {"Sunglasses Collection"}
+                  </div>
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__gbfMr
+                    )}
+                  >
+                    {"Get 25% off on selected items"}
+                  </div>
+
+                  <Button
+                    children2={
+                      <svg
+                        className={classNames(projectcss.all, sty.svg__zDoAc)}
+                        role={"img"}
+                      />
+                    }
+                    slot={
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__qPipq
+                        )}
+                      >
+                        {"Go to collection ->"}
+                      </div>
+                    }
+                  >
+                    <svg
+                      className={classNames(projectcss.all, sty.svg__yszNu)}
+                      role={"img"}
+                    />
+                  </Button>
+                </React.Fragment>
+              }
             />
 
             <p.Stack
               as={"div"}
               hasGap={true}
-              className={classNames(defaultcss.all, sty.freeBox__pLgiA)}
+              className={classNames(projectcss.all, sty.freeBox__pLgiA)}
             >
               <Banner
                 className={classNames("__wab_instance", sty.banner__ndYlx)}
+                left={
+                  <React.Fragment>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__dECmV
+                      )}
+                    >
+                      {"Sunglasses Collection"}
+                    </div>
+
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__wCyjn
+                      )}
+                    >
+                      {"Get 25% off on selected items"}
+                    </div>
+
+                    <Button
+                      children2={
+                        <svg
+                          className={classNames(
+                            projectcss.all,
+                            sty.svg___6Tf0L
+                          )}
+                          role={"img"}
+                        />
+                      }
+                      slot={
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__mU9Z
+                          )}
+                        >
+                          {"Go to collection ->"}
+                        </div>
+                      }
+                    >
+                      <svg
+                        className={classNames(projectcss.all, sty.svg__n5XYw)}
+                        role={"img"}
+                      />
+                    </Button>
+                  </React.Fragment>
+                }
               >
-                <img
+                <p.PlasmicImg
                   alt={""}
-                  className={classNames(defaultcss.img, sty.img___2N1Mi)}
+                  className={classNames(sty.img___2N1Mi)}
+                  displayHeight={"100%" as const}
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={"none" as const}
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"100%" as const}
                   src={
                     "https://images.unsplash.com/photo-1463100099107-aa0980c362e6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2850&q=80" as const
                   }
@@ -110,10 +221,64 @@ function PlasmicShopBanners__RenderFunc(props: {
 
               <Banner
                 className={classNames("__wab_instance", sty.banner__gShXe)}
+                left={
+                  <React.Fragment>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__kSmip
+                      )}
+                    >
+                      {"Sunglasses Collection"}
+                    </div>
+
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__jxwkG
+                      )}
+                    >
+                      {"Get 25% off on selected items"}
+                    </div>
+
+                    <Button
+                      children2={
+                        <svg
+                          className={classNames(projectcss.all, sty.svg__vWdbL)}
+                          role={"img"}
+                        />
+                      }
+                      slot={
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__v4KN0
+                          )}
+                        >
+                          {"Go to collection ->"}
+                        </div>
+                      }
+                    >
+                      <svg
+                        className={classNames(projectcss.all, sty.svg__xTit5)}
+                        role={"img"}
+                      />
+                    </Button>
+                  </React.Fragment>
+                }
               >
-                <img
+                <p.PlasmicImg
                   alt={""}
-                  className={classNames(defaultcss.img, sty.img__uCglE)}
+                  className={classNames(sty.img__uCglE)}
+                  displayHeight={"100%" as const}
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={"none" as const}
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"100%" as const}
                   src={
                     "https://images.unsplash.com/photo-1554568218-0f1715e72254?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1834&q=80" as const
                   }
@@ -149,7 +314,6 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicShopBanners__VariantsArgs;
     args?: PlasmicShopBanners__ArgsType;
     overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicShopBanners__Fetches;
   } & Omit<PlasmicShopBanners__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     // Specify args directly as props
     Omit<PlasmicShopBanners__ArgsType, ReservedPropsType> &
@@ -176,13 +340,10 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       internalVariantPropNames: PlasmicShopBanners__VariantProps
     });
 
-    const { dataFetches } = props;
-
     return PlasmicShopBanners__RenderFunc({
       variants,
       args,
       overrides,
-      dataFetches,
       forNode: nodeName
     });
   };

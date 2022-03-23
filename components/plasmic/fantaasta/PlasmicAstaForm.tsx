@@ -16,6 +16,7 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 
 import {
   hasVariant,
@@ -33,27 +34,33 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import SettingInput from "../../SettingInput"; // plasmic-import: JGXUTtU5D6Eq/component
 import Button from "../../Button"; // plasmic-import: ILa2cLxyoTg0/component
+import Checkbox from "../../Checkbox"; // plasmic-import: 65sYWpc3XrI/component
+
+import { useScreenVariants as useScreenVariantsfKkpFikCuog } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: F-KkpFIKCuog/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
-import * as projectcss from "./plasmic_fantaasta.module.css"; // plasmic-import: xdSnfxWCziyzb8tBiGitqa/projectcss
-import * as sty from "./PlasmicAstaForm.module.css"; // plasmic-import: TXm06OyomR/css
 
-import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: Gng1eaWxMrAo/icon
+import projectcss from "./plasmic_fantaasta.module.css"; // plasmic-import: xdSnfxWCziyzb8tBiGitqa/projectcss
+import sty from "./PlasmicAstaForm.module.css"; // plasmic-import: TXm06OyomR/css
+
+import Icon13Icon from "./icons/PlasmicIcon__Icon13"; // plasmic-import: WTGQtc0Orv/icon
+import Icon3Icon from "./icons/PlasmicIcon__Icon3"; // plasmic-import: un1KrORrRr/icon
 
 export type PlasmicAstaForm__VariantMembers = {
-  state: "empty" | "completed";
+  steps: "first" | "second" | "third" | "success";
+  unnamedVariant: "unnamedVariant";
 };
 
 export type PlasmicAstaForm__VariantsArgs = {
-  state?: MultiChoiceArg<"empty" | "completed">;
+  steps?: MultiChoiceArg<"first" | "second" | "third" | "success">;
+  unnamedVariant?: SingleBooleanChoiceArg<"unnamedVariant">;
 };
 
 type VariantPropType = keyof PlasmicAstaForm__VariantsArgs;
 export const PlasmicAstaForm__VariantProps = new Array<VariantPropType>(
-  "state"
+  "steps",
+  "unnamedVariant"
 );
 
 export type PlasmicAstaForm__ArgsType = {};
@@ -62,16 +69,31 @@ export const PlasmicAstaForm__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicAstaForm__OverridesType = {
   root?: p.Flex<"div">;
-  freeBox?: p.Flex<"div">;
-  settingOne?: p.Flex<"div">;
-  settingTwo?: p.Flex<"div">;
-  settingInput?: p.Flex<typeof SettingInput>;
-  textarea?: p.Flex<"textarea">;
-  button?: p.Flex<typeof Button>;
+  tabHeader?: p.Flex<"div">;
+  infoTab?: p.Flex<typeof Button>;
+  roseTab?: p.Flex<typeof Button>;
+  roleTab?: p.Flex<typeof Button>;
+  astaname?: p.Flex<"input">;
+  numberpartecipants?: p.Flex<"input">;
+  budget?: p.Flex<"input">;
+  numberPlayers?: p.Flex<"input">;
+  numAttaccanti?: p.Flex<"input">;
+  numDifensori?: p.Flex<"input">;
+  numPortieri?: p.Flex<"input">;
+  numCentrocampisti?: p.Flex<"input">;
+  checkboxContrattazione?: p.Flex<typeof Checkbox>;
+  checkboxSvincolo?: p.Flex<typeof Checkbox>;
+  checkboxDebito?: p.Flex<typeof Checkbox>;
+  successLottie?: p.Flex<"div">;
+  goHomeButton?: p.Flex<"button">;
+  submitButton?: p.Flex<"button">;
+  backwardButton?: p.Flex<"button">;
+  forwardButton?: p.Flex<"button">;
 };
 
 export interface DefaultAstaFormProps {
-  state?: MultiChoiceArg<"empty" | "completed">;
+  steps?: MultiChoiceArg<"first" | "second" | "third" | "success">;
+  unnamedVariant?: SingleBooleanChoiceArg<"unnamedVariant">;
   className?: string;
 }
 
@@ -79,10 +101,14 @@ function PlasmicAstaForm__RenderFunc(props: {
   variants: PlasmicAstaForm__VariantsArgs;
   args: PlasmicAstaForm__ArgsType;
   overrides: PlasmicAstaForm__OverridesType;
-  dataFetches?: PlasmicAstaForm__Fetches;
+
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode, dataFetches } = props;
+  const { variants, args, overrides, forNode } = props;
+
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariantsfKkpFikCuog()
+  });
 
   return (
     <div
@@ -90,123 +116,1337 @@ function PlasmicAstaForm__RenderFunc(props: {
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
-      className={classNames(defaultcss.all, projectcss.root_reset, sty.root)}
+      className={classNames(
+        projectcss.all,
+        projectcss.root_reset,
+        projectcss.plasmic_default_styles,
+        projectcss.plasmic_mixins,
+        projectcss.plasmic_tokens,
+        sty.root,
+        {
+          [sty.rootsteps_first]: hasVariant(variants, "steps", "first"),
+          [sty.rootsteps_second]: hasVariant(variants, "steps", "second"),
+          [sty.rootsteps_success]: hasVariant(variants, "steps", "success"),
+          [sty.rootsteps_third]: hasVariant(variants, "steps", "third")
+        }
+      )}
     >
       <p.Stack
         as={"div"}
-        data-plasmic-name={"freeBox"}
-        data-plasmic-override={overrides.freeBox}
         hasGap={true}
-        className={classNames(defaultcss.all, sty.freeBox)}
+        className={classNames(projectcss.all, sty.freeBox__tzcMa, {
+          [sty.freeBoxsteps_first__tzcMaHRkB]: hasVariant(
+            variants,
+            "steps",
+            "first"
+          ),
+          [sty.freeBoxsteps_second__tzcMaaei8L]: hasVariant(
+            variants,
+            "steps",
+            "second"
+          ),
+          [sty.freeBoxsteps_success__tzcMax7Wok]: hasVariant(
+            variants,
+            "steps",
+            "success"
+          ),
+          [sty.freeBoxsteps_third__tzcMaxWVw]: hasVariant(
+            variants,
+            "steps",
+            "third"
+          )
+        })}
       >
-        <div
-          data-plasmic-name={"settingOne"}
-          data-plasmic-override={overrides.settingOne}
-          className={classNames(
-            defaultcss.all,
-            defaultcss.__wab_text,
-            sty.settingOne
-          )}
-        >
-          {"Nome Asta"}
-        </div>
-
-        <input
-          className={classNames(defaultcss.input, sty.textbox___44Lwq)}
-          placeholder={"None" as const}
-          size={1 as const}
-          type={"text" as const}
-          value={"" as const}
-        />
-
-        <div
-          data-plasmic-name={"settingTwo"}
-          data-plasmic-override={overrides.settingTwo}
-          className={classNames(
-            defaultcss.all,
-            defaultcss.__wab_text,
-            sty.settingTwo
-          )}
-        >
-          {"Numero Partecipanti"}
-        </div>
-
-        <SettingInput
-          data-plasmic-name={"settingInput"}
-          data-plasmic-override={overrides.settingInput}
-          className={classNames("__wab_instance", sty.settingInput)}
-        />
-
-        <div
-          className={classNames(
-            defaultcss.all,
-            defaultcss.__wab_text,
-            sty.text__ziATb
-          )}
-        >
-          {"Budget Inziale Asta "}
-        </div>
-
-        <input
-          className={classNames(defaultcss.input, sty.textbox__ugddB)}
-          placeholder={"Numero Crediti" as const}
-          size={1 as const}
-          type={"text" as const}
-          value={"" as const}
-        />
-
-        <div
-          className={classNames(
-            defaultcss.all,
-            defaultcss.__wab_text,
-            sty.text__nF2Bn
-          )}
-        >
-          {"Impostazioni Rose"}
-        </div>
-
-        <div
-          className={classNames(
-            defaultcss.all,
-            defaultcss.__wab_text,
-            sty.text__nvD6
-          )}
-        >
-          {"Numero Totale Calciatori Rosa"}
-        </div>
-
-        <input
-          className={classNames(defaultcss.input, sty.textbox__v72Qt)}
-          placeholder={"Numero Giocatori" as const}
-          size={1 as const}
-          type={"text" as const}
-          value={"" as const}
-        />
-
-        <textarea
-          data-plasmic-name={"textarea"}
-          data-plasmic-override={overrides.textarea}
-          className={classNames(defaultcss.textarea, sty.textarea)}
-          disabled={true}
-        />
-
-        <Button
-          data-plasmic-name={"button"}
-          data-plasmic-override={overrides.button}
-          className={classNames("__wab_instance", sty.button)}
-          colors={"indigo" as const}
-          slot={
+        {(hasVariant(variants, "steps", "success") ? true : true) ? (
+          <p.Stack
+            as={"div"}
+            data-plasmic-name={"tabHeader"}
+            data-plasmic-override={overrides.tabHeader}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.tabHeader, {
+              [sty.tabHeadersteps_second]: hasVariant(
+                variants,
+                "steps",
+                "second"
+              ),
+              [sty.tabHeadersteps_success]: hasVariant(
+                variants,
+                "steps",
+                "success"
+              ),
+              [sty.tabHeadersteps_third]: hasVariant(variants, "steps", "third")
+            })}
+          >
             <div
-              className={classNames(
-                defaultcss.all,
-                defaultcss.__wab_text,
-                sty.text__z8CH
-              )}
+              className={classNames(projectcss.all, sty.column__njczm, {
+                [sty.columnsteps_success__njczmx7Wok]: hasVariant(
+                  variants,
+                  "steps",
+                  "success"
+                )
+              })}
             >
-              {"Crea"}
+              <Button
+                data-plasmic-name={"infoTab"}
+                data-plasmic-override={overrides.infoTab}
+                children2={
+                  <svg
+                    className={classNames(projectcss.all, sty.svg__lU0Y)}
+                    role={"img"}
+                  />
+                }
+                className={classNames("__wab_instance", sty.infoTab, {
+                  [sty.infoTabsteps_second]: hasVariant(
+                    variants,
+                    "steps",
+                    "second"
+                  ),
+                  [sty.infoTabsteps_third]: hasVariant(
+                    variants,
+                    "steps",
+                    "third"
+                  )
+                })}
+                slot={"Informazioni"}
+                tab={
+                  hasVariant(variants, "steps", "third")
+                    ? []
+                    : hasVariant(variants, "steps", "second")
+                    ? []
+                    : ["tabSelected"]
+                }
+              >
+                <svg
+                  className={classNames(projectcss.all, sty.svg__buFxN)}
+                  role={"img"}
+                />
+              </Button>
             </div>
-          }
-        />
+
+            <div className={classNames(projectcss.all, sty.column___2Awzw)}>
+              <Button
+                data-plasmic-name={"roseTab"}
+                data-plasmic-override={overrides.roseTab}
+                children2={
+                  <svg
+                    className={classNames(projectcss.all, sty.svg__udXR)}
+                    role={"img"}
+                  />
+                }
+                className={classNames("__wab_instance", sty.roseTab, {
+                  [sty.roseTabsteps_second]: hasVariant(
+                    variants,
+                    "steps",
+                    "second"
+                  ),
+                  [sty.roseTabsteps_third]: hasVariant(
+                    variants,
+                    "steps",
+                    "third"
+                  )
+                })}
+                slot={"Rose"}
+                tab={
+                  hasVariant(variants, "steps", "second")
+                    ? ["tabSelected"]
+                    : ["tabBase"]
+                }
+              >
+                <svg
+                  className={classNames(projectcss.all, sty.svg__d7Zop)}
+                  role={"img"}
+                />
+              </Button>
+            </div>
+
+            <div className={classNames(projectcss.all, sty.column__e3CLm)}>
+              <Button
+                data-plasmic-name={"roleTab"}
+                data-plasmic-override={overrides.roleTab}
+                children2={
+                  <svg
+                    className={classNames(projectcss.all, sty.svg__ayhs)}
+                    role={"img"}
+                  />
+                }
+                className={classNames("__wab_instance", sty.roleTab, {
+                  [sty.roleTabsteps_third]: hasVariant(
+                    variants,
+                    "steps",
+                    "third"
+                  )
+                })}
+                slot={"Regole"}
+                tab={
+                  hasVariant(variants, "steps", "third")
+                    ? ["tabSelected"]
+                    : ["tabBase"]
+                }
+              >
+                <svg
+                  className={classNames(projectcss.all, sty.svg__an6Ha)}
+                  role={"img"}
+                />
+              </Button>
+            </div>
+          </p.Stack>
+        ) : null}
+        {(hasVariant(variants, "steps", "success") ? true : true) ? (
+          <p.Stack
+            as={"div"}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.freeBox__b9CoD, {
+              [sty.freeBoxsteps_first__b9CoDhRkB]: hasVariant(
+                variants,
+                "steps",
+                "first"
+              ),
+              [sty.freeBoxsteps_second__b9CoDaei8L]: hasVariant(
+                variants,
+                "steps",
+                "second"
+              ),
+              [sty.freeBoxsteps_success__b9CoDx7Wok]: hasVariant(
+                variants,
+                "steps",
+                "success"
+              ),
+              [sty.freeBoxsteps_third__b9CoDxWVw]: hasVariant(
+                variants,
+                "steps",
+                "third"
+              ),
+              [sty.freeBoxunnamedVariant__b9CoDvEGp]: hasVariant(
+                variants,
+                "unnamedVariant",
+                "unnamedVariant"
+              )
+            })}
+          >
+            {(
+              hasVariant(variants, "steps", "third")
+                ? true
+                : hasVariant(variants, "steps", "second")
+                ? true
+                : true
+            ) ? (
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__wmZPr,
+                  {
+                    [sty.textsteps_second__wmZPraei8L]: hasVariant(
+                      variants,
+                      "steps",
+                      "second"
+                    ),
+                    [sty.textsteps_third__wmZPrxWVw]: hasVariant(
+                      variants,
+                      "steps",
+                      "third"
+                    )
+                  }
+                )}
+              >
+                {"Nome Asta"}
+              </div>
+            ) : null}
+            {(
+              hasVariant(variants, "steps", "third")
+                ? true
+                : hasVariant(variants, "steps", "second")
+                ? true
+                : true
+            ) ? (
+              <input
+                data-plasmic-name={"astaname"}
+                data-plasmic-override={overrides.astaname}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.input,
+                  sty.astaname,
+                  {
+                    [sty.astanamesteps_second]: hasVariant(
+                      variants,
+                      "steps",
+                      "second"
+                    ),
+                    [sty.astanamesteps_third]: hasVariant(
+                      variants,
+                      "steps",
+                      "third"
+                    ),
+                    [sty.astanameunnamedVariant]: hasVariant(
+                      variants,
+                      "unnamedVariant",
+                      "unnamedVariant"
+                    )
+                  }
+                )}
+                name={"AstaName" as const}
+                placeholder={"Nome Asta" as const}
+                size={1 as const}
+                type={"text" as const}
+              />
+            ) : null}
+            {(
+              hasVariant(variants, "steps", "third")
+                ? true
+                : hasVariant(variants, "steps", "second")
+                ? true
+                : true
+            ) ? (
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__kgRcJ,
+                  {
+                    [sty.textsteps_second__kgRcJaei8L]: hasVariant(
+                      variants,
+                      "steps",
+                      "second"
+                    ),
+                    [sty.textsteps_third__kgRcJxWVw]: hasVariant(
+                      variants,
+                      "steps",
+                      "third"
+                    )
+                  }
+                )}
+              >
+                {"Numero Partecipanti"}
+              </div>
+            ) : null}
+            {(
+              hasVariant(variants, "steps", "third")
+                ? true
+                : hasVariant(variants, "steps", "second")
+                ? true
+                : true
+            ) ? (
+              <input
+                data-plasmic-name={"numberpartecipants"}
+                data-plasmic-override={overrides.numberpartecipants}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.input,
+                  sty.numberpartecipants,
+                  {
+                    [sty.numberpartecipantssteps_second]: hasVariant(
+                      variants,
+                      "steps",
+                      "second"
+                    ),
+                    [sty.numberpartecipantssteps_third]: hasVariant(
+                      variants,
+                      "steps",
+                      "third"
+                    )
+                  }
+                )}
+                placeholder={"Numero Partecipanti" as const}
+                size={1 as const}
+                type={"text" as const}
+              />
+            ) : null}
+            {(
+              hasVariant(variants, "steps", "third")
+                ? true
+                : hasVariant(variants, "steps", "second")
+                ? true
+                : true
+            ) ? (
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__ziATb,
+                  {
+                    [sty.textsteps_second__ziATbaei8L]: hasVariant(
+                      variants,
+                      "steps",
+                      "second"
+                    ),
+                    [sty.textsteps_third__ziATbxWVw]: hasVariant(
+                      variants,
+                      "steps",
+                      "third"
+                    )
+                  }
+                )}
+              >
+                {"Budget Inziale Asta "}
+              </div>
+            ) : null}
+            {(
+              hasVariant(variants, "unnamedVariant", "unnamedVariant")
+                ? true
+                : hasVariant(variants, "steps", "third")
+                ? true
+                : hasVariant(variants, "steps", "second")
+                ? true
+                : true
+            ) ? (
+              <input
+                data-plasmic-name={"budget"}
+                data-plasmic-override={overrides.budget}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.input,
+                  sty.budget,
+                  {
+                    [sty.budgetsteps_second]: hasVariant(
+                      variants,
+                      "steps",
+                      "second"
+                    ),
+                    [sty.budgetsteps_third]: hasVariant(
+                      variants,
+                      "steps",
+                      "third"
+                    ),
+                    [sty.budgetunnamedVariant]: hasVariant(
+                      variants,
+                      "unnamedVariant",
+                      "unnamedVariant"
+                    )
+                  }
+                )}
+                placeholder={"Numero Crediti" as const}
+                size={1 as const}
+                type={"text" as const}
+              />
+            ) : null}
+            {(
+              hasVariant(variants, "unnamedVariant", "unnamedVariant")
+                ? true
+                : hasVariant(variants, "steps", "third")
+                ? true
+                : hasVariant(variants, "steps", "first")
+                ? true
+                : true
+            ) ? (
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__nF2Bn,
+                  {
+                    [sty.textsteps_first__nF2BnHRkB]: hasVariant(
+                      variants,
+                      "steps",
+                      "first"
+                    ),
+                    [sty.textsteps_second__nF2Bnaei8L]: hasVariant(
+                      variants,
+                      "steps",
+                      "second"
+                    ),
+                    [sty.textsteps_third__nF2BnxWVw]: hasVariant(
+                      variants,
+                      "steps",
+                      "third"
+                    ),
+                    [sty.textunnamedVariant__nF2BnvEGp]: hasVariant(
+                      variants,
+                      "unnamedVariant",
+                      "unnamedVariant"
+                    )
+                  }
+                )}
+              >
+                {"Impostazioni Rose"}
+              </div>
+            ) : null}
+            {(
+              hasVariant(variants, "unnamedVariant", "unnamedVariant")
+                ? true
+                : hasVariant(variants, "steps", "third")
+                ? true
+                : hasVariant(variants, "steps", "first")
+                ? true
+                : true
+            ) ? (
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__nvD6,
+                  {
+                    [sty.textsteps_first__nvD6HRkB]: hasVariant(
+                      variants,
+                      "steps",
+                      "first"
+                    ),
+                    [sty.textsteps_second__nvD6Aei8L]: hasVariant(
+                      variants,
+                      "steps",
+                      "second"
+                    ),
+                    [sty.textsteps_third__nvD6XWVw]: hasVariant(
+                      variants,
+                      "steps",
+                      "third"
+                    ),
+                    [sty.textunnamedVariant__nvD6VEGp]: hasVariant(
+                      variants,
+                      "unnamedVariant",
+                      "unnamedVariant"
+                    )
+                  }
+                )}
+              >
+                {"Numero Totale Calciatori Rosa"}
+              </div>
+            ) : null}
+            {(
+              hasVariant(variants, "unnamedVariant", "unnamedVariant")
+                ? true
+                : hasVariant(variants, "steps", "third")
+                ? true
+                : hasVariant(variants, "steps", "first")
+                ? true
+                : true
+            ) ? (
+              <input
+                data-plasmic-name={"numberPlayers"}
+                data-plasmic-override={overrides.numberPlayers}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.input,
+                  sty.numberPlayers,
+                  {
+                    [sty.numberPlayerssteps_first]: hasVariant(
+                      variants,
+                      "steps",
+                      "first"
+                    ),
+                    [sty.numberPlayerssteps_second]: hasVariant(
+                      variants,
+                      "steps",
+                      "second"
+                    ),
+                    [sty.numberPlayerssteps_third]: hasVariant(
+                      variants,
+                      "steps",
+                      "third"
+                    ),
+                    [sty.numberPlayersunnamedVariant]: hasVariant(
+                      variants,
+                      "unnamedVariant",
+                      "unnamedVariant"
+                    )
+                  }
+                )}
+                placeholder={"Numero Giocatori" as const}
+                size={1 as const}
+                type={"text" as const}
+              />
+            ) : null}
+            {(
+              hasVariant(variants, "unnamedVariant", "unnamedVariant")
+                ? true
+                : hasVariant(variants, "steps", "third")
+                ? true
+                : true
+            ) ? (
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox___9VMdh, {
+                  [sty.freeBoxsteps_third___9VMdhxWVw]: hasVariant(
+                    variants,
+                    "steps",
+                    "third"
+                  ),
+                  [sty.freeBoxunnamedVariant___9VMdhvEGp]: hasVariant(
+                    variants,
+                    "unnamedVariant",
+                    "unnamedVariant"
+                  )
+                })}
+              >
+                <div className={classNames(projectcss.all, sty.columns__lqd23)}>
+                  <div
+                    className={classNames(projectcss.all, sty.column__ggmjq)}
+                  >
+                    {(hasVariant(variants, "steps", "first") ? true : true) ? (
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__bhxxl,
+                          {
+                            [sty.textsteps_first__bhxxlHRkB]: hasVariant(
+                              variants,
+                              "steps",
+                              "first"
+                            ),
+                            [sty.textsteps_second__bhxxlaei8L]: hasVariant(
+                              variants,
+                              "steps",
+                              "second"
+                            )
+                          }
+                        )}
+                      >
+                        {"Numero Attaccanti"}
+                      </div>
+                    ) : null}
+                  </div>
+
+                  <div
+                    className={classNames(projectcss.all, sty.column__bH6Eg)}
+                  >
+                    {(hasVariant(variants, "steps", "first") ? true : true) ? (
+                      <input
+                        data-plasmic-name={"numAttaccanti"}
+                        data-plasmic-override={overrides.numAttaccanti}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.input,
+                          sty.numAttaccanti,
+                          {
+                            [sty.numAttaccantisteps_first]: hasVariant(
+                              variants,
+                              "steps",
+                              "first"
+                            ),
+                            [sty.numAttaccantisteps_second]: hasVariant(
+                              variants,
+                              "steps",
+                              "second"
+                            )
+                          }
+                        )}
+                        placeholder={"Numero Giocatori" as const}
+                        size={1 as const}
+                        type={"text" as const}
+                      />
+                    ) : null}
+                  </div>
+                </div>
+
+                <div className={classNames(projectcss.all, sty.columns__o8456)}>
+                  <div
+                    className={classNames(projectcss.all, sty.column__ywH1G)}
+                  >
+                    {(hasVariant(variants, "steps", "first") ? true : true) ? (
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__sipmf,
+                          {
+                            [sty.textsteps_first__sipmfHRkB]: hasVariant(
+                              variants,
+                              "steps",
+                              "first"
+                            ),
+                            [sty.textsteps_second__sipmfaei8L]: hasVariant(
+                              variants,
+                              "steps",
+                              "second"
+                            )
+                          }
+                        )}
+                      >
+                        {"Numero Difensori"}
+                      </div>
+                    ) : null}
+                  </div>
+
+                  <div
+                    className={classNames(projectcss.all, sty.column__h5UmU)}
+                  >
+                    {(hasVariant(variants, "steps", "first") ? true : true) ? (
+                      <input
+                        data-plasmic-name={"numDifensori"}
+                        data-plasmic-override={overrides.numDifensori}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.input,
+                          sty.numDifensori,
+                          {
+                            [sty.numDifensoristeps_first]: hasVariant(
+                              variants,
+                              "steps",
+                              "first"
+                            ),
+                            [sty.numDifensoristeps_second]: hasVariant(
+                              variants,
+                              "steps",
+                              "second"
+                            )
+                          }
+                        )}
+                        placeholder={"Numero Giocatori" as const}
+                        size={1 as const}
+                        type={"text" as const}
+                      />
+                    ) : null}
+                  </div>
+                </div>
+
+                <div className={classNames(projectcss.all, sty.columns__eigeq)}>
+                  <div
+                    className={classNames(projectcss.all, sty.column__krJnk)}
+                  >
+                    {(hasVariant(variants, "steps", "first") ? true : true) ? (
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__uAhfO,
+                          {
+                            [sty.textsteps_first__uAhfOhRkB]: hasVariant(
+                              variants,
+                              "steps",
+                              "first"
+                            ),
+                            [sty.textsteps_second__uAhfOaei8L]: hasVariant(
+                              variants,
+                              "steps",
+                              "second"
+                            )
+                          }
+                        )}
+                      >
+                        {"Numero Portieri"}
+                      </div>
+                    ) : null}
+                  </div>
+
+                  <div
+                    className={classNames(projectcss.all, sty.column___9L0Pc)}
+                  >
+                    {(hasVariant(variants, "steps", "first") ? true : true) ? (
+                      <input
+                        data-plasmic-name={"numPortieri"}
+                        data-plasmic-override={overrides.numPortieri}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.input,
+                          sty.numPortieri,
+                          {
+                            [sty.numPortieristeps_first]: hasVariant(
+                              variants,
+                              "steps",
+                              "first"
+                            ),
+                            [sty.numPortieristeps_second]: hasVariant(
+                              variants,
+                              "steps",
+                              "second"
+                            )
+                          }
+                        )}
+                        placeholder={"Numero Giocatori" as const}
+                        size={1 as const}
+                        type={"text" as const}
+                      />
+                    ) : null}
+                  </div>
+                </div>
+
+                <div className={classNames(projectcss.all, sty.columns__pDja)}>
+                  <div
+                    className={classNames(projectcss.all, sty.column__e0Yke)}
+                  >
+                    {(hasVariant(variants, "steps", "first") ? true : true) ? (
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__vq7Oi,
+                          {
+                            [sty.textsteps_first__vq7OiHRkB]: hasVariant(
+                              variants,
+                              "steps",
+                              "first"
+                            ),
+                            [sty.textsteps_second__vq7Oiaei8L]: hasVariant(
+                              variants,
+                              "steps",
+                              "second"
+                            )
+                          }
+                        )}
+                      >
+                        {"Numero Centrocampisti"}
+                      </div>
+                    ) : null}
+                  </div>
+
+                  <div
+                    className={classNames(projectcss.all, sty.column__mpDb0)}
+                  >
+                    {(hasVariant(variants, "steps", "first") ? true : true) ? (
+                      <input
+                        data-plasmic-name={"numCentrocampisti"}
+                        data-plasmic-override={overrides.numCentrocampisti}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.input,
+                          sty.numCentrocampisti,
+                          {
+                            [sty.numCentrocampististeps_first]: hasVariant(
+                              variants,
+                              "steps",
+                              "first"
+                            ),
+                            [sty.numCentrocampististeps_second]: hasVariant(
+                              variants,
+                              "steps",
+                              "second"
+                            )
+                          }
+                        )}
+                        placeholder={"Numero Giocatori" as const}
+                        size={1 as const}
+                        type={"text" as const}
+                      />
+                    ) : null}
+                  </div>
+                </div>
+              </p.Stack>
+            ) : null}
+            {(
+              hasVariant(variants, "steps", "third")
+                ? true
+                : hasVariant(variants, "steps", "first")
+                ? true
+                : false
+            ) ? (
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__p2Skt,
+                  {
+                    [sty.textsteps_first__p2SkthRkB]: hasVariant(
+                      variants,
+                      "steps",
+                      "first"
+                    ),
+                    [sty.textsteps_second__p2SkTaei8L]: hasVariant(
+                      variants,
+                      "steps",
+                      "second"
+                    ),
+                    [sty.textsteps_third__p2SkTxWVw]: hasVariant(
+                      variants,
+                      "steps",
+                      "third"
+                    )
+                  }
+                )}
+              >
+                {hasVariant(variants, "steps", "third")
+                  ? "Regole Generali"
+                  : "Numero Totale Calciatori Rosa"}
+              </div>
+            ) : null}
+            {(
+              hasVariant(variants, "unnamedVariant", "unnamedVariant")
+                ? true
+                : hasVariant(variants, "steps", "third")
+                ? true
+                : hasVariant(variants, "steps", "second")
+                ? true
+                : hasVariant(variants, "steps", "first")
+                ? true
+                : true
+            ) ? (
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__bR18A, {
+                  [sty.freeBoxsteps_first__bR18AhRkB]: hasVariant(
+                    variants,
+                    "steps",
+                    "first"
+                  ),
+                  [sty.freeBoxsteps_second__bR18Aaei8L]: hasVariant(
+                    variants,
+                    "steps",
+                    "second"
+                  ),
+                  [sty.freeBoxsteps_third__bR18AxWVw]: hasVariant(
+                    variants,
+                    "steps",
+                    "third"
+                  ),
+                  [sty.freeBoxunnamedVariant__bR18AvEGp]: hasVariant(
+                    variants,
+                    "unnamedVariant",
+                    "unnamedVariant"
+                  )
+                })}
+              >
+                <div
+                  className={classNames(projectcss.all, sty.columns__vvs2H, {
+                    [sty.columnssteps_third__vvs2HxWVw]: hasVariant(
+                      variants,
+                      "steps",
+                      "third"
+                    )
+                  })}
+                >
+                  <div
+                    className={classNames(projectcss.all, sty.column__bksIu, {
+                      [sty.columnsteps_third__bksIUxWVw]: hasVariant(
+                        variants,
+                        "steps",
+                        "third"
+                      )
+                    })}
+                  >
+                    {(hasVariant(variants, "steps", "first") ? true : true) ? (
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__ur3Tr,
+                          {
+                            [sty.textsteps_first__ur3TrHRkB]: hasVariant(
+                              variants,
+                              "steps",
+                              "first"
+                            ),
+                            [sty.textsteps_second__ur3Traei8L]: hasVariant(
+                              variants,
+                              "steps",
+                              "second"
+                            ),
+                            [sty.textsteps_third__ur3TrxWVw]: hasVariant(
+                              variants,
+                              "steps",
+                              "third"
+                            )
+                          }
+                        )}
+                      >
+                        {"Contrattazione Fine Asta"}
+                      </div>
+                    ) : null}
+                  </div>
+
+                  <div
+                    className={classNames(projectcss.all, sty.column__f9YVo, {
+                      [sty.columnsteps_third__f9YVoxWVw]: hasVariant(
+                        variants,
+                        "steps",
+                        "third"
+                      )
+                    })}
+                  >
+                    <Checkbox
+                      data-plasmic-name={"checkboxContrattazione"}
+                      data-plasmic-override={overrides.checkboxContrattazione}
+                      className={classNames(
+                        "__wab_instance",
+                        sty.checkboxContrattazione,
+                        {
+                          [sty.checkboxContrattazionesteps_third]: hasVariant(
+                            variants,
+                            "steps",
+                            "third"
+                          )
+                        }
+                      )}
+                    >
+                      {"Abilita"}
+                    </Checkbox>
+                  </div>
+                </div>
+
+                <div
+                  className={classNames(projectcss.all, sty.columns__lqJK, {
+                    [sty.columnssteps_third__lqJKxWVw]: hasVariant(
+                      variants,
+                      "steps",
+                      "third"
+                    )
+                  })}
+                >
+                  <div
+                    className={classNames(projectcss.all, sty.column___63EUe)}
+                  >
+                    {(hasVariant(variants, "steps", "first") ? true : true) ? (
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text___73Sgw,
+                          {
+                            [sty.textsteps_first___73SgwHRkB]: hasVariant(
+                              variants,
+                              "steps",
+                              "first"
+                            ),
+                            [sty.textsteps_second___73Sgwaei8L]: hasVariant(
+                              variants,
+                              "steps",
+                              "second"
+                            )
+                          }
+                        )}
+                      >
+                        {"Svincola Giocatore al Termine dell'Asta"}
+                      </div>
+                    ) : null}
+                  </div>
+
+                  <div
+                    className={classNames(projectcss.all, sty.column__uG2Qs, {
+                      [sty.columnsteps_third__uG2QSxWVw]: hasVariant(
+                        variants,
+                        "steps",
+                        "third"
+                      )
+                    })}
+                  >
+                    <Checkbox
+                      data-plasmic-name={"checkboxSvincolo"}
+                      data-plasmic-override={overrides.checkboxSvincolo}
+                      className={classNames(
+                        "__wab_instance",
+                        sty.checkboxSvincolo,
+                        {
+                          [sty.checkboxSvincolosteps_third]: hasVariant(
+                            variants,
+                            "steps",
+                            "third"
+                          )
+                        }
+                      )}
+                    >
+                      {"Abilita"}
+                    </Checkbox>
+                  </div>
+                </div>
+
+                <div className={classNames(projectcss.all, sty.columns__eESg9)}>
+                  <div
+                    className={classNames(projectcss.all, sty.column__ffa38)}
+                  >
+                    {(hasVariant(variants, "steps", "first") ? true : true) ? (
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__aXnYb,
+                          {
+                            [sty.textsteps_first__aXnYbHRkB]: hasVariant(
+                              variants,
+                              "steps",
+                              "first"
+                            ),
+                            [sty.textsteps_second__aXnYbaei8L]: hasVariant(
+                              variants,
+                              "steps",
+                              "second"
+                            )
+                          }
+                        )}
+                      >
+                        {"I partecipanti possono andare in rosso"}
+                      </div>
+                    ) : null}
+                  </div>
+
+                  <div
+                    className={classNames(projectcss.all, sty.column__g2NBp)}
+                  >
+                    <Checkbox
+                      data-plasmic-name={"checkboxDebito"}
+                      data-plasmic-override={overrides.checkboxDebito}
+                      className={classNames(
+                        "__wab_instance",
+                        sty.checkboxDebito
+                      )}
+                    >
+                      {"Abilita"}
+                    </Checkbox>
+                  </div>
+                </div>
+              </p.Stack>
+            ) : null}
+          </p.Stack>
+        ) : null}
+        {(hasVariant(variants, "steps", "success") ? true : false) ? (
+          <p.Stack
+            as={"div"}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.freeBox___6GUqc, {
+              [sty.freeBoxsteps_success___6GUqcx7Wok]: hasVariant(
+                variants,
+                "steps",
+                "success"
+              )
+            })}
+          >
+            {(hasVariant(variants, "steps", "success") ? true : false) ? (
+              <div
+                data-plasmic-name={"successLottie"}
+                data-plasmic-override={overrides.successLottie}
+                className={classNames(projectcss.all, sty.successLottie, {
+                  [sty.successLottiesteps_success]: hasVariant(
+                    variants,
+                    "steps",
+                    "success"
+                  )
+                })}
+              />
+            ) : null}
+            {(hasVariant(variants, "steps", "success") ? true : false) ? (
+              <button
+                data-plasmic-name={"goHomeButton"}
+                data-plasmic-override={overrides.goHomeButton}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.button,
+                  projectcss.__wab_text,
+                  sty.goHomeButton,
+                  {
+                    [sty.goHomeButtonsteps_success]: hasVariant(
+                      variants,
+                      "steps",
+                      "success"
+                    )
+                  }
+                )}
+                type={
+                  hasVariant(variants, "steps", "success")
+                    ? ("button" as const)
+                    : undefined
+                }
+              >
+                {hasVariant(variants, "steps", "success")
+                  ? "Vai alla Home"
+                  : "Click Me"}
+              </button>
+            ) : null}
+          </p.Stack>
+        ) : null}
+        {(hasVariant(variants, "steps", "success") ? true : true) ? (
+          <p.Stack
+            as={"div"}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.freeBox___6WuGd, {
+              [sty.freeBoxsteps_first___6WuGdHRkB]: hasVariant(
+                variants,
+                "steps",
+                "first"
+              ),
+              [sty.freeBoxsteps_second___6WuGdaei8L]: hasVariant(
+                variants,
+                "steps",
+                "second"
+              ),
+              [sty.freeBoxsteps_success___6WuGdx7Wok]: hasVariant(
+                variants,
+                "steps",
+                "success"
+              ),
+              [sty.freeBoxsteps_third___6WuGdxWVw]: hasVariant(
+                variants,
+                "steps",
+                "third"
+              )
+            })}
+          >
+            {(hasVariant(variants, "steps", "third") ? true : true) ? (
+              <p.Stack
+                as={"button"}
+                data-plasmic-name={"submitButton"}
+                data-plasmic-override={overrides.submitButton}
+                hasGap={true}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.button,
+                  sty.submitButton,
+                  {
+                    [sty.submitButtonsteps_first]: hasVariant(
+                      variants,
+                      "steps",
+                      "first"
+                    ),
+                    [sty.submitButtonsteps_second]: hasVariant(
+                      variants,
+                      "steps",
+                      "second"
+                    ),
+                    [sty.submitButtonsteps_third]: hasVariant(
+                      variants,
+                      "steps",
+                      "third"
+                    )
+                  }
+                )}
+                form={"app-form" as const}
+                type={"submit" as const}
+              >
+                {(hasVariant(variants, "steps", "third") ? true : true) ? (
+                  <Icon13Icon
+                    className={classNames(projectcss.all, sty.svg__h5Akb, {
+                      [sty.svgsteps_third__h5AkbxWVw]: hasVariant(
+                        variants,
+                        "steps",
+                        "third"
+                      )
+                    })}
+                    role={"img"}
+                  />
+                ) : null}
+                {(hasVariant(variants, "steps", "third") ? true : false) ? (
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__pxo5,
+                      {
+                        [sty.textsteps_third__pxo5XWVw]: hasVariant(
+                          variants,
+                          "steps",
+                          "third"
+                        )
+                      }
+                    )}
+                  >
+                    {hasVariant(variants, "steps", "third")
+                      ? "Salva"
+                      : "Enter some text"}
+                  </div>
+                ) : null}
+              </p.Stack>
+            ) : null}
+            {(hasVariant(variants, "steps", "third") ? true : true) ? (
+              <p.Stack
+                as={"button"}
+                data-plasmic-name={"backwardButton"}
+                data-plasmic-override={overrides.backwardButton}
+                hasGap={true}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.button,
+                  sty.backwardButton,
+                  {
+                    [sty.backwardButtonsteps_first]: hasVariant(
+                      variants,
+                      "steps",
+                      "first"
+                    ),
+                    [sty.backwardButtonsteps_second]: hasVariant(
+                      variants,
+                      "steps",
+                      "second"
+                    ),
+                    [sty.backwardButtonsteps_third]: hasVariant(
+                      variants,
+                      "steps",
+                      "third"
+                    )
+                  }
+                )}
+                type={"button" as const}
+              >
+                {(hasVariant(variants, "steps", "third") ? true : true) ? (
+                  <Icon13Icon
+                    className={classNames(projectcss.all, sty.svg__uox7L, {
+                      [sty.svgsteps_second__uox7Laei8L]: hasVariant(
+                        variants,
+                        "steps",
+                        "second"
+                      ),
+                      [sty.svgsteps_third__uox7LxWVw]: hasVariant(
+                        variants,
+                        "steps",
+                        "third"
+                      )
+                    })}
+                    role={"img"}
+                  />
+                ) : null}
+                {(hasVariant(variants, "steps", "third") ? true : false) ? (
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__yaZ7O,
+                      {
+                        [sty.textsteps_third__yaZ7OxWVw]: hasVariant(
+                          variants,
+                          "steps",
+                          "third"
+                        )
+                      }
+                    )}
+                  >
+                    {hasVariant(variants, "steps", "third")
+                      ? "Salva"
+                      : "Enter some text"}
+                  </div>
+                ) : null}
+              </p.Stack>
+            ) : null}
+            {(hasVariant(variants, "steps", "third") ? true : true) ? (
+              <p.Stack
+                as={"button"}
+                data-plasmic-name={"forwardButton"}
+                data-plasmic-override={overrides.forwardButton}
+                hasGap={true}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.button,
+                  sty.forwardButton,
+                  {
+                    [sty.forwardButtonsteps_first]: hasVariant(
+                      variants,
+                      "steps",
+                      "first"
+                    ),
+                    [sty.forwardButtonsteps_second]: hasVariant(
+                      variants,
+                      "steps",
+                      "second"
+                    ),
+                    [sty.forwardButtonsteps_success]: hasVariant(
+                      variants,
+                      "steps",
+                      "success"
+                    ),
+                    [sty.forwardButtonsteps_third]: hasVariant(
+                      variants,
+                      "steps",
+                      "third"
+                    )
+                  }
+                )}
+                type={"button" as const}
+              >
+                <Icon3Icon
+                  className={classNames(projectcss.all, sty.svg__ohXGy, {
+                    [sty.svgsteps_first__ohXGyHRkB]: hasVariant(
+                      variants,
+                      "steps",
+                      "first"
+                    ),
+                    [sty.svgsteps_second__ohXGyaei8L]: hasVariant(
+                      variants,
+                      "steps",
+                      "second"
+                    )
+                  })}
+                  role={"img"}
+                />
+              </p.Stack>
+            ) : null}
+          </p.Stack>
+        ) : null}
       </p.Stack>
     </div>
   ) as React.ReactElement | null;
@@ -215,38 +1455,73 @@ function PlasmicAstaForm__RenderFunc(props: {
 const PlasmicDescendants = {
   root: [
     "root",
-    "freeBox",
-    "settingOne",
-    "settingTwo",
-    "settingInput",
-    "textarea",
-    "button"
+    "tabHeader",
+    "infoTab",
+    "roseTab",
+    "roleTab",
+    "astaname",
+    "numberpartecipants",
+    "budget",
+    "numberPlayers",
+    "numAttaccanti",
+    "numDifensori",
+    "numPortieri",
+    "numCentrocampisti",
+    "checkboxContrattazione",
+    "checkboxSvincolo",
+    "checkboxDebito",
+    "successLottie",
+    "goHomeButton",
+    "submitButton",
+    "backwardButton",
+    "forwardButton"
   ],
-  freeBox: [
-    "freeBox",
-    "settingOne",
-    "settingTwo",
-    "settingInput",
-    "textarea",
-    "button"
-  ],
-  settingOne: ["settingOne"],
-  settingTwo: ["settingTwo"],
-  settingInput: ["settingInput"],
-  textarea: ["textarea"],
-  button: ["button"]
+  tabHeader: ["tabHeader", "infoTab", "roseTab", "roleTab"],
+  infoTab: ["infoTab"],
+  roseTab: ["roseTab"],
+  roleTab: ["roleTab"],
+  astaname: ["astaname"],
+  numberpartecipants: ["numberpartecipants"],
+  budget: ["budget"],
+  numberPlayers: ["numberPlayers"],
+  numAttaccanti: ["numAttaccanti"],
+  numDifensori: ["numDifensori"],
+  numPortieri: ["numPortieri"],
+  numCentrocampisti: ["numCentrocampisti"],
+  checkboxContrattazione: ["checkboxContrattazione"],
+  checkboxSvincolo: ["checkboxSvincolo"],
+  checkboxDebito: ["checkboxDebito"],
+  successLottie: ["successLottie"],
+  goHomeButton: ["goHomeButton"],
+  submitButton: ["submitButton"],
+  backwardButton: ["backwardButton"],
+  forwardButton: ["forwardButton"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  freeBox: "div";
-  settingOne: "div";
-  settingTwo: "div";
-  settingInput: typeof SettingInput;
-  textarea: "textarea";
-  button: typeof Button;
+  tabHeader: "div";
+  infoTab: typeof Button;
+  roseTab: typeof Button;
+  roleTab: typeof Button;
+  astaname: "input";
+  numberpartecipants: "input";
+  budget: "input";
+  numberPlayers: "input";
+  numAttaccanti: "input";
+  numDifensori: "input";
+  numPortieri: "input";
+  numCentrocampisti: "input";
+  checkboxContrattazione: typeof Checkbox;
+  checkboxSvincolo: typeof Checkbox;
+  checkboxDebito: typeof Checkbox;
+  successLottie: "div";
+  goHomeButton: "button";
+  submitButton: "button";
+  backwardButton: "button";
+  forwardButton: "button";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -260,7 +1535,6 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicAstaForm__VariantsArgs;
     args?: PlasmicAstaForm__ArgsType;
     overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicAstaForm__Fetches;
   } & Omit<PlasmicAstaForm__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     // Specify args directly as props
     Omit<PlasmicAstaForm__ArgsType, ReservedPropsType> &
@@ -287,13 +1561,10 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       internalVariantPropNames: PlasmicAstaForm__VariantProps
     });
 
-    const { dataFetches } = props;
-
     return PlasmicAstaForm__RenderFunc({
       variants,
       args,
       overrides,
-      dataFetches,
       forNode: nodeName
     });
   };
@@ -310,12 +1581,26 @@ export const PlasmicAstaForm = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    freeBox: makeNodeComponent("freeBox"),
-    settingOne: makeNodeComponent("settingOne"),
-    settingTwo: makeNodeComponent("settingTwo"),
-    settingInput: makeNodeComponent("settingInput"),
-    textarea: makeNodeComponent("textarea"),
-    button: makeNodeComponent("button"),
+    tabHeader: makeNodeComponent("tabHeader"),
+    infoTab: makeNodeComponent("infoTab"),
+    roseTab: makeNodeComponent("roseTab"),
+    roleTab: makeNodeComponent("roleTab"),
+    astaname: makeNodeComponent("astaname"),
+    numberpartecipants: makeNodeComponent("numberpartecipants"),
+    budget: makeNodeComponent("budget"),
+    numberPlayers: makeNodeComponent("numberPlayers"),
+    numAttaccanti: makeNodeComponent("numAttaccanti"),
+    numDifensori: makeNodeComponent("numDifensori"),
+    numPortieri: makeNodeComponent("numPortieri"),
+    numCentrocampisti: makeNodeComponent("numCentrocampisti"),
+    checkboxContrattazione: makeNodeComponent("checkboxContrattazione"),
+    checkboxSvincolo: makeNodeComponent("checkboxSvincolo"),
+    checkboxDebito: makeNodeComponent("checkboxDebito"),
+    successLottie: makeNodeComponent("successLottie"),
+    goHomeButton: makeNodeComponent("goHomeButton"),
+    submitButton: makeNodeComponent("submitButton"),
+    backwardButton: makeNodeComponent("backwardButton"),
+    forwardButton: makeNodeComponent("forwardButton"),
 
     // Metadata about props expected for PlasmicAstaForm
     internalVariantProps: PlasmicAstaForm__VariantProps,

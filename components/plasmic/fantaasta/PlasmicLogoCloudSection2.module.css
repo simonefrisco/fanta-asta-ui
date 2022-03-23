@@ -6,12 +6,12 @@
   padding: 128px;
 }
 .freeBox {
+  flex-direction: row;
   display: flex;
   position: relative;
   left: auto;
   top: auto;
   max-width: 1920px;
-  flex-direction: row;
 }
 .freeBox > :global(.__wab_flex-container) {
   flex-direction: row;

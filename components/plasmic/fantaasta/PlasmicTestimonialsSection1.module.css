@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  background: #f2f2f7;
+  background: var(--token-Vfp7jZr9FOgh);
   padding: 64px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -12,14 +12,14 @@
   }
 }
 .freeBox {
+  flex-direction: row;
   display: flex;
   position: relative;
-  flex-direction: row;
 }
 .freeBox > :global(.__wab_flex-container) {
   flex-direction: row;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   margin-left: calc(0px - 32px);
   width: calc(100% + 32px);
   margin-top: calc(0px - 32px);

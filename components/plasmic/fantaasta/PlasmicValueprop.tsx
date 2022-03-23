@@ -16,6 +16,7 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 
 import {
   hasVariant,
@@ -35,9 +36,9 @@ import {
 } from "@plasmicapp/react-web";
 
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
-import * as projectcss from "./plasmic_fantaasta.module.css"; // plasmic-import: xdSnfxWCziyzb8tBiGitqa/projectcss
-import * as sty from "./PlasmicValueprop.module.css"; // plasmic-import: XC-0mAT2Chwv/css
+
+import projectcss from "./plasmic_fantaasta.module.css"; // plasmic-import: xdSnfxWCziyzb8tBiGitqa/projectcss
+import sty from "./PlasmicValueprop.module.css"; // plasmic-import: XC-0mAT2Chwv/css
 
 import Icon8Icon from "./icons/PlasmicIcon__Icon8"; // plasmic-import: ww9gPs7WhSQI/icon
 
@@ -110,10 +111,10 @@ function PlasmicValueprop__RenderFunc(props: {
   variants: PlasmicValueprop__VariantsArgs;
   args: PlasmicValueprop__ArgsType;
   overrides: PlasmicValueprop__OverridesType;
-  dataFetches?: PlasmicValueprop__Fetches;
+
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode, dataFetches } = props;
+  const { variants, args, overrides, forNode } = props;
 
   return (
     <p.Stack
@@ -123,39 +124,47 @@ function PlasmicValueprop__RenderFunc(props: {
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       hasGap={true}
-      className={classNames(defaultcss.all, projectcss.root_reset, sty.root, {
-        [sty.root__card]: hasVariant(variants, "card", "card"),
-        [sty.root__card_vertical]:
-          hasVariant(variants, "card", "card") &&
-          hasVariant(variants, "vertical", "vertical"),
-        [sty.root__flatIcon]: hasVariant(variants, "flatIcon", "flatIcon"),
-        [sty.root__flat]: hasVariant(variants, "flat", "flat"),
-        [sty.root__justDescription]: hasVariant(
-          variants,
-          "justDescription",
-          "justDescription"
-        ),
-        [sty.root__vertical]: hasVariant(variants, "vertical", "vertical")
-      })}
-    >
-      <div
-        className={classNames(defaultcss.all, sty.freeBox___3MwG6, {
-          [sty.freeBox__card___3MwG6MAxe]: hasVariant(variants, "card", "card"),
-          [sty.freeBox__card_vertical___3MwG6MAxeOJfCu]:
+      className={classNames(
+        projectcss.all,
+        projectcss.root_reset,
+        projectcss.plasmic_default_styles,
+        projectcss.plasmic_mixins,
+        projectcss.plasmic_tokens,
+        sty.root,
+        {
+          [sty.rootcard]: hasVariant(variants, "card", "card"),
+          [sty.rootcard_vertical]:
             hasVariant(variants, "card", "card") &&
             hasVariant(variants, "vertical", "vertical"),
-          [sty.freeBox__color_lightQuarternary___3MwG6WfpAj]: hasVariant(
+          [sty.rootflatIcon]: hasVariant(variants, "flatIcon", "flatIcon"),
+          [sty.rootflat]: hasVariant(variants, "flat", "flat"),
+          [sty.rootjustDescription]: hasVariant(
+            variants,
+            "justDescription",
+            "justDescription"
+          ),
+          [sty.rootvertical]: hasVariant(variants, "vertical", "vertical")
+        }
+      )}
+    >
+      <div
+        className={classNames(projectcss.all, sty.freeBox___3MwG6, {
+          [sty.freeBoxcard___3MwG6MAxe]: hasVariant(variants, "card", "card"),
+          [sty.freeBoxcard_vertical___3MwG6MAxeOJfCu]:
+            hasVariant(variants, "card", "card") &&
+            hasVariant(variants, "vertical", "vertical"),
+          [sty.freeBoxcolor_lightQuarternary___3MwG6WfpAj]: hasVariant(
             variants,
             "color",
             "lightQuarternary"
           ),
-          [sty.freeBox__flatIcon___3MwG6SqVCg]: hasVariant(
+          [sty.freeBoxflatIcon___3MwG6SqVCg]: hasVariant(
             variants,
             "flatIcon",
             "flatIcon"
           ),
-          [sty.freeBox__flat___3MwG63J4I]: hasVariant(variants, "flat", "flat"),
-          [sty.freeBox__vertical___3MwG6OJfCu]: hasVariant(
+          [sty.freeBoxflat___3MwG63J4I]: hasVariant(variants, "flat", "flat"),
+          [sty.freeBoxvertical___3MwG6OJfCu]: hasVariant(
             variants,
             "vertical",
             "vertical"
@@ -164,9 +173,15 @@ function PlasmicValueprop__RenderFunc(props: {
       >
         {p.renderPlasmicSlot({
           defaultContents: (
-            <img
+            <p.PlasmicImg
               alt={""}
-              className={classNames(defaultcss.img, sty.img__ny1SY)}
+              className={classNames(sty.img__ny1SY)}
+              displayHeight={"56px" as const}
+              displayMaxHeight={"none" as const}
+              displayMaxWidth={"none" as const}
+              displayMinHeight={"0" as const}
+              displayMinWidth={"0" as const}
+              displayWidth={"56px" as const}
               src={
                 "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/twitter/281/red-apple_1f34e.png" as const
               }
@@ -179,31 +194,23 @@ function PlasmicValueprop__RenderFunc(props: {
 
       {false ? (
         <div
-          className={classNames(defaultcss.all, sty.freeBox__ypx76, {
-            [sty.freeBox__card__ypx76MAxe]: hasVariant(
-              variants,
-              "card",
-              "card"
-            ),
-            [sty.freeBox__card_vertical__ypx76MAxeOJfCu]:
+          className={classNames(projectcss.all, sty.freeBox__ypx76, {
+            [sty.freeBoxcard__ypx76MAxe]: hasVariant(variants, "card", "card"),
+            [sty.freeBoxcard_vertical__ypx76MAxeOJfCu]:
               hasVariant(variants, "card", "card") &&
               hasVariant(variants, "vertical", "vertical"),
-            [sty.freeBox__color_lightQuarternary__ypx76WfpAj]: hasVariant(
+            [sty.freeBoxcolor_lightQuarternary__ypx76WfpAj]: hasVariant(
               variants,
               "color",
               "lightQuarternary"
             ),
-            [sty.freeBox__flatIcon__ypx76SqVCg]: hasVariant(
+            [sty.freeBoxflatIcon__ypx76SqVCg]: hasVariant(
               variants,
               "flatIcon",
               "flatIcon"
             ),
-            [sty.freeBox__flat__ypx763J4I]: hasVariant(
-              variants,
-              "flat",
-              "flat"
-            ),
-            [sty.freeBox__vertical__ypx76OJfCu]: hasVariant(
+            [sty.freeBoxflat__ypx763J4I]: hasVariant(variants, "flat", "flat"),
+            [sty.freeBoxvertical__ypx76OJfCu]: hasVariant(
               variants,
               "vertical",
               "vertical"
@@ -213,7 +220,7 @@ function PlasmicValueprop__RenderFunc(props: {
           {p.renderPlasmicSlot({
             defaultContents: (
               <Icon8Icon
-                className={classNames(defaultcss.all, sty.svg___4Rrn4)}
+                className={classNames(projectcss.all, sty.svg___4Rrn4)}
                 role={"img"}
               />
             ),
@@ -226,9 +233,9 @@ function PlasmicValueprop__RenderFunc(props: {
       <p.Stack
         as={"div"}
         hasGap={true}
-        className={classNames(defaultcss.all, sty.freeBox__xYdJ, {
-          [sty.freeBox__flat__xYdJ3J4I]: hasVariant(variants, "flat", "flat"),
-          [sty.freeBox__justDescription__xYdJRCeSb]: hasVariant(
+        className={classNames(projectcss.all, sty.freeBox__xYdJ, {
+          [sty.freeBoxflat__xYdJ3J4I]: hasVariant(variants, "flat", "flat"),
+          [sty.freeBoxjustDescription__xYdJRCeSb]: hasVariant(
             variants,
             "justDescription",
             "justDescription"
@@ -244,12 +251,12 @@ function PlasmicValueprop__RenderFunc(props: {
               defaultContents: "Label",
               value: args.children,
               className: classNames(sty.slotTargetChildren, {
-                [sty.slotTargetChildren__dark]: hasVariant(
+                [sty.slotTargetChildrendark]: hasVariant(
                   variants,
                   "dark",
                   "dark"
                 ),
-                [sty.slotTargetChildren__justDescription]: hasVariant(
+                [sty.slotTargetChildrenjustDescription]: hasVariant(
                   variants,
                   "justDescription",
                   "justDescription"
@@ -262,9 +269,9 @@ function PlasmicValueprop__RenderFunc(props: {
             "Porttitor feugiat a scelerisque nullam parturient vestibulum tempor a litora suscipit arcu potenti varius venenatis venenatis dapibus fames adipiscing in in taciti.",
           value: args.slot,
           className: classNames(sty.slotTargetSlot, {
-            [sty.slotTargetSlot__card]: hasVariant(variants, "card", "card"),
-            [sty.slotTargetSlot__dark]: hasVariant(variants, "dark", "dark"),
-            [sty.slotTargetSlot__justDescription]: hasVariant(
+            [sty.slotTargetSlotcard]: hasVariant(variants, "card", "card"),
+            [sty.slotTargetSlotdark]: hasVariant(variants, "dark", "dark"),
+            [sty.slotTargetSlotjustDescription]: hasVariant(
               variants,
               "justDescription",
               "justDescription"
@@ -297,7 +304,6 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicValueprop__VariantsArgs;
     args?: PlasmicValueprop__ArgsType;
     overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicValueprop__Fetches;
   } & Omit<PlasmicValueprop__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     // Specify args directly as props
     Omit<PlasmicValueprop__ArgsType, ReservedPropsType> &
@@ -324,13 +330,10 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       internalVariantPropNames: PlasmicValueprop__VariantProps
     });
 
-    const { dataFetches } = props;
-
     return PlasmicValueprop__RenderFunc({
       variants,
       args,
       overrides,
-      dataFetches,
       forNode: nodeName
     });
   };

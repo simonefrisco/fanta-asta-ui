@@ -16,6 +16,7 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 
 import {
   hasVariant,
@@ -35,9 +36,9 @@ import {
 } from "@plasmicapp/react-web";
 
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
-import * as projectcss from "./plasmic_fantaasta.module.css"; // plasmic-import: xdSnfxWCziyzb8tBiGitqa/projectcss
-import * as sty from "./PlasmicLogoCloudSection2.module.css"; // plasmic-import: MdG23ORLiPQo/css
+
+import projectcss from "./plasmic_fantaasta.module.css"; // plasmic-import: xdSnfxWCziyzb8tBiGitqa/projectcss
+import sty from "./PlasmicLogoCloudSection2.module.css"; // plasmic-import: MdG23ORLiPQo/css
 
 export type PlasmicLogoCloudSection2__VariantMembers = {};
 
@@ -69,10 +70,10 @@ function PlasmicLogoCloudSection2__RenderFunc(props: {
   variants: PlasmicLogoCloudSection2__VariantsArgs;
   args: PlasmicLogoCloudSection2__ArgsType;
   overrides: PlasmicLogoCloudSection2__OverridesType;
-  dataFetches?: PlasmicLogoCloudSection2__Fetches;
+
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode, dataFetches } = props;
+  const { variants, args, overrides, forNode } = props;
 
   return (
     <div
@@ -80,46 +81,108 @@ function PlasmicLogoCloudSection2__RenderFunc(props: {
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
-      className={classNames(defaultcss.all, projectcss.root_reset, sty.root)}
+      className={classNames(
+        projectcss.all,
+        projectcss.root_reset,
+        projectcss.plasmic_default_styles,
+        projectcss.plasmic_mixins,
+        projectcss.plasmic_tokens,
+        sty.root
+      )}
     >
       <p.Stack
         as={"div"}
         data-plasmic-name={"freeBox"}
         data-plasmic-override={overrides.freeBox}
         hasGap={true}
-        className={classNames(defaultcss.all, sty.freeBox)}
+        className={classNames(projectcss.all, sty.freeBox)}
       >
         {p.renderPlasmicSlot({
           defaultContents: (
             <React.Fragment>
-              <img
+              <p.PlasmicImg
                 alt={""}
-                className={classNames(defaultcss.img, sty.img__kxutu)}
-                src={"/plasmic/fantaasta/images/loomsvg2.svg"}
+                className={classNames(sty.img__kxutu)}
+                displayHeight={"48px" as const}
+                displayMaxHeight={"none" as const}
+                displayMaxWidth={"none" as const}
+                displayMinHeight={"0" as const}
+                displayMinWidth={"0" as const}
+                displayWidth={"auto" as const}
+                src={{
+                  src: "/plasmic/fantaasta/images/loomsvg2.svg",
+                  fullWidth: 300,
+                  fullHeight: 91,
+                  aspectRatio: 3.303226
+                }}
               />
 
-              <img
+              <p.PlasmicImg
                 alt={""}
-                className={classNames(defaultcss.img, sty.img__azSAa)}
-                src={"/plasmic/fantaasta/images/strapisvg2.svg"}
+                className={classNames(sty.img__azSAa)}
+                displayHeight={"48px" as const}
+                displayMaxHeight={"none" as const}
+                displayMaxWidth={"none" as const}
+                displayMinHeight={"0" as const}
+                displayMinWidth={"0" as const}
+                displayWidth={"auto" as const}
+                src={{
+                  src: "/plasmic/fantaasta/images/strapisvg2.svg",
+                  fullWidth: 300,
+                  fullHeight: 78,
+                  aspectRatio: 3.849624
+                }}
               />
 
-              <img
+              <p.PlasmicImg
                 alt={""}
-                className={classNames(defaultcss.img, sty.img__xjclD)}
-                src={"/plasmic/fantaasta/images/segmentsvg2.svg"}
+                className={classNames(sty.img__xjclD)}
+                displayHeight={"48px" as const}
+                displayMaxHeight={"none" as const}
+                displayMaxWidth={"none" as const}
+                displayMinHeight={"0" as const}
+                displayMinWidth={"0" as const}
+                displayWidth={"auto" as const}
+                src={{
+                  src: "/plasmic/fantaasta/images/segmentsvg2.svg",
+                  fullWidth: 300,
+                  fullHeight: 62,
+                  aspectRatio: 4.87619
+                }}
               />
 
-              <img
+              <p.PlasmicImg
                 alt={""}
-                className={classNames(defaultcss.img, sty.img___28UTr)}
-                src={"/plasmic/fantaasta/images/xstate1Svg.svg"}
+                className={classNames(sty.img___28UTr)}
+                displayHeight={"48px" as const}
+                displayMaxHeight={"none" as const}
+                displayMaxWidth={"none" as const}
+                displayMinHeight={"0" as const}
+                displayMinWidth={"0" as const}
+                displayWidth={"auto" as const}
+                src={{
+                  src: "/plasmic/fantaasta/images/xstate1Svg.svg",
+                  fullWidth: 300,
+                  fullHeight: 94,
+                  aspectRatio: 3.2
+                }}
               />
 
-              <img
+              <p.PlasmicImg
                 alt={""}
-                className={classNames(defaultcss.img, sty.img___8QAww)}
-                src={"/plasmic/fantaasta/images/mapboxsvg2.svg"}
+                className={classNames(sty.img___8QAww)}
+                displayHeight={"48px" as const}
+                displayMaxHeight={"none" as const}
+                displayMaxWidth={"none" as const}
+                displayMinHeight={"0" as const}
+                displayMinWidth={"0" as const}
+                displayWidth={"auto" as const}
+                src={{
+                  src: "/plasmic/fantaasta/images/mapboxsvg2.svg",
+                  fullWidth: 300,
+                  fullHeight: 67,
+                  aspectRatio: 4.491228
+                }}
               />
             </React.Fragment>
           ),
@@ -153,7 +216,6 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicLogoCloudSection2__VariantsArgs;
     args?: PlasmicLogoCloudSection2__ArgsType;
     overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicLogoCloudSection2__Fetches;
   } & Omit<PlasmicLogoCloudSection2__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     // Specify args directly as props
     Omit<PlasmicLogoCloudSection2__ArgsType, ReservedPropsType> &
@@ -180,13 +242,10 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       internalVariantPropNames: PlasmicLogoCloudSection2__VariantProps
     });
 
-    const { dataFetches } = props;
-
     return PlasmicLogoCloudSection2__RenderFunc({
       variants,
       args,
       overrides,
-      dataFetches,
       forNode: nodeName
     });
   };

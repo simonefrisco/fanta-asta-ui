@@ -16,6 +16,7 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 
 import {
   hasVariant,
@@ -36,11 +37,9 @@ import {
 import Button from "../../Button"; // plasmic-import: ILa2cLxyoTg0/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
-import * as projectcss from "./plasmic_fantaasta.module.css"; // plasmic-import: xdSnfxWCziyzb8tBiGitqa/projectcss
-import * as sty from "./PlasmicBanner.module.css"; // plasmic-import: bPsGEjQSDQD0/css
 
-import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: Gng1eaWxMrAo/icon
+import projectcss from "./plasmic_fantaasta.module.css"; // plasmic-import: xdSnfxWCziyzb8tBiGitqa/projectcss
+import sty from "./PlasmicBanner.module.css"; // plasmic-import: bPsGEjQSDQD0/css
 
 export type PlasmicBanner__VariantMembers = {};
 
@@ -76,10 +75,10 @@ function PlasmicBanner__RenderFunc(props: {
   variants: PlasmicBanner__VariantsArgs;
   args: PlasmicBanner__ArgsType;
   overrides: PlasmicBanner__OverridesType;
-  dataFetches?: PlasmicBanner__Fetches;
+
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode, dataFetches } = props;
+  const { variants, args, overrides, forNode } = props;
 
   return (
     <div
@@ -87,18 +86,31 @@ function PlasmicBanner__RenderFunc(props: {
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
-      className={classNames(defaultcss.all, projectcss.root_reset, sty.root)}
+      className={classNames(
+        projectcss.all,
+        projectcss.root_reset,
+        projectcss.plasmic_default_styles,
+        projectcss.plasmic_mixins,
+        projectcss.plasmic_tokens,
+        sty.root
+      )}
     >
       <div
         data-plasmic-name={"right"}
         data-plasmic-override={overrides.right}
-        className={classNames(defaultcss.all, sty.right)}
+        className={classNames(projectcss.all, sty.right)}
       >
         {p.renderPlasmicSlot({
           defaultContents: (
-            <img
+            <p.PlasmicImg
               alt={""}
-              className={classNames(defaultcss.img, sty.img___1Azr4)}
+              className={classNames(sty.img___1Azr4)}
+              displayHeight={"100%" as const}
+              displayMaxHeight={"none" as const}
+              displayMaxWidth={"none" as const}
+              displayMinHeight={"0" as const}
+              displayMinWidth={"0" as const}
+              displayWidth={"100%" as const}
               src={
                 "https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2851&q=80" as const
               }
@@ -111,7 +123,7 @@ function PlasmicBanner__RenderFunc(props: {
         <div
           data-plasmic-name={"freeBox"}
           data-plasmic-override={overrides.freeBox}
-          className={classNames(defaultcss.all, sty.freeBox)}
+          className={classNames(projectcss.all, sty.freeBox)}
         />
       </div>
 
@@ -120,15 +132,15 @@ function PlasmicBanner__RenderFunc(props: {
         data-plasmic-name={"left"}
         data-plasmic-override={overrides.left}
         hasGap={true}
-        className={classNames(defaultcss.all, sty.left)}
+        className={classNames(projectcss.all, sty.left)}
       >
         {p.renderPlasmicSlot({
           defaultContents: (
             <React.Fragment>
               <div
                 className={classNames(
-                  defaultcss.all,
-                  defaultcss.__wab_text,
+                  projectcss.all,
+                  projectcss.__wab_text,
                   sty.text__gRPje
                 )}
               >
@@ -137,8 +149,8 @@ function PlasmicBanner__RenderFunc(props: {
 
               <div
                 className={classNames(
-                  defaultcss.all,
-                  defaultcss.__wab_text,
+                  projectcss.all,
+                  projectcss.__wab_text,
                   sty.text__za38D
                 )}
               >
@@ -146,18 +158,29 @@ function PlasmicBanner__RenderFunc(props: {
               </div>
 
               <Button
+                children2={
+                  <svg
+                    className={classNames(projectcss.all, sty.svg___6OpVh)}
+                    role={"img"}
+                  />
+                }
                 slot={
                   <div
                     className={classNames(
-                      defaultcss.all,
-                      defaultcss.__wab_text,
+                      projectcss.all,
+                      projectcss.__wab_text,
                       sty.text___2GoIm
                     )}
                   >
                     {"Go to collection ->"}
                   </div>
                 }
-              />
+              >
+                <svg
+                  className={classNames(projectcss.all, sty.svg__hfD3A)}
+                  role={"img"}
+                />
+              </Button>
             </React.Fragment>
           ),
           value: args.left
@@ -194,7 +217,6 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicBanner__VariantsArgs;
     args?: PlasmicBanner__ArgsType;
     overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicBanner__Fetches;
   } & Omit<PlasmicBanner__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     // Specify args directly as props
     Omit<PlasmicBanner__ArgsType, ReservedPropsType> &
@@ -221,13 +243,10 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       internalVariantPropNames: PlasmicBanner__VariantProps
     });
 
-    const { dataFetches } = props;
-
     return PlasmicBanner__RenderFunc({
       variants,
       args,
       overrides,
-      dataFetches,
       forNode: nodeName
     });
   };

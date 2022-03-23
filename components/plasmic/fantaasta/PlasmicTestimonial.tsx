@@ -16,6 +16,7 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 
 import {
   hasVariant,
@@ -35,9 +36,9 @@ import {
 } from "@plasmicapp/react-web";
 
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
-import * as projectcss from "./plasmic_fantaasta.module.css"; // plasmic-import: xdSnfxWCziyzb8tBiGitqa/projectcss
-import * as sty from "./PlasmicTestimonial.module.css"; // plasmic-import: wTuiZggGXl-D/css
+
+import projectcss from "./plasmic_fantaasta.module.css"; // plasmic-import: xdSnfxWCziyzb8tBiGitqa/projectcss
+import sty from "./PlasmicTestimonial.module.css"; // plasmic-import: wTuiZggGXl-D/css
 
 export type PlasmicTestimonial__VariantMembers = {};
 
@@ -76,10 +77,10 @@ function PlasmicTestimonial__RenderFunc(props: {
   variants: PlasmicTestimonial__VariantsArgs;
   args: PlasmicTestimonial__ArgsType;
   overrides: PlasmicTestimonial__OverridesType;
-  dataFetches?: PlasmicTestimonial__Fetches;
+
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode, dataFetches } = props;
+  const { variants, args, overrides, forNode } = props;
 
   return (
     <p.Stack
@@ -89,12 +90,19 @@ function PlasmicTestimonial__RenderFunc(props: {
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       hasGap={true}
-      className={classNames(defaultcss.all, projectcss.root_reset, sty.root)}
+      className={classNames(
+        projectcss.all,
+        projectcss.root_reset,
+        projectcss.plasmic_default_styles,
+        projectcss.plasmic_mixins,
+        projectcss.plasmic_tokens,
+        sty.root
+      )}
     >
       <p.Stack
         as={"div"}
         hasGap={true}
-        className={classNames(defaultcss.all, sty.freeBox__rpAfS)}
+        className={classNames(projectcss.all, sty.freeBox__rpAfS)}
       >
         {p.renderPlasmicSlot({
           defaultContents:
@@ -107,13 +115,19 @@ function PlasmicTestimonial__RenderFunc(props: {
       <p.Stack
         as={"div"}
         hasGap={true}
-        className={classNames(defaultcss.all, sty.freeBox__tEwun)}
+        className={classNames(projectcss.all, sty.freeBox__tEwun)}
       >
         {p.renderPlasmicSlot({
           defaultContents: (
-            <img
+            <p.PlasmicImg
               alt={""}
-              className={classNames(defaultcss.img, sty.img__bRnvX)}
+              className={classNames(sty.img__bRnvX)}
+              displayHeight={"64px" as const}
+              displayMaxHeight={"none" as const}
+              displayMaxWidth={"none" as const}
+              displayMinHeight={"0" as const}
+              displayMinWidth={"0" as const}
+              displayWidth={"64px" as const}
             />
           ),
 
@@ -123,9 +137,9 @@ function PlasmicTestimonial__RenderFunc(props: {
         <p.Stack
           as={"div"}
           hasGap={true}
-          className={classNames(defaultcss.all, sty.freeBox__xJznq)}
+          className={classNames(projectcss.all, sty.freeBox__xJznq)}
         >
-          <div className={classNames(defaultcss.all, sty.freeBox__w83Sd)}>
+          <div className={classNames(projectcss.all, sty.freeBox__w83Sd)}>
             {p.renderPlasmicSlot({
               defaultContents: "Tracy Jordan",
               value: args.slot2,
@@ -165,7 +179,6 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicTestimonial__VariantsArgs;
     args?: PlasmicTestimonial__ArgsType;
     overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicTestimonial__Fetches;
   } & Omit<PlasmicTestimonial__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     // Specify args directly as props
     Omit<PlasmicTestimonial__ArgsType, ReservedPropsType> &
@@ -192,13 +205,10 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       internalVariantPropNames: PlasmicTestimonial__VariantProps
     });
 
-    const { dataFetches } = props;
-
     return PlasmicTestimonial__RenderFunc({
       variants,
       args,
       overrides,
-      dataFetches,
       forNode: nodeName
     });
   };

@@ -16,6 +16,7 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 
 import {
   hasVariant,
@@ -35,9 +36,9 @@ import {
 } from "@plasmicapp/react-web";
 
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
-import * as projectcss from "./plasmic_fantaasta.module.css"; // plasmic-import: xdSnfxWCziyzb8tBiGitqa/projectcss
-import * as sty from "./PlasmicLogo.module.css"; // plasmic-import: cTUv7R2uelNJ/css
+
+import projectcss from "./plasmic_fantaasta.module.css"; // plasmic-import: xdSnfxWCziyzb8tBiGitqa/projectcss
+import sty from "./PlasmicLogo.module.css"; // plasmic-import: cTUv7R2uelNJ/css
 
 export type PlasmicLogo__VariantMembers = {
   _50Opaque: "_50Opaque";
@@ -57,7 +58,7 @@ type ArgPropType = keyof PlasmicLogo__ArgsType;
 export const PlasmicLogo__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicLogo__OverridesType = {
-  root?: p.Flex<"img">;
+  root?: p.Flex<typeof p.PlasmicImg>;
 };
 
 export interface DefaultLogoProps {
@@ -69,22 +70,38 @@ function PlasmicLogo__RenderFunc(props: {
   variants: PlasmicLogo__VariantsArgs;
   args: PlasmicLogo__ArgsType;
   overrides: PlasmicLogo__OverridesType;
-  dataFetches?: PlasmicLogo__Fetches;
+
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode, dataFetches } = props;
+  const { variants, args, overrides, forNode } = props;
 
   return (
-    <img
+    <p.PlasmicImg
       data-plasmic-name={"root"}
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       alt={""}
-      className={classNames(defaultcss.img, projectcss.root_reset, sty.root, {
-        [sty.root___50Opaque]: hasVariant(variants, "_50Opaque", "_50Opaque")
-      })}
-      src={"/plasmic/fantaasta/images/image13.svg"}
+      className={classNames(
+        projectcss.root_reset,
+        projectcss.plasmic_default_styles,
+        projectcss.plasmic_mixins,
+        projectcss.plasmic_tokens,
+        sty.root,
+        { [sty.root_50Opaque]: hasVariant(variants, "_50Opaque", "_50Opaque") }
+      )}
+      displayHeight={"40px" as const}
+      displayMaxHeight={"none" as const}
+      displayMaxWidth={"none" as const}
+      displayMinHeight={"0" as const}
+      displayMinWidth={"0" as const}
+      displayWidth={"40px" as const}
+      src={{
+        src: "/plasmic/fantaasta/images/image13.svg",
+        fullWidth: 150,
+        fullHeight: 150,
+        aspectRatio: 1
+      }}
     />
   ) as React.ReactElement | null;
 }
@@ -96,7 +113,7 @@ type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
-  root: "img";
+  root: typeof p.PlasmicImg;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -110,7 +127,6 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicLogo__VariantsArgs;
     args?: PlasmicLogo__ArgsType;
     overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicLogo__Fetches;
   } & Omit<PlasmicLogo__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     // Specify args directly as props
     Omit<PlasmicLogo__ArgsType, ReservedPropsType> &
@@ -137,13 +153,10 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       internalVariantPropNames: PlasmicLogo__VariantProps
     });
 
-    const { dataFetches } = props;
-
     return PlasmicLogo__RenderFunc({
       variants,
       args,
       overrides,
-      dataFetches,
       forNode: nodeName
     });
   };

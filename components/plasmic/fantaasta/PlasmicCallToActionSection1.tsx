@@ -16,6 +16,7 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 
 import {
   hasVariant,
@@ -35,14 +36,12 @@ import {
 } from "@plasmicapp/react-web";
 import Button from "../../Button"; // plasmic-import: ILa2cLxyoTg0/component
 
-import { useScreenVariants } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: F-KkpFIKCuog/globalVariant
+import { useScreenVariants as useScreenVariantsfKkpFikCuog } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: F-KkpFIKCuog/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
-import * as projectcss from "./plasmic_fantaasta.module.css"; // plasmic-import: xdSnfxWCziyzb8tBiGitqa/projectcss
-import * as sty from "./PlasmicCallToActionSection1.module.css"; // plasmic-import: CFD5al1x8pOU/css
 
-import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: Gng1eaWxMrAo/icon
+import projectcss from "./plasmic_fantaasta.module.css"; // plasmic-import: xdSnfxWCziyzb8tBiGitqa/projectcss
+import sty from "./PlasmicCallToActionSection1.module.css"; // plasmic-import: CFD5al1x8pOU/css
 
 export type PlasmicCallToActionSection1__VariantMembers = {};
 
@@ -79,13 +78,13 @@ function PlasmicCallToActionSection1__RenderFunc(props: {
   variants: PlasmicCallToActionSection1__VariantsArgs;
   args: PlasmicCallToActionSection1__ArgsType;
   overrides: PlasmicCallToActionSection1__OverridesType;
-  dataFetches?: PlasmicCallToActionSection1__Fetches;
+
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode, dataFetches } = props;
+  const { variants, args, overrides, forNode } = props;
 
   const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariants()
+    screen: useScreenVariantsfKkpFikCuog()
   });
 
   return (
@@ -96,31 +95,44 @@ function PlasmicCallToActionSection1__RenderFunc(props: {
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       hasGap={true}
-      className={classNames(defaultcss.all, projectcss.root_reset, sty.root)}
+      className={classNames(
+        projectcss.all,
+        projectcss.root_reset,
+        projectcss.plasmic_default_styles,
+        projectcss.plasmic_mixins,
+        projectcss.plasmic_tokens,
+        sty.root
+      )}
     >
       <div
         data-plasmic-name={"freeBox"}
         data-plasmic-override={overrides.freeBox}
-        className={classNames(defaultcss.all, sty.freeBox)}
+        className={classNames(projectcss.all, sty.freeBox)}
       >
         <div
           data-plasmic-name={"art"}
           data-plasmic-override={overrides.art}
-          className={classNames(defaultcss.all, sty.art)}
+          className={classNames(projectcss.all, sty.art)}
         >
           {p.renderPlasmicSlot({
             defaultContents: (
               <React.Fragment>
-                <img
+                <p.PlasmicImg
                   alt={""}
-                  className={classNames(defaultcss.img, sty.img___1Ab5B)}
+                  className={classNames(sty.img___1Ab5B)}
+                  displayHeight={"auto" as const}
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={"none" as const}
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"auto" as const}
                   src={
                     "https://images.unsplash.com/photo-1530099486328-e021101a494a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2916&q=80" as const
                   }
                 />
 
                 <div
-                  className={classNames(defaultcss.all, sty.freeBox__yLvaT)}
+                  className={classNames(projectcss.all, sty.freeBox__yLvaT)}
                 />
               </React.Fragment>
             ),
@@ -133,7 +145,7 @@ function PlasmicCallToActionSection1__RenderFunc(props: {
           data-plasmic-name={"copy"}
           data-plasmic-override={overrides.copy}
           hasGap={true}
-          className={classNames(defaultcss.all, sty.copy)}
+          className={classNames(projectcss.all, sty.copy)}
         >
           {p.renderPlasmicSlot({
             defaultContents: (
@@ -141,12 +153,12 @@ function PlasmicCallToActionSection1__RenderFunc(props: {
                 <p.Stack
                   as={"div"}
                   hasGap={true}
-                  className={classNames(defaultcss.all, sty.freeBox__uUgTm)}
+                  className={classNames(projectcss.all, sty.freeBox__uUgTm)}
                 >
                   <div
                     className={classNames(
-                      defaultcss.all,
-                      defaultcss.__wab_text,
+                      projectcss.all,
+                      projectcss.__wab_text,
                       sty.text___2NeAb
                     )}
                   >
@@ -155,8 +167,8 @@ function PlasmicCallToActionSection1__RenderFunc(props: {
 
                   <div
                     className={classNames(
-                      defaultcss.all,
-                      defaultcss.__wab_text,
+                      projectcss.all,
+                      projectcss.__wab_text,
                       sty.text___7NNYk
                     )}
                   >
@@ -165,8 +177,8 @@ function PlasmicCallToActionSection1__RenderFunc(props: {
 
                   <div
                     className={classNames(
-                      defaultcss.all,
-                      defaultcss.__wab_text,
+                      projectcss.all,
+                      projectcss.__wab_text,
                       sty.text__aJuWn
                     )}
                   >
@@ -179,30 +191,52 @@ function PlasmicCallToActionSection1__RenderFunc(props: {
                 <p.Stack
                   as={"div"}
                   hasGap={true}
-                  className={classNames(defaultcss.all, sty.freeBox__d4UWf)}
+                  className={classNames(projectcss.all, sty.freeBox__d4UWf)}
                 >
                   <Button
+                    children2={
+                      <svg
+                        className={classNames(projectcss.all, sty.svg__clSsD)}
+                        role={"img"}
+                      />
+                    }
                     className={classNames("__wab_instance", sty.button__jnaIm)}
                     colors={"blue" as const}
                     slot={"Start now ->"}
-                  />
+                  >
+                    <svg
+                      className={classNames(projectcss.all, sty.svg__qVaWm)}
+                      role={"img"}
+                    />
+                  </Button>
 
                   <Button
-                    bgDifference={"bgDifference" as const}
+                    bgDifference={true}
+                    children2={
+                      <svg
+                        className={classNames(projectcss.all, sty.svg__omLms)}
+                        role={"img"}
+                      />
+                    }
                     className={classNames("__wab_instance", sty.button__t8Nq7)}
-                    darkGray={"darkGray" as const}
+                    darkGray={true}
                     slot={
                       <div
                         className={classNames(
-                          defaultcss.all,
-                          defaultcss.__wab_text,
+                          projectcss.all,
+                          projectcss.__wab_text,
                           sty.text__oGrIa
                         )}
                       >
                         {"Learn more…"}
                       </div>
                     }
-                  />
+                  >
+                    <svg
+                      className={classNames(projectcss.all, sty.svg__pwmRa)}
+                      role={"img"}
+                    />
+                  </Button>
                 </p.Stack>
               </React.Fragment>
             ),
@@ -241,7 +275,6 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicCallToActionSection1__VariantsArgs;
     args?: PlasmicCallToActionSection1__ArgsType;
     overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicCallToActionSection1__Fetches;
   } & Omit<PlasmicCallToActionSection1__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     // Specify args directly as props
     Omit<PlasmicCallToActionSection1__ArgsType, ReservedPropsType> &
@@ -268,13 +301,10 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       internalVariantPropNames: PlasmicCallToActionSection1__VariantProps
     });
 
-    const { dataFetches } = props;
-
     return PlasmicCallToActionSection1__RenderFunc({
       variants,
       args,
       overrides,
-      dataFetches,
       forNode: nodeName
     });
   };

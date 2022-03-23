@@ -10,16 +10,16 @@
   }
 }
 .foreground {
+  flex-direction: column;
   display: flex;
   position: relative;
-  flex-direction: column;
-  background: #f2f2f7;
+  background: var(--token-WVCnb5gEJt38);
   padding: 64px;
 }
 .foreground > :global(.__wab_flex-container) {
   flex-direction: column;
-  align-items: center;
   justify-content: flex-start;
+  align-items: center;
   margin-top: calc(0px - 48px);
   height: calc(100% + 48px);
 }
@@ -39,14 +39,14 @@
   }
 }
 .freeBox__vzlr4 {
-  display: flex;
   flex-direction: column;
+  display: flex;
   height: auto;
 }
 .freeBox__vzlr4 > :global(.__wab_flex-container) {
   flex-direction: column;
-  align-items: center;
   justify-content: flex-start;
+  align-items: center;
   margin-top: calc(0px - 16px);
   height: calc(100% + 16px);
 }
@@ -70,25 +70,25 @@
 .h2___2VrUe {
   font-size: 48px;
   font-weight: 800;
-  color: #000000d9 /* plasmic-token: oNQSCRm6FxBI */;
+  color: var(--token-oNQSCRm6FxBI);
   line-height: 1;
 }
 .text__o2Q2L {
   font-size: 20px;
-  color: #05050599 /* plasmic-token: XEy-tQANXH6D */;
+  color: var(--token-XEy-tQANXH6D);
   text-align: left;
   line-height: 28px;
 }
 .freeBox__n7VnX {
+  flex-direction: column;
   display: flex;
   position: relative;
-  flex-direction: column;
   max-width: 960px;
 }
 .freeBox__n7VnX > :global(.__wab_flex-container) {
   flex-direction: column;
-  align-items: stretch;
   justify-content: flex-start;
+  align-items: stretch;
   margin-top: calc(0px - 48px);
   height: calc(100% + 48px);
 }
@@ -103,14 +103,14 @@
   margin-top: 48px;
 }
 .freeBox__t9BTk {
+  flex-direction: row;
   display: flex;
   position: relative;
-  flex-direction: row;
 }
 .freeBox__t9BTk > :global(.__wab_flex-container) {
   flex-direction: row;
-  align-items: stretch;
   justify-content: flex-start;
+  align-items: stretch;
   margin-left: calc(0px - 48px);
   width: calc(100% + 48px);
 }
@@ -138,7 +138,7 @@
   object-fit: cover;
   width: 24px;
   height: 24px;
-  color: #f2f2f7 /* plasmic-token: WVCnb5gEJt38 */;
+  color: var(--token-WVCnb5gEJt38);
 }
 .valueprop___1GYpQ:global(.__wab_instance) {
   width: 100%;
@@ -154,7 +154,7 @@
   object-fit: cover;
   width: 24px;
   height: 24px;
-  color: #f2f2f7 /* plasmic-token: WVCnb5gEJt38 */;
+  color: var(--token-WVCnb5gEJt38);
 }
 .valueprop__qy3Io:global(.__wab_instance) {
   width: 100%;
@@ -170,7 +170,7 @@
   object-fit: cover;
   width: 24px;
   height: 24px;
-  color: #f2f2f7 /* plasmic-token: WVCnb5gEJt38 */;
+  color: var(--token-WVCnb5gEJt38);
 }
 .valueprop___8Nj0A:global(.__wab_instance) {
   width: 100%;
@@ -186,21 +186,21 @@
   object-fit: cover;
   width: 24px;
   height: 24px;
-  color: #f2f2f7 /* plasmic-token: WVCnb5gEJt38 */;
+  color: var(--token-WVCnb5gEJt38);
 }
 .text__qDpos {
   height: auto;
 }
 .freeBox__jxQ8S {
+  flex-direction: column;
   display: flex;
   position: relative;
-  flex-direction: column;
   max-width: 960px;
 }
 .freeBox__jxQ8S > :global(.__wab_flex-container) {
   flex-direction: column;
-  align-items: stretch;
   justify-content: flex-start;
+  align-items: stretch;
   margin-top: calc(0px - 48px);
   height: calc(100% + 48px);
 }
@@ -215,14 +215,14 @@
   margin-top: 48px;
 }
 .freeBox__ti6Ks {
+  flex-direction: row;
   display: flex;
   position: relative;
-  flex-direction: row;
 }
 .freeBox__ti6Ks > :global(.__wab_flex-container) {
   flex-direction: row;
-  align-items: stretch;
   justify-content: flex-start;
+  align-items: stretch;
   margin-left: calc(0px - 48px);
   width: calc(100% + 48px);
 }
@@ -250,7 +250,7 @@
   object-fit: cover;
   width: 24px;
   height: 24px;
-  color: #f2f2f7 /* plasmic-token: WVCnb5gEJt38 */;
+  color: var(--token-WVCnb5gEJt38);
 }
 .text___0Uica {
   height: auto;
@@ -269,7 +269,7 @@
   object-fit: cover;
   width: 24px;
   height: 24px;
-  color: #f2f2f7 /* plasmic-token: WVCnb5gEJt38 */;
+  color: var(--token-WVCnb5gEJt38);
 }
 .valueprop__jhSV:global(.__wab_instance) {
   width: 100%;
@@ -285,7 +285,7 @@
   object-fit: cover;
   width: 24px;
   height: 24px;
-  color: #f2f2f7 /* plasmic-token: WVCnb5gEJt38 */;
+  color: var(--token-WVCnb5gEJt38);
 }
 .valueprop__vtLBw:global(.__wab_instance) {
   width: 100%;
@@ -301,5 +301,5 @@
   object-fit: cover;
   width: 24px;
   height: 24px;
-  color: #f2f2f7 /* plasmic-token: WVCnb5gEJt38 */;
+  color: var(--token-WVCnb5gEJt38);
 }

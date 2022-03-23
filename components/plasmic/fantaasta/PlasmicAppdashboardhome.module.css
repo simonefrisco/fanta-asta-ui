@@ -1,0 +1,3008 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  padding-bottom: 0px;
+  min-width: 0;
+  min-height: 0;
+}
+.home {
+  background: rgba(247, 247, 247, 1);
+  filter: drop-shadow(0px 1px 0.5px rgba(0, 0, 0, 0.079))
+    drop-shadow(0px 2px 0.5px rgba(0, 0, 0, 0.059))
+    drop-shadow(0px 1px 1.5px rgba(0, 0, 0, 0.1));
+  width: 1512px;
+  height: 1161px;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  left: auto;
+  top: auto;
+  padding-right: 0px;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+.rectangle6 {
+  background: rgba(255, 255, 255, 1);
+  width: 219px;
+  height: 1048px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.frame70 {
+  width: 240px;
+  height: 24px;
+  display: block;
+  position: absolute;
+  top: 113px;
+  left: 19px;
+  overflow: hidden;
+}
+.text__xszeE {
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 16px;
+  color: rgba(149, 149, 149, 1);
+  position: absolute;
+  top: 4px;
+  left: 0px;
+}
+.svg__iGHn4 {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #969696;
+  width: 24px;
+  height: 24px;
+  display: block;
+  top: 0px;
+  right: 0px;
+}
+._1OneLine {
+  width: 272px;
+  height: 44px;
+  display: block;
+  position: absolute;
+  top: 145px;
+  left: 7px;
+  overflow: hidden;
+}
+.right {
+  width: 80px;
+  height: 44px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.text__roNa3 {
+  display: block;
+  font-size: 13px;
+  text-align: right;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 20px;
+  color: rgba(149, 149, 149, 1);
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+.xBase1OneLineLeftLabelIcon {
+  height: 44px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 80px;
+}
+.text__p30ID {
+  display: block;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(87, 86, 86, 1);
+  position: absolute;
+  top: 10px;
+  left: 48px;
+}
+.svg__xGuUi {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #969696;
+  width: 24px;
+  height: 24px;
+  display: block;
+  top: 10px;
+  left: 12px;
+}
+._1OneLine2 {
+  width: 272px;
+  height: 44px;
+  display: block;
+  position: absolute;
+  top: 189px;
+  left: 7px;
+  overflow: hidden;
+}
+.right2 {
+  width: 80px;
+  height: 44px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.text__iOhl8 {
+  display: block;
+  font-size: 13px;
+  text-align: right;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 20px;
+  color: rgba(149, 149, 149, 1);
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+.xBase1OneLineLeftLabelIcon2 {
+  height: 44px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 80px;
+}
+.text__bo5Ci {
+  display: block;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(87, 86, 86, 1);
+  position: absolute;
+  top: 10px;
+  left: 48px;
+}
+.svg__fiM83 {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #969696;
+  width: 24px;
+  height: 24px;
+  display: block;
+  top: 10px;
+  left: 12px;
+}
+._1OneLine3 {
+  width: 272px;
+  height: 44px;
+  display: block;
+  position: absolute;
+  top: 233px;
+  left: 7px;
+  overflow: hidden;
+}
+.right3 {
+  width: 80px;
+  height: 44px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.text__jAlF {
+  display: block;
+  font-size: 13px;
+  text-align: right;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 20px;
+  color: rgba(149, 149, 149, 1);
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+.xBase1OneLineLeftLabelIcon3 {
+  height: 44px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 80px;
+}
+.text__ylsKc {
+  display: block;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(87, 86, 86, 1);
+  position: absolute;
+  top: 10px;
+  left: 48px;
+}
+.svg__uKewm {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #969696;
+  width: 24px;
+  height: 24px;
+  display: block;
+  top: 10px;
+  left: 12px;
+}
+.group1 {
+  width: 99px;
+  height: 52px;
+  display: block;
+  position: absolute;
+  top: 26px;
+  left: 96px;
+}
+.text__tnaG7 {
+  display: block;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 28px;
+  color: rgba(27, 27, 27, 1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.text__xJeuI {
+  display: block;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(149, 149, 149, 1);
+  position: absolute;
+  top: 28px;
+  left: 0px;
+}
+.logo {
+  width: 56px;
+  height: 56px;
+  display: block;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+}
+.rectangle1 {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: inset 0px 0px 0px 1px rgba(231, 231, 231, 1);
+  width: 56px;
+  height: 56px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 8px;
+}
+.svg__iP66L {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #969696;
+  width: 32px;
+  height: 32px;
+  display: block;
+  top: 12px;
+  left: 12px;
+}
+.searchBar {
+  width: 744px;
+  height: 40px;
+  display: block;
+  position: absolute;
+  top: 24px;
+  left: 344px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.right4 {
+  width: 32px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  overflow: hidden;
+}
+.svg__jGAoK {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #e8e8e8;
+  width: 20px;
+  height: 20px;
+  display: block;
+  top: 10px;
+  right: 12px;
+}
+.left {
+  height: 40px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 32px;
+  overflow: hidden;
+}
+.svg___9E0Wq {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #969696;
+  width: 20px;
+  height: 20px;
+  display: block;
+  top: 10px;
+  left: 12px;
+}
+.textState {
+  display: block;
+  position: absolute;
+  top: 8px;
+  left: 40px;
+  right: 0px;
+  bottom: 8px;
+}
+.text___13PmI {
+  display: block;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(149, 149, 149, 1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+}
+.frame71 {
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+.frame71 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 24px);
+  width: calc(100% + 24px);
+}
+.frame71 > :global(.__wab_flex-container) > *,
+.frame71 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.frame71 > :global(.__wab_flex-container) > picture > img,
+.frame71
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 24px;
+}
+.group10 {
+  width: 28px;
+  height: 24px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+}
+.svg___5FHjb {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #969696;
+  width: 24px;
+  height: 24px;
+  display: block;
+  top: 0px;
+  left: 0px;
+}
+.counter {
+  background: rgba(232, 44, 44, 1);
+  width: auto;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 0px;
+  left: 13px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-radius: 96px;
+}
+.text__jZsa {
+  display: block;
+  font-size: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 1);
+  position: relative;
+}
+.frame7 {
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+}
+.frame7 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.frame7 > :global(.__wab_flex-container) > *,
+.frame7 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.frame7 > :global(.__wab_flex-container) > picture > img,
+.frame7
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 8px;
+}
+.avatar {
+  background: url("/plasmic/fantaasta/images/avatar4.jpeg") center center / cover no-repeat;
+  box-shadow: inset 0px 0px 0px 1px rgba(231, 231, 231, 1);
+  width: 32px;
+  height: 32px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+  border-radius: 256px;
+}
+.status {
+  background: rgba(0, 132, 255, 1);
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 1);
+  width: 25%;
+  height: 25%;
+  display: block;
+  position: absolute;
+  top: 75%;
+  left: 75%;
+  overflow: hidden;
+  border-radius: 100px;
+}
+.svg__lrAl {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #969696;
+  width: 24px;
+  height: 24px;
+  display: block;
+  flex-shrink: 0;
+}
+.frame6 {
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+}
+.frame6 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.frame6 > :global(.__wab_flex-container) > *,
+.frame6 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.frame6 > :global(.__wab_flex-container) > picture > img,
+.frame6
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 8px;
+}
+.avatarOneLine {
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+}
+.avatarOneLine > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.avatarOneLine > :global(.__wab_flex-container) > *,
+.avatarOneLine > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.avatarOneLine > :global(.__wab_flex-container) > picture > img,
+.avatarOneLine
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 8px;
+}
+.avatar2 {
+  background: linear-gradient(rgba(0, 132, 255, 0.1), rgba(0, 132, 255, 0.1)),
+    rgba(255, 255, 255, 1);
+  width: 32px;
+  height: 32px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+  border-radius: 256px;
+}
+.kk {
+  display: block;
+  font-size: 13px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 20px;
+  color: rgba(0, 132, 255, 1);
+  position: absolute;
+  top: 6px;
+  left: 12px;
+}
+.statusDot {
+  background: rgba(0, 132, 255, 1);
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 1);
+  width: 25%;
+  height: 25%;
+  display: block;
+  position: absolute;
+  top: 75%;
+  left: 75%;
+  overflow: hidden;
+  border-radius: 100px;
+}
+.mikeBrown {
+  display: block;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(27, 27, 27, 1);
+  position: relative;
+}
+.svg__yTEx9 {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #969696;
+  width: 24px;
+  height: 24px;
+  display: block;
+  flex-shrink: 0;
+}
+.text__dXx0T {
+  display: block;
+  font-size: 36px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 48px;
+  color: rgba(27, 27, 27, 1);
+  position: absolute;
+  top: 88px;
+  left: 344px;
+}
+.text__rqmaq {
+  display: block;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 28px;
+  color: rgba(149, 149, 149, 1);
+  position: absolute;
+  top: 144px;
+  left: 344px;
+}
+.frame108 {
+  background: rgba(247, 247, 247, 1);
+  width: 1216px;
+  height: 60px;
+  display: block;
+  position: absolute;
+  top: 189px;
+  left: 296px;
+  overflow: hidden;
+}
+.frame109 {
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 24px;
+  left: 44px;
+}
+.frame109 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: calc(0px - 44px);
+  width: calc(100% + 44px);
+}
+.frame109 > :global(.__wab_flex-container) > *,
+.frame109 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.frame109 > :global(.__wab_flex-container) > picture > img,
+.frame109
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 44px;
+}
+.text__un5KG {
+  display: block;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(87, 86, 86, 1);
+  position: relative;
+}
+.text__sKtWt {
+  display: block;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(87, 86, 86, 1);
+  position: relative;
+}
+.text___3I87E {
+  display: block;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(87, 86, 86, 1);
+  position: relative;
+}
+.text__sZmgG {
+  display: block;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(87, 86, 86, 1);
+  position: relative;
+}
+.frame111 {
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 10px;
+  left: 1081px;
+}
+.frame111 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: calc(0px - 32px);
+  width: calc(100% + 32px);
+}
+.frame111 > :global(.__wab_flex-container) > *,
+.frame111 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.frame111 > :global(.__wab_flex-container) > picture > img,
+.frame111
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 32px;
+}
+.button {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.button2 {
+  flex-direction: row;
+  background: rgba(0, 132, 255, 1);
+  filter: drop-shadow(0px 1px 0.5px rgba(0, 0, 0, 0.079))
+    drop-shadow(0px 2px 0.5px rgba(0, 0, 0, 0.059))
+    drop-shadow(0px 1px 1.5px rgba(0, 0, 0, 0.1));
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+.button2 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.button2 > :global(.__wab_flex-container) > *,
+.button2 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.button2 > :global(.__wab_flex-container) > picture > img,
+.button2
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 8px;
+}
+.svg__fevLc {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  display: block;
+  flex-shrink: 0;
+}
+.text2 {
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 1);
+  position: relative;
+}
+.counter2 {
+  background: rgba(255, 255, 255, 1);
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-radius: 96px;
+}
+.text__w62R5 {
+  display: block;
+  font-size: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 16px;
+  color: rgba(27, 27, 27, 1);
+  position: relative;
+}
+.svg__a0Xq8 {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  display: block;
+  flex-shrink: 0;
+}
+.text__hZxWb {
+  display: block;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(87, 86, 86, 1);
+  position: absolute;
+  top: 24px;
+  left: 681px;
+}
+.text__apTaz {
+  mix-blend-mode: normal;
+  display: block;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 338px;
+  left: 331px;
+  width: 552px;
+  height: 24px;
+}
+.freeBox__bNeh3 {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  top: 378px;
+  left: 309px;
+  min-width: 0;
+  padding: 8px;
+}
+.freeBox___5DwS {
+  flex-direction: row;
+  display: flex;
+  position: relative;
+  width: 1192px;
+  height: 727px;
+  max-width: 100%;
+  flex-shrink: 0;
+  padding: 8px;
+}
+.freeBox___5DwS > :global(.__wab_flex-container) {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  margin-left: calc(0px - 12px);
+  width: calc(100% + 12px);
+  margin-top: calc(0px - 12px);
+  height: calc(100% + 12px);
+}
+.freeBox___5DwS > :global(.__wab_flex-container) > *,
+.freeBox___5DwS > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox___5DwS > :global(.__wab_flex-container) > picture > img,
+.freeBox___5DwS
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 12px;
+  margin-top: 12px;
+}
+.compo2 {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: inset 0px 0px 0px 2px rgba(0, 132, 255, 1);
+  filter: drop-shadow(0px 1px 0.5px rgba(0, 0, 0, 0.079))
+    drop-shadow(0px 2px 0.5px rgba(0, 0, 0, 0.059))
+    drop-shadow(0px 1px 1.5px rgba(0, 0, 0, 0.1));
+  width: 20%;
+  height: 123px;
+  display: block;
+  position: relative;
+  top: auto;
+  left: auto;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.avatarOneLine2 {
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+.avatarOneLine2 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.avatarOneLine2 > :global(.__wab_flex-container) > *,
+.avatarOneLine2 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.avatarOneLine2 > :global(.__wab_flex-container) > picture > img,
+.avatarOneLine2
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 8px;
+}
+.avatar3 {
+  background: url("/plasmic/fantaasta/images/avatar5.png") center center / cover no-repeat;
+  box-shadow: inset 0px 0px 0px 1px rgba(231, 231, 231, 1);
+  width: 32px;
+  height: 32px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+  border-radius: 256px;
+}
+.statusDot2 {
+  background: rgba(0, 132, 255, 1);
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 1);
+  width: 25%;
+  height: 25%;
+  display: block;
+  position: absolute;
+  top: 75%;
+  left: 75%;
+  overflow: hidden;
+  border-radius: 100px;
+}
+.text__amh6E {
+  display: block;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(27, 27, 27, 1);
+  position: relative;
+}
+.svg___1Ezwt {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #e8e8e8;
+  width: 232px;
+  height: 1px;
+  display: block;
+  top: 60px;
+  left: 16px;
+}
+.badge {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 73px;
+  left: 16px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.xBaseBadge {
+  flex-direction: row;
+  background: linear-gradient(rgba(255, 149, 26, 0.1), rgba(255, 149, 26, 0.1)),
+    rgba(255, 255, 255, 1);
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  padding: 2px 6px;
+}
+.xBaseBadge > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 4px);
+  width: calc(100% + 4px);
+}
+.xBaseBadge > :global(.__wab_flex-container) > *,
+.xBaseBadge > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.xBaseBadge > :global(.__wab_flex-container) > picture > img,
+.xBaseBadge
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 4px;
+}
+.svg__mqU {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #f98600;
+  width: 12px;
+  height: 12px;
+  display: block;
+  flex-shrink: 0;
+}
+.text3 {
+  display: block;
+  font-size: 13px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 20px;
+  color: rgba(248, 134, 0, 1);
+  position: relative;
+}
+.svg___7RNhn {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #969696;
+  width: 12px;
+  height: 12px;
+  display: block;
+  flex-shrink: 0;
+}
+.text__skxMx {
+  display: block;
+  font-size: 16px;
+  text-align: right;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(87, 86, 86, 1);
+  position: absolute;
+  top: 73px;
+  right: 16px;
+}
+.compo1 {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: inset 0px 0px 0px 2px rgba(0, 132, 255, 1);
+  filter: drop-shadow(0px 1px 0.5px rgba(0, 0, 0, 0.079))
+    drop-shadow(0px 2px 0.5px rgba(0, 0, 0, 0.059))
+    drop-shadow(0px 1px 1.5px rgba(0, 0, 0, 0.1));
+  width: 264px;
+  height: 113px;
+  display: block;
+  overflow: hidden;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+.avatarOneLine3 {
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+.avatarOneLine3 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.avatarOneLine3 > :global(.__wab_flex-container) > *,
+.avatarOneLine3 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.avatarOneLine3 > :global(.__wab_flex-container) > picture > img,
+.avatarOneLine3
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 8px;
+}
+.avatar4 {
+  background: url("/plasmic/fantaasta/images/avatar5.png") center center / cover no-repeat;
+  box-shadow: inset 0px 0px 0px 1px rgba(231, 231, 231, 1);
+  width: 32px;
+  height: 32px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+  border-radius: 256px;
+}
+.statusDot3 {
+  background: rgba(0, 132, 255, 1);
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 1);
+  width: 25%;
+  height: 25%;
+  display: block;
+  position: absolute;
+  top: 75%;
+  left: 75%;
+  overflow: hidden;
+  border-radius: 100px;
+}
+.text__vzPah {
+  display: block;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(27, 27, 27, 1);
+  position: relative;
+}
+.svg___1MIjd {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #e8e8e8;
+  width: 232px;
+  height: 1px;
+  display: block;
+  top: 60px;
+  left: 16px;
+}
+.badge2 {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 73px;
+  left: 16px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.xBaseBadge2 {
+  flex-direction: row;
+  background: linear-gradient(rgba(255, 149, 26, 0.1), rgba(255, 149, 26, 0.1)),
+    rgba(255, 255, 255, 1);
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  padding: 2px 6px;
+}
+.xBaseBadge2 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 4px);
+  width: calc(100% + 4px);
+}
+.xBaseBadge2 > :global(.__wab_flex-container) > *,
+.xBaseBadge2 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.xBaseBadge2 > :global(.__wab_flex-container) > picture > img,
+.xBaseBadge2
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 4px;
+}
+.svg__eT5U7 {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #f98600;
+  width: 12px;
+  height: 12px;
+  display: block;
+  flex-shrink: 0;
+}
+.text4 {
+  display: block;
+  font-size: 13px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 20px;
+  color: rgba(248, 134, 0, 1);
+  position: relative;
+}
+.svg__bid9S {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #969696;
+  width: 12px;
+  height: 12px;
+  display: block;
+  flex-shrink: 0;
+}
+.text__smcHh {
+  display: block;
+  font-size: 16px;
+  text-align: right;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(87, 86, 86, 1);
+  position: absolute;
+  top: 73px;
+  right: 16px;
+}
+.compo3 {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: inset 0px 0px 0px 2px rgba(0, 132, 255, 1);
+  filter: drop-shadow(0px 1px 0.5px rgba(0, 0, 0, 0.079))
+    drop-shadow(0px 2px 0.5px rgba(0, 0, 0, 0.059))
+    drop-shadow(0px 1px 1.5px rgba(0, 0, 0, 0.1));
+  width: 264px;
+  height: 113px;
+  display: block;
+  overflow: hidden;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+.avatarOneLine4 {
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+.avatarOneLine4 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.avatarOneLine4 > :global(.__wab_flex-container) > *,
+.avatarOneLine4 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.avatarOneLine4 > :global(.__wab_flex-container) > picture > img,
+.avatarOneLine4
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 8px;
+}
+.avatar5 {
+  background: url("/plasmic/fantaasta/images/avatar5.png") center center / cover no-repeat;
+  box-shadow: inset 0px 0px 0px 1px rgba(231, 231, 231, 1);
+  width: 32px;
+  height: 32px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+  border-radius: 256px;
+}
+.statusDot4 {
+  background: rgba(0, 132, 255, 1);
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 1);
+  width: 25%;
+  height: 25%;
+  display: block;
+  position: absolute;
+  top: 75%;
+  left: 75%;
+  overflow: hidden;
+  border-radius: 100px;
+}
+.text___4IioU {
+  display: block;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(27, 27, 27, 1);
+  position: relative;
+}
+.svg__osLwE {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #e8e8e8;
+  width: 232px;
+  height: 1px;
+  display: block;
+  top: 60px;
+  left: 16px;
+}
+.badge3 {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 73px;
+  left: 16px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.xBaseBadge3 {
+  flex-direction: row;
+  background: linear-gradient(rgba(255, 149, 26, 0.1), rgba(255, 149, 26, 0.1)),
+    rgba(255, 255, 255, 1);
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  padding: 2px 6px;
+}
+.xBaseBadge3 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 4px);
+  width: calc(100% + 4px);
+}
+.xBaseBadge3 > :global(.__wab_flex-container) > *,
+.xBaseBadge3 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.xBaseBadge3 > :global(.__wab_flex-container) > picture > img,
+.xBaseBadge3
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 4px;
+}
+.svg__onxp {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #f98600;
+  width: 12px;
+  height: 12px;
+  display: block;
+  flex-shrink: 0;
+}
+.text5 {
+  display: block;
+  font-size: 13px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 20px;
+  color: rgba(248, 134, 0, 1);
+  position: relative;
+}
+.svg__iCvZo {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #969696;
+  width: 12px;
+  height: 12px;
+  display: block;
+  flex-shrink: 0;
+}
+.text___8Gt0M {
+  display: block;
+  font-size: 16px;
+  text-align: right;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(87, 86, 86, 1);
+  position: absolute;
+  top: 73px;
+  right: 16px;
+}
+.compo4 {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: inset 0px 0px 0px 2px rgba(0, 132, 255, 1);
+  filter: drop-shadow(0px 1px 0.5px rgba(0, 0, 0, 0.079))
+    drop-shadow(0px 2px 0.5px rgba(0, 0, 0, 0.059))
+    drop-shadow(0px 1px 1.5px rgba(0, 0, 0, 0.1));
+  width: 264px;
+  height: 113px;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border-radius: 8px;
+}
+.avatarOneLine5 {
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+.avatarOneLine5 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.avatarOneLine5 > :global(.__wab_flex-container) > *,
+.avatarOneLine5 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.avatarOneLine5 > :global(.__wab_flex-container) > picture > img,
+.avatarOneLine5
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 8px;
+}
+.avatar6 {
+  background: url("/plasmic/fantaasta/images/avatar5.png") center center / cover no-repeat;
+  box-shadow: inset 0px 0px 0px 1px rgba(231, 231, 231, 1);
+  width: 32px;
+  height: 32px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+  border-radius: 256px;
+}
+.statusDot5 {
+  background: rgba(0, 132, 255, 1);
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 1);
+  width: 25%;
+  height: 25%;
+  display: block;
+  position: absolute;
+  top: 75%;
+  left: 75%;
+  overflow: hidden;
+  border-radius: 100px;
+}
+.text__xEOi {
+  display: block;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(27, 27, 27, 1);
+  position: relative;
+}
+.svg__n8N5E {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #e8e8e8;
+  width: 232px;
+  height: 1px;
+  display: block;
+  top: 60px;
+  left: 16px;
+}
+.badge4 {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 73px;
+  left: 16px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.xBaseBadge4 {
+  flex-direction: row;
+  background: linear-gradient(rgba(255, 149, 26, 0.1), rgba(255, 149, 26, 0.1)),
+    rgba(255, 255, 255, 1);
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  padding: 2px 6px;
+}
+.xBaseBadge4 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 4px);
+  width: calc(100% + 4px);
+}
+.xBaseBadge4 > :global(.__wab_flex-container) > *,
+.xBaseBadge4 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.xBaseBadge4 > :global(.__wab_flex-container) > picture > img,
+.xBaseBadge4
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 4px;
+}
+.svg___4KqcQ {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #f98600;
+  width: 12px;
+  height: 12px;
+  display: block;
+  flex-shrink: 0;
+}
+.text6 {
+  display: block;
+  font-size: 13px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 20px;
+  color: rgba(248, 134, 0, 1);
+  position: relative;
+}
+.svg__bavdY {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #969696;
+  width: 12px;
+  height: 12px;
+  display: block;
+  flex-shrink: 0;
+}
+.text__kqYTv {
+  display: block;
+  font-size: 16px;
+  text-align: right;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(87, 86, 86, 1);
+  position: absolute;
+  top: 73px;
+  right: 16px;
+}
+.compo5 {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: inset 0px 0px 0px 2px rgba(0, 132, 255, 1);
+  filter: drop-shadow(0px 1px 0.5px rgba(0, 0, 0, 0.079))
+    drop-shadow(0px 2px 0.5px rgba(0, 0, 0, 0.059))
+    drop-shadow(0px 1px 1.5px rgba(0, 0, 0, 0.1));
+  width: 264px;
+  height: 113px;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border-radius: 8px;
+}
+.avatarOneLine6 {
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+.avatarOneLine6 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.avatarOneLine6 > :global(.__wab_flex-container) > *,
+.avatarOneLine6 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.avatarOneLine6 > :global(.__wab_flex-container) > picture > img,
+.avatarOneLine6
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 8px;
+}
+.avatar7 {
+  background: url("/plasmic/fantaasta/images/avatar5.png") center center / cover no-repeat;
+  box-shadow: inset 0px 0px 0px 1px rgba(231, 231, 231, 1);
+  width: 32px;
+  height: 32px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+  border-radius: 256px;
+}
+.statusDot6 {
+  background: rgba(0, 132, 255, 1);
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 1);
+  width: 25%;
+  height: 25%;
+  display: block;
+  position: absolute;
+  top: 75%;
+  left: 75%;
+  overflow: hidden;
+  border-radius: 100px;
+}
+.text__qKwKp {
+  display: block;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(27, 27, 27, 1);
+  position: relative;
+}
+.svg__oUaj {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #e8e8e8;
+  width: 232px;
+  height: 1px;
+  display: block;
+  top: 60px;
+  left: 16px;
+}
+.badge5 {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 73px;
+  left: 16px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.xBaseBadge5 {
+  flex-direction: row;
+  background: linear-gradient(rgba(255, 149, 26, 0.1), rgba(255, 149, 26, 0.1)),
+    rgba(255, 255, 255, 1);
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  padding: 2px 6px;
+}
+.xBaseBadge5 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 4px);
+  width: calc(100% + 4px);
+}
+.xBaseBadge5 > :global(.__wab_flex-container) > *,
+.xBaseBadge5 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.xBaseBadge5 > :global(.__wab_flex-container) > picture > img,
+.xBaseBadge5
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 4px;
+}
+.svg___7LkYx {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #f98600;
+  width: 12px;
+  height: 12px;
+  display: block;
+  flex-shrink: 0;
+}
+.text7 {
+  display: block;
+  font-size: 13px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 20px;
+  color: rgba(248, 134, 0, 1);
+  position: relative;
+}
+.svg__p9GA {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #969696;
+  width: 12px;
+  height: 12px;
+  display: block;
+  flex-shrink: 0;
+}
+.text___3FFCx {
+  display: block;
+  font-size: 16px;
+  text-align: right;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(87, 86, 86, 1);
+  position: absolute;
+  top: 73px;
+  right: 16px;
+}
+.compo6 {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: inset 0px 0px 0px 2px rgba(0, 132, 255, 1);
+  filter: drop-shadow(0px 1px 0.5px rgba(0, 0, 0, 0.079))
+    drop-shadow(0px 2px 0.5px rgba(0, 0, 0, 0.059))
+    drop-shadow(0px 1px 1.5px rgba(0, 0, 0, 0.1));
+  width: 264px;
+  height: 113px;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border-radius: 8px;
+}
+.avatarOneLine7 {
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+.avatarOneLine7 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.avatarOneLine7 > :global(.__wab_flex-container) > *,
+.avatarOneLine7 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.avatarOneLine7 > :global(.__wab_flex-container) > picture > img,
+.avatarOneLine7
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 8px;
+}
+.avatar8 {
+  background: url("/plasmic/fantaasta/images/avatar5.png") center center / cover no-repeat;
+  box-shadow: inset 0px 0px 0px 1px rgba(231, 231, 231, 1);
+  width: 32px;
+  height: 32px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+  border-radius: 256px;
+}
+.statusDot7 {
+  background: rgba(0, 132, 255, 1);
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 1);
+  width: 25%;
+  height: 25%;
+  display: block;
+  position: absolute;
+  top: 75%;
+  left: 75%;
+  overflow: hidden;
+  border-radius: 100px;
+}
+.text__mcjTn {
+  display: block;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(27, 27, 27, 1);
+  position: relative;
+}
+.svg__ivId8 {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #e8e8e8;
+  width: 232px;
+  height: 1px;
+  display: block;
+  top: 60px;
+  left: 16px;
+}
+.badge6 {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 73px;
+  left: 16px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.xBaseBadge6 {
+  flex-direction: row;
+  background: linear-gradient(rgba(255, 149, 26, 0.1), rgba(255, 149, 26, 0.1)),
+    rgba(255, 255, 255, 1);
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  padding: 2px 6px;
+}
+.xBaseBadge6 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 4px);
+  width: calc(100% + 4px);
+}
+.xBaseBadge6 > :global(.__wab_flex-container) > *,
+.xBaseBadge6 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.xBaseBadge6 > :global(.__wab_flex-container) > picture > img,
+.xBaseBadge6
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 4px;
+}
+.svg__yPeuv {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #f98600;
+  width: 12px;
+  height: 12px;
+  display: block;
+  flex-shrink: 0;
+}
+.text8 {
+  display: block;
+  font-size: 13px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 20px;
+  color: rgba(248, 134, 0, 1);
+  position: relative;
+}
+.svg__gr8T7 {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #969696;
+  width: 12px;
+  height: 12px;
+  display: block;
+  flex-shrink: 0;
+}
+.text__vp6Ql {
+  display: block;
+  font-size: 16px;
+  text-align: right;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(87, 86, 86, 1);
+  position: absolute;
+  top: 73px;
+  right: 16px;
+}
+.compo7 {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: inset 0px 0px 0px 2px rgba(0, 132, 255, 1);
+  filter: drop-shadow(0px 1px 0.5px rgba(0, 0, 0, 0.079))
+    drop-shadow(0px 2px 0.5px rgba(0, 0, 0, 0.059))
+    drop-shadow(0px 1px 1.5px rgba(0, 0, 0, 0.1));
+  width: 264px;
+  height: 113px;
+  display: block;
+  overflow: hidden;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+.avatarOneLine8 {
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+.avatarOneLine8 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.avatarOneLine8 > :global(.__wab_flex-container) > *,
+.avatarOneLine8 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.avatarOneLine8 > :global(.__wab_flex-container) > picture > img,
+.avatarOneLine8
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 8px;
+}
+.avatar9 {
+  background: url("/plasmic/fantaasta/images/avatar5.png") center center / cover no-repeat;
+  box-shadow: inset 0px 0px 0px 1px rgba(231, 231, 231, 1);
+  width: 32px;
+  height: 32px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+  border-radius: 256px;
+}
+.statusDot8 {
+  background: rgba(0, 132, 255, 1);
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 1);
+  width: 25%;
+  height: 25%;
+  display: block;
+  position: absolute;
+  top: 75%;
+  left: 75%;
+  overflow: hidden;
+  border-radius: 100px;
+}
+.text__snI1B {
+  display: block;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(27, 27, 27, 1);
+  position: relative;
+}
+.svg__nT9OT {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #e8e8e8;
+  width: 232px;
+  height: 1px;
+  display: block;
+  top: 60px;
+  left: 16px;
+}
+.badge7 {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 73px;
+  left: 16px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.xBaseBadge7 {
+  flex-direction: row;
+  background: linear-gradient(rgba(255, 149, 26, 0.1), rgba(255, 149, 26, 0.1)),
+    rgba(255, 255, 255, 1);
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  padding: 2px 6px;
+}
+.xBaseBadge7 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 4px);
+  width: calc(100% + 4px);
+}
+.xBaseBadge7 > :global(.__wab_flex-container) > *,
+.xBaseBadge7 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.xBaseBadge7 > :global(.__wab_flex-container) > picture > img,
+.xBaseBadge7
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 4px;
+}
+.svg__wQEgr {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #f98600;
+  width: 12px;
+  height: 12px;
+  display: block;
+  flex-shrink: 0;
+}
+.text9 {
+  display: block;
+  font-size: 13px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 20px;
+  color: rgba(248, 134, 0, 1);
+  position: relative;
+}
+.svg__yrpP0 {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #969696;
+  width: 12px;
+  height: 12px;
+  display: block;
+  flex-shrink: 0;
+}
+.text__f4JAt {
+  display: block;
+  font-size: 16px;
+  text-align: right;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(87, 86, 86, 1);
+  position: absolute;
+  top: 73px;
+  right: 16px;
+}
+.compo8 {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: inset 0px 0px 0px 2px rgba(0, 132, 255, 1);
+  filter: drop-shadow(0px 1px 0.5px rgba(0, 0, 0, 0.079))
+    drop-shadow(0px 2px 0.5px rgba(0, 0, 0, 0.059))
+    drop-shadow(0px 1px 1.5px rgba(0, 0, 0, 0.1));
+  width: 264px;
+  height: 113px;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border-radius: 8px;
+}
+.avatarOneLine9 {
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+.avatarOneLine9 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.avatarOneLine9 > :global(.__wab_flex-container) > *,
+.avatarOneLine9 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.avatarOneLine9 > :global(.__wab_flex-container) > picture > img,
+.avatarOneLine9
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 8px;
+}
+.avatar10 {
+  background: url("/plasmic/fantaasta/images/avatar5.png") center center / cover no-repeat;
+  box-shadow: inset 0px 0px 0px 1px rgba(231, 231, 231, 1);
+  width: 32px;
+  height: 32px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+  border-radius: 256px;
+}
+.statusDot9 {
+  background: rgba(0, 132, 255, 1);
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 1);
+  width: 25%;
+  height: 25%;
+  display: block;
+  position: absolute;
+  top: 75%;
+  left: 75%;
+  overflow: hidden;
+  border-radius: 100px;
+}
+.text__usrg5 {
+  display: block;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(27, 27, 27, 1);
+  position: relative;
+}
+.svg__cZnaG {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #e8e8e8;
+  width: 232px;
+  height: 1px;
+  display: block;
+  top: 60px;
+  left: 16px;
+}
+.badge8 {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 73px;
+  left: 16px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.xBaseBadge8 {
+  flex-direction: row;
+  background: linear-gradient(rgba(255, 149, 26, 0.1), rgba(255, 149, 26, 0.1)),
+    rgba(255, 255, 255, 1);
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  padding: 2px 6px;
+}
+.xBaseBadge8 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 4px);
+  width: calc(100% + 4px);
+}
+.xBaseBadge8 > :global(.__wab_flex-container) > *,
+.xBaseBadge8 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.xBaseBadge8 > :global(.__wab_flex-container) > picture > img,
+.xBaseBadge8
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 4px;
+}
+.svg__ai2As {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #f98600;
+  width: 12px;
+  height: 12px;
+  display: block;
+  flex-shrink: 0;
+}
+.text10 {
+  display: block;
+  font-size: 13px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 20px;
+  color: rgba(248, 134, 0, 1);
+  position: relative;
+}
+.svg___4C4Dp {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #969696;
+  width: 12px;
+  height: 12px;
+  display: block;
+  flex-shrink: 0;
+}
+.text__njToG {
+  display: block;
+  font-size: 16px;
+  text-align: right;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(87, 86, 86, 1);
+  position: absolute;
+  top: 73px;
+  right: 16px;
+}
+.compo9 {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: inset 0px 0px 0px 2px rgba(0, 132, 255, 1);
+  filter: drop-shadow(0px 1px 0.5px rgba(0, 0, 0, 0.079))
+    drop-shadow(0px 2px 0.5px rgba(0, 0, 0, 0.059))
+    drop-shadow(0px 1px 1.5px rgba(0, 0, 0, 0.1));
+  width: 264px;
+  height: 113px;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border-radius: 8px;
+}
+.avatarOneLine10 {
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+.avatarOneLine10 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.avatarOneLine10 > :global(.__wab_flex-container) > *,
+.avatarOneLine10 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.avatarOneLine10 > :global(.__wab_flex-container) > picture > img,
+.avatarOneLine10
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 8px;
+}
+.avatar11 {
+  background: url("/plasmic/fantaasta/images/avatar5.png") center center / cover no-repeat;
+  box-shadow: inset 0px 0px 0px 1px rgba(231, 231, 231, 1);
+  width: 32px;
+  height: 32px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+  border-radius: 256px;
+}
+.statusDot10 {
+  background: rgba(0, 132, 255, 1);
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 1);
+  width: 25%;
+  height: 25%;
+  display: block;
+  position: absolute;
+  top: 75%;
+  left: 75%;
+  overflow: hidden;
+  border-radius: 100px;
+}
+.text__f1XiC {
+  display: block;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(27, 27, 27, 1);
+  position: relative;
+}
+.svg__xMPzD {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #e8e8e8;
+  width: 232px;
+  height: 1px;
+  display: block;
+  top: 60px;
+  left: 16px;
+}
+.badge9 {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 73px;
+  left: 16px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.xBaseBadge9 {
+  flex-direction: row;
+  background: linear-gradient(rgba(255, 149, 26, 0.1), rgba(255, 149, 26, 0.1)),
+    rgba(255, 255, 255, 1);
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  padding: 2px 6px;
+}
+.xBaseBadge9 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 4px);
+  width: calc(100% + 4px);
+}
+.xBaseBadge9 > :global(.__wab_flex-container) > *,
+.xBaseBadge9 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.xBaseBadge9 > :global(.__wab_flex-container) > picture > img,
+.xBaseBadge9
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 4px;
+}
+.svg___2Qkkb {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #f98600;
+  width: 12px;
+  height: 12px;
+  display: block;
+  flex-shrink: 0;
+}
+.text11 {
+  display: block;
+  font-size: 13px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 20px;
+  color: rgba(248, 134, 0, 1);
+  position: relative;
+}
+.svg__ruH8D {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #969696;
+  width: 12px;
+  height: 12px;
+  display: block;
+  flex-shrink: 0;
+}
+.text__luPuk {
+  display: block;
+  font-size: 16px;
+  text-align: right;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(87, 86, 86, 1);
+  position: absolute;
+  top: 73px;
+  right: 16px;
+}
+.compo10 {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: inset 0px 0px 0px 2px rgba(0, 132, 255, 1);
+  filter: drop-shadow(0px 1px 0.5px rgba(0, 0, 0, 0.079))
+    drop-shadow(0px 2px 0.5px rgba(0, 0, 0, 0.059))
+    drop-shadow(0px 1px 1.5px rgba(0, 0, 0, 0.1));
+  width: 264px;
+  height: 113px;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border-radius: 8px;
+}
+.avatarOneLine11 {
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+.avatarOneLine11 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.avatarOneLine11 > :global(.__wab_flex-container) > *,
+.avatarOneLine11 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.avatarOneLine11 > :global(.__wab_flex-container) > picture > img,
+.avatarOneLine11
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 8px;
+}
+.avatar12 {
+  background: url("/plasmic/fantaasta/images/avatar5.png") center center / cover no-repeat;
+  box-shadow: inset 0px 0px 0px 1px rgba(231, 231, 231, 1);
+  width: 32px;
+  height: 32px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+  border-radius: 256px;
+}
+.statusDot11 {
+  background: rgba(0, 132, 255, 1);
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 1);
+  width: 25%;
+  height: 25%;
+  display: block;
+  position: absolute;
+  top: 75%;
+  left: 75%;
+  overflow: hidden;
+  border-radius: 100px;
+}
+.text__poBBl {
+  display: block;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(27, 27, 27, 1);
+  position: relative;
+}
+.svg__yExk {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #e8e8e8;
+  width: 232px;
+  height: 1px;
+  display: block;
+  top: 60px;
+  left: 16px;
+}
+.badge10 {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 73px;
+  left: 16px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.xBaseBadge10 {
+  flex-direction: row;
+  background: linear-gradient(rgba(255, 149, 26, 0.1), rgba(255, 149, 26, 0.1)),
+    rgba(255, 255, 255, 1);
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  padding: 2px 6px;
+}
+.xBaseBadge10 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 4px);
+  width: calc(100% + 4px);
+}
+.xBaseBadge10 > :global(.__wab_flex-container) > *,
+.xBaseBadge10 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.xBaseBadge10 > :global(.__wab_flex-container) > picture > img,
+.xBaseBadge10
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 4px;
+}
+.svg__v2Sab {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #f98600;
+  width: 12px;
+  height: 12px;
+  display: block;
+  flex-shrink: 0;
+}
+.text12 {
+  display: block;
+  font-size: 13px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 20px;
+  color: rgba(248, 134, 0, 1);
+  position: relative;
+}
+.svg__eTOp {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #969696;
+  width: 12px;
+  height: 12px;
+  display: block;
+  flex-shrink: 0;
+}
+.text__nWsQx {
+  display: block;
+  font-size: 16px;
+  text-align: right;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(87, 86, 86, 1);
+  position: absolute;
+  top: 73px;
+  right: 16px;
+}
+.compo11 {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: inset 0px 0px 0px 2px rgba(0, 132, 255, 1);
+  filter: drop-shadow(0px 1px 0.5px rgba(0, 0, 0, 0.079))
+    drop-shadow(0px 2px 0.5px rgba(0, 0, 0, 0.059))
+    drop-shadow(0px 1px 1.5px rgba(0, 0, 0, 0.1));
+  width: 264px;
+  height: 113px;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border-radius: 8px;
+}
+.avatarOneLine12 {
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+.avatarOneLine12 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.avatarOneLine12 > :global(.__wab_flex-container) > *,
+.avatarOneLine12 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.avatarOneLine12 > :global(.__wab_flex-container) > picture > img,
+.avatarOneLine12
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 8px;
+}
+.avatar13 {
+  background: url("/plasmic/fantaasta/images/avatar5.png") center center / cover no-repeat;
+  box-shadow: inset 0px 0px 0px 1px rgba(231, 231, 231, 1);
+  width: 32px;
+  height: 32px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+  border-radius: 256px;
+}
+.statusDot12 {
+  background: rgba(0, 132, 255, 1);
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 1);
+  width: 25%;
+  height: 25%;
+  display: block;
+  position: absolute;
+  top: 75%;
+  left: 75%;
+  overflow: hidden;
+  border-radius: 100px;
+}
+.text__iGgN4 {
+  display: block;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(27, 27, 27, 1);
+  position: relative;
+}
+.svg__leFlK {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #e8e8e8;
+  width: 232px;
+  height: 1px;
+  display: block;
+  top: 60px;
+  left: 16px;
+}
+.badge11 {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 73px;
+  left: 16px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.xBaseBadge11 {
+  flex-direction: row;
+  background: linear-gradient(rgba(255, 149, 26, 0.1), rgba(255, 149, 26, 0.1)),
+    rgba(255, 255, 255, 1);
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  padding: 2px 6px;
+}
+.xBaseBadge11 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 4px);
+  width: calc(100% + 4px);
+}
+.xBaseBadge11 > :global(.__wab_flex-container) > *,
+.xBaseBadge11 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.xBaseBadge11 > :global(.__wab_flex-container) > picture > img,
+.xBaseBadge11
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 4px;
+}
+.svg___3D4Cc {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #f98600;
+  width: 12px;
+  height: 12px;
+  display: block;
+  flex-shrink: 0;
+}
+.text13 {
+  display: block;
+  font-size: 13px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 20px;
+  color: rgba(248, 134, 0, 1);
+  position: relative;
+}
+.svg___6WZpU {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #969696;
+  width: 12px;
+  height: 12px;
+  display: block;
+  flex-shrink: 0;
+}
+.text__vx72W {
+  display: block;
+  font-size: 16px;
+  text-align: right;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(87, 86, 86, 1);
+  position: absolute;
+  top: 73px;
+  right: 16px;
+}
+.compo12 {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: inset 0px 0px 0px 2px rgba(0, 132, 255, 1);
+  filter: drop-shadow(0px 1px 0.5px rgba(0, 0, 0, 0.079))
+    drop-shadow(0px 2px 0.5px rgba(0, 0, 0, 0.059))
+    drop-shadow(0px 1px 1.5px rgba(0, 0, 0, 0.1));
+  width: 264px;
+  height: 123px;
+  display: block;
+  position: relative;
+  top: auto;
+  left: auto;
+  overflow: hidden;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+.avatarOneLine13 {
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+.avatarOneLine13 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.avatarOneLine13 > :global(.__wab_flex-container) > *,
+.avatarOneLine13 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.avatarOneLine13 > :global(.__wab_flex-container) > picture > img,
+.avatarOneLine13
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 8px;
+}
+.avatar14 {
+  background: url("/plasmic/fantaasta/images/avatar5.png") center center / cover no-repeat;
+  box-shadow: inset 0px 0px 0px 1px rgba(231, 231, 231, 1);
+  width: 32px;
+  height: 32px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+  border-radius: 256px;
+}
+.statusDot13 {
+  background: rgba(0, 132, 255, 1);
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 1);
+  width: 25%;
+  height: 25%;
+  display: block;
+  position: absolute;
+  top: 75%;
+  left: 75%;
+  overflow: hidden;
+  border-radius: 100px;
+}
+.text__nEd6F {
+  display: block;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(27, 27, 27, 1);
+  position: relative;
+}
+.svg___3NbSi {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #e8e8e8;
+  width: 232px;
+  height: 1px;
+  display: block;
+  top: 60px;
+  left: 16px;
+}
+.badge12 {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 73px;
+  left: 16px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.xBaseBadge12 {
+  flex-direction: row;
+  background: linear-gradient(rgba(255, 149, 26, 0.1), rgba(255, 149, 26, 0.1)),
+    rgba(255, 255, 255, 1);
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  padding: 2px 6px;
+}
+.xBaseBadge12 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 4px);
+  width: calc(100% + 4px);
+}
+.xBaseBadge12 > :global(.__wab_flex-container) > *,
+.xBaseBadge12 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.xBaseBadge12 > :global(.__wab_flex-container) > picture > img,
+.xBaseBadge12
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 4px;
+}
+.svg___8Cccc {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #f98600;
+  width: 12px;
+  height: 12px;
+  display: block;
+  flex-shrink: 0;
+}
+.text14 {
+  display: block;
+  font-size: 13px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 20px;
+  color: rgba(248, 134, 0, 1);
+  position: relative;
+}
+.svg__i8DDw {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #969696;
+  width: 12px;
+  height: 12px;
+  display: block;
+  flex-shrink: 0;
+}
+.text__xohx5 {
+  display: block;
+  font-size: 16px;
+  text-align: right;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(87, 86, 86, 1);
+  position: absolute;
+  top: 73px;
+  right: 16px;
+}
+.columns {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: auto;
+  align-items: stretch;
+  flex-shrink: 1;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  min-width: 0;
+  padding: 8px;
+}
+.columns > :nth-child(4n + 1) {
+  width: calc((100% - 4 * 0px) * 3 / 12);
+}
+.columns > :nth-child(4n + 2) {
+  width: calc((100% - 4 * 0px) * 3 / 12);
+}
+.columns > :nth-child(4n + 3) {
+  width: calc((100% - 4 * 0px) * 3 / 12);
+}
+.columns > :nth-child(4n + 4) {
+  width: calc((100% - 4 * 0px) * 3 / 12);
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .columns {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 0;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .columns > :nth-child(1n + 1) {
+    width: calc((100% - 1 * 0px) * 12 / 12);
+  }
+}
+.column__h78Iq {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+  padding: 8px;
+}
+.column__bCdSj {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+  padding: 8px;
+}
+.column___8HLy4 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+  padding: 8px;
+}
+.column__m407B {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+  padding: 8px;
+}

@@ -16,6 +16,7 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 
 import {
   hasVariant,
@@ -36,14 +37,13 @@ import {
 import Button from "../../Button"; // plasmic-import: ILa2cLxyoTg0/component
 import ListItem from "../../ListItem"; // plasmic-import: I5LTwhtpH7uf/component
 
-import { useScreenVariants } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: F-KkpFIKCuog/globalVariant
+import { useScreenVariants as useScreenVariantsfKkpFikCuog } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: F-KkpFIKCuog/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
-import * as projectcss from "./plasmic_fantaasta.module.css"; // plasmic-import: xdSnfxWCziyzb8tBiGitqa/projectcss
-import * as sty from "./PlasmicValuesSection2Dark.module.css"; // plasmic-import: TjWE54Gs_7oW/css
 
-import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: Gng1eaWxMrAo/icon
+import projectcss from "./plasmic_fantaasta.module.css"; // plasmic-import: xdSnfxWCziyzb8tBiGitqa/projectcss
+import sty from "./PlasmicValuesSection2Dark.module.css"; // plasmic-import: TjWE54Gs_7oW/css
+
 import Icon17Icon from "./icons/PlasmicIcon__Icon17"; // plasmic-import: XGEWJsAsZQXH/icon
 import Icon16Icon from "./icons/PlasmicIcon__Icon16"; // plasmic-import: ZHsGtcpBsGnf/icon
 
@@ -77,13 +77,13 @@ function PlasmicValuesSection2Dark__RenderFunc(props: {
   variants: PlasmicValuesSection2Dark__VariantsArgs;
   args: PlasmicValuesSection2Dark__ArgsType;
   overrides: PlasmicValuesSection2Dark__OverridesType;
-  dataFetches?: PlasmicValuesSection2Dark__Fetches;
+
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode, dataFetches } = props;
+  const { variants, args, overrides, forNode } = props;
 
   const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariants()
+    screen: useScreenVariantsfKkpFikCuog()
   });
 
   return (
@@ -94,14 +94,21 @@ function PlasmicValuesSection2Dark__RenderFunc(props: {
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       hasGap={true}
-      className={classNames(defaultcss.all, projectcss.root_reset, sty.root)}
+      className={classNames(
+        projectcss.all,
+        projectcss.root_reset,
+        projectcss.plasmic_default_styles,
+        projectcss.plasmic_mixins,
+        projectcss.plasmic_tokens,
+        sty.root
+      )}
     >
       <p.Stack
         as={"div"}
         data-plasmic-name={"foreground"}
         data-plasmic-override={overrides.foreground}
         hasGap={true}
-        className={classNames(defaultcss.all, sty.foreground)}
+        className={classNames(projectcss.all, sty.foreground)}
       >
         {p.renderPlasmicSlot({
           defaultContents: (
@@ -109,12 +116,12 @@ function PlasmicValuesSection2Dark__RenderFunc(props: {
               <p.Stack
                 as={"div"}
                 hasGap={true}
-                className={classNames(defaultcss.all, sty.freeBox__koK4V)}
+                className={classNames(projectcss.all, sty.freeBox__koK4V)}
               >
                 <div
                   className={classNames(
-                    defaultcss.all,
-                    defaultcss.__wab_text,
+                    projectcss.all,
+                    projectcss.__wab_text,
                     sty.text__qYcHw
                   )}
                 >
@@ -123,8 +130,9 @@ function PlasmicValuesSection2Dark__RenderFunc(props: {
 
                 <h2
                   className={classNames(
-                    defaultcss.h2,
-                    defaultcss.__wab_text,
+                    projectcss.all,
+                    projectcss.h2,
+                    projectcss.__wab_text,
                     sty.h2__wuOin
                   )}
                 >
@@ -133,8 +141,8 @@ function PlasmicValuesSection2Dark__RenderFunc(props: {
 
                 <div
                   className={classNames(
-                    defaultcss.all,
-                    defaultcss.__wab_text,
+                    projectcss.all,
+                    projectcss.__wab_text,
                     sty.text__i02V
                   )}
                 >
@@ -146,44 +154,49 @@ function PlasmicValuesSection2Dark__RenderFunc(props: {
                 <Button
                   children2={
                     <Icon17Icon
-                      className={classNames(defaultcss.all, sty.svg___5SmFm)}
+                      className={classNames(projectcss.all, sty.svg___5SmFm)}
                       role={"img"}
                     />
                   }
                   className={classNames("__wab_instance", sty.button__saSeQ)}
-                  endIcon={"endIcon" as const}
-                  flat={"flat" as const}
-                  linkLabel={"linkLabel" as const}
-                  noGap={"noGap" as const}
+                  endIcon={true}
+                  flat={true}
+                  linkLabel={true}
+                  noGap={true}
                   slot={
                     <div
                       className={classNames(
-                        defaultcss.all,
-                        defaultcss.__wab_text,
+                        projectcss.all,
+                        projectcss.__wab_text,
                         sty.text__z0B3Y
                       )}
                     >
                       {"Learn more"}
                     </div>
                   }
-                />
+                >
+                  <svg
+                    className={classNames(projectcss.all, sty.svg__hnpBs)}
+                    role={"img"}
+                  />
+                </Button>
               </p.Stack>
 
-              <div className={classNames(defaultcss.all, sty.freeBox__lMvCf)}>
+              <div className={classNames(projectcss.all, sty.freeBox__lMvCf)}>
                 <ListItem
                   bottomBorder={"dark" as const}
                   className={classNames("__wab_instance", sty.listItem___2Azbf)}
                   slot={
                     <Icon16Icon
-                      className={classNames(defaultcss.all, sty.svg__w2OEi)}
+                      className={classNames(projectcss.all, sty.svg__w2OEi)}
                       role={"img"}
                     />
                   }
                 >
                   <div
                     className={classNames(
-                      defaultcss.all,
-                      defaultcss.__wab_text,
+                      projectcss.all,
+                      projectcss.__wab_text,
                       sty.text__gAu5R
                     )}
                   >
@@ -196,15 +209,15 @@ function PlasmicValuesSection2Dark__RenderFunc(props: {
                   className={classNames("__wab_instance", sty.listItem__s6Hj4)}
                   slot={
                     <Icon16Icon
-                      className={classNames(defaultcss.all, sty.svg__cQtOi)}
+                      className={classNames(projectcss.all, sty.svg__cQtOi)}
                       role={"img"}
                     />
                   }
                 >
                   <div
                     className={classNames(
-                      defaultcss.all,
-                      defaultcss.__wab_text,
+                      projectcss.all,
+                      projectcss.__wab_text,
                       sty.text__wceBl
                     )}
                   >
@@ -217,15 +230,15 @@ function PlasmicValuesSection2Dark__RenderFunc(props: {
                   className={classNames("__wab_instance", sty.listItem___1WJyy)}
                   slot={
                     <Icon16Icon
-                      className={classNames(defaultcss.all, sty.svg___7Whxh)}
+                      className={classNames(projectcss.all, sty.svg___7Whxh)}
                       role={"img"}
                     />
                   }
                 >
                   <div
                     className={classNames(
-                      defaultcss.all,
-                      defaultcss.__wab_text,
+                      projectcss.all,
+                      projectcss.__wab_text,
                       sty.text__tDkkD
                     )}
                   >
@@ -238,15 +251,15 @@ function PlasmicValuesSection2Dark__RenderFunc(props: {
                   className={classNames("__wab_instance", sty.listItem___9NqbB)}
                   slot={
                     <Icon16Icon
-                      className={classNames(defaultcss.all, sty.svg__t4J3)}
+                      className={classNames(projectcss.all, sty.svg__t4J3)}
                       role={"img"}
                     />
                   }
                 >
                   <div
                     className={classNames(
-                      defaultcss.all,
-                      defaultcss.__wab_text,
+                      projectcss.all,
+                      projectcss.__wab_text,
                       sty.text__lawI1
                     )}
                   >
@@ -258,15 +271,15 @@ function PlasmicValuesSection2Dark__RenderFunc(props: {
                   className={classNames("__wab_instance", sty.listItem__eClo)}
                   slot={
                     <Icon16Icon
-                      className={classNames(defaultcss.all, sty.svg__cDJoA)}
+                      className={classNames(projectcss.all, sty.svg__cDJoA)}
                       role={"img"}
                     />
                   }
                 >
                   <div
                     className={classNames(
-                      defaultcss.all,
-                      defaultcss.__wab_text,
+                      projectcss.all,
+                      projectcss.__wab_text,
                       sty.text__kAyTj
                     )}
                   >
@@ -306,7 +319,6 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicValuesSection2Dark__VariantsArgs;
     args?: PlasmicValuesSection2Dark__ArgsType;
     overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicValuesSection2Dark__Fetches;
   } & Omit<PlasmicValuesSection2Dark__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     // Specify args directly as props
     Omit<PlasmicValuesSection2Dark__ArgsType, ReservedPropsType> &
@@ -333,13 +345,10 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       internalVariantPropNames: PlasmicValuesSection2Dark__VariantProps
     });
 
-    const { dataFetches } = props;
-
     return PlasmicValuesSection2Dark__RenderFunc({
       variants,
       args,
       overrides,
-      dataFetches,
       forNode: nodeName
     });
   };

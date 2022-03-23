@@ -249,19 +249,6 @@
           "componentType": "component"
         },
         {
-          "id": "p3a1HfRCrQ1",
-          "name": "LoginFrom",
-          "type": "managed",
-          "projectId": "xdSnfxWCziyzb8tBiGitqa",
-          "renderModuleFilePath": "plasmic/fantaasta/PlasmicLoginFrom.tsx",
-          "importSpec": {
-            "modulePath": "LoginFrom.tsx"
-          },
-          "cssFilePath": "plasmic/fantaasta/PlasmicLoginFrom.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
           "id": "JGXUTtU5D6Eq",
           "name": "SettingInput",
           "type": "managed",
@@ -273,19 +260,6 @@
           "cssFilePath": "plasmic/fantaasta/PlasmicSettingInput.module.css",
           "scheme": "blackbox",
           "componentType": "component"
-        },
-        {
-          "id": "ZPtvWtdss9",
-          "name": "Arenahome",
-          "type": "managed",
-          "projectId": "xdSnfxWCziyzb8tBiGitqa",
-          "renderModuleFilePath": "plasmic/fantaasta/PlasmicArenahome.tsx",
-          "importSpec": {
-            "modulePath": "../pages/arena/home.tsx"
-          },
-          "cssFilePath": "plasmic/fantaasta/PlasmicArenahome.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
         },
         {
           "id": "Uev3p9VZayM",
@@ -314,19 +288,6 @@
           "componentType": "component"
         },
         {
-          "id": "wfDe24iI-Nf",
-          "name": "NewAstaForm",
-          "type": "managed",
-          "projectId": "xdSnfxWCziyzb8tBiGitqa",
-          "renderModuleFilePath": "plasmic/fantaasta/PlasmicNewAstaForm.tsx",
-          "importSpec": {
-            "modulePath": "NewAstaForm.tsx"
-          },
-          "cssFilePath": "plasmic/fantaasta/PlasmicNewAstaForm.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
           "id": "7aFEpfg1e-",
           "name": "AstaItem",
           "type": "managed",
@@ -338,29 +299,166 @@
           "cssFilePath": "plasmic/fantaasta/PlasmicAstaItem.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "p3a1HfRCrQ1",
+          "name": "LoginForm",
+          "type": "managed",
+          "projectId": "xdSnfxWCziyzb8tBiGitqa",
+          "renderModuleFilePath": "plasmic/fantaasta/PlasmicLoginForm.tsx",
+          "importSpec": {
+            "modulePath": "LoginForm.tsx"
+          },
+          "cssFilePath": "plasmic/fantaasta/PlasmicLoginForm.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "ZPtvWtdss9",
+          "name": "Apphome",
+          "type": "managed",
+          "projectId": "xdSnfxWCziyzb8tBiGitqa",
+          "renderModuleFilePath": "plasmic/fantaasta/PlasmicApphome.tsx",
+          "importSpec": {
+            "modulePath": "../pages/app/home.tsx"
+          },
+          "cssFilePath": "plasmic/fantaasta/PlasmicApphome.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "wfDe24iI-Nf",
+          "name": "ZoldNewAstaForm",
+          "type": "managed",
+          "projectId": "xdSnfxWCziyzb8tBiGitqa",
+          "renderModuleFilePath": "plasmic/fantaasta/PlasmicZoldNewAstaForm.tsx",
+          "importSpec": {
+            "modulePath": "ZoldNewAstaForm.tsx"
+          },
+          "cssFilePath": "plasmic/fantaasta/PlasmicZoldNewAstaForm.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "v5XTG1rwiH",
+          "name": "ProfileCard",
+          "type": "managed",
+          "projectId": "xdSnfxWCziyzb8tBiGitqa",
+          "renderModuleFilePath": "plasmic/fantaasta/PlasmicProfileCard.tsx",
+          "importSpec": {
+            "modulePath": "ProfileCard.tsx"
+          },
+          "cssFilePath": "plasmic/fantaasta/PlasmicProfileCard.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "65sYWpc3XrI",
+          "name": "Checkbox",
+          "type": "managed",
+          "projectId": "xdSnfxWCziyzb8tBiGitqa",
+          "renderModuleFilePath": "plasmic/fantaasta/PlasmicCheckbox.tsx",
+          "importSpec": {
+            "modulePath": "Checkbox.tsx"
+          },
+          "cssFilePath": "plasmic/fantaasta/PlasmicCheckbox.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "checkbox"
+        },
+        {
+          "id": "TCjH0W7XCS",
+          "name": "Dashboard",
+          "type": "managed",
+          "projectId": "xdSnfxWCziyzb8tBiGitqa",
+          "renderModuleFilePath": "plasmic/fantaasta/PlasmicDashboard.tsx",
+          "importSpec": {
+            "modulePath": "Dashboard.tsx"
+          },
+          "cssFilePath": "plasmic/fantaasta/PlasmicDashboard.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "NSc17XI_uh",
+          "name": "SidebarItem",
+          "type": "managed",
+          "projectId": "xdSnfxWCziyzb8tBiGitqa",
+          "renderModuleFilePath": "plasmic/fantaasta/PlasmicSidebarItem.tsx",
+          "importSpec": {
+            "modulePath": "SidebarItem.tsx"
+          },
+          "cssFilePath": "plasmic/fantaasta/PlasmicSidebarItem.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "ZY2_lRDBfym",
+          "name": "AstaCard",
+          "type": "managed",
+          "projectId": "xdSnfxWCziyzb8tBiGitqa",
+          "renderModuleFilePath": "plasmic/fantaasta/PlasmicAstaCard.tsx",
+          "importSpec": {
+            "modulePath": "AstaCard.tsx"
+          },
+          "cssFilePath": "plasmic/fantaasta/PlasmicAstaCard.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "8XFSOb_fdhz",
+          "name": "AstaSettings",
+          "type": "managed",
+          "projectId": "xdSnfxWCziyzb8tBiGitqa",
+          "renderModuleFilePath": "plasmic/fantaasta/PlasmicAstaSettings.tsx",
+          "importSpec": {
+            "modulePath": "AstaSettings.tsx"
+          },
+          "cssFilePath": "plasmic/fantaasta/PlasmicAstaSettings.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "u-hfTCv0IT",
+          "name": "Appdashboardhome",
+          "type": "managed",
+          "projectId": "xdSnfxWCziyzb8tBiGitqa",
+          "renderModuleFilePath": "plasmic/fantaasta/PlasmicAppdashboardhome.tsx",
+          "importSpec": {
+            "modulePath": "../pages/app/dashboard/home.tsx"
+          },
+          "cssFilePath": "plasmic/fantaasta/PlasmicAppdashboardhome.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "iHDVMRGn6s",
+          "name": "Appdashboardsetting",
+          "type": "managed",
+          "projectId": "xdSnfxWCziyzb8tBiGitqa",
+          "renderModuleFilePath": "plasmic/fantaasta/PlasmicAppdashboardsetting.tsx",
+          "importSpec": {
+            "modulePath": "../pages/app/dashboard/setting.tsx"
+          },
+          "cssFilePath": "plasmic/fantaasta/PlasmicAppdashboardsetting.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "OBeI1cWkLth",
+          "name": "HomeDash",
+          "type": "managed",
+          "projectId": "xdSnfxWCziyzb8tBiGitqa",
+          "renderModuleFilePath": "plasmic/fantaasta/PlasmicHomeDash.tsx",
+          "importSpec": {
+            "modulePath": "../pages/home-dash.tsx"
+          },
+          "cssFilePath": "plasmic/fantaasta/PlasmicHomeDash.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
-        {
-          "id": "Gng1eaWxMrAo",
-          "name": "IconIcon",
-          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Icon.tsx"
-        },
-        {
-          "id": "5t9BS3r8A2SR",
-          "name": "Icon6Icon",
-          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Icon6.tsx"
-        },
-        {
-          "id": "pXWkAvQ7tVd0",
-          "name": "Icon5Icon",
-          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Icon5.tsx"
-        },
-        {
-          "id": "1Sae458yn7P2",
-          "name": "Icon9Icon",
-          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Icon9.tsx"
-        },
         {
           "id": "yD18I_eEzZ3x",
           "name": "Icon2Icon",
@@ -385,6 +483,976 @@
           "id": "ZHsGtcpBsGnf",
           "name": "Icon16Icon",
           "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Icon16.tsx"
+        },
+        {
+          "id": "un1KrORrRr",
+          "name": "Icon3Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Icon3.tsx"
+        },
+        {
+          "id": "ZCe7IWOTk5",
+          "name": "DividerVerticalIcon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__DividerVertical.tsx"
+        },
+        {
+          "id": "SrcgCiUQX2L",
+          "name": "IconLeftIcon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__IconLeft.tsx"
+        },
+        {
+          "id": "1mJJX8kJknM",
+          "name": "VectorIcon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Vector.tsx"
+        },
+        {
+          "id": "sohnyY4ZzCc",
+          "name": "PathIcon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Path.tsx"
+        },
+        {
+          "id": "dh5j-mezk7e",
+          "name": "Vector2Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Vector2.tsx"
+        },
+        {
+          "id": "mFVTXyo8nA2",
+          "name": "XLgIcon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__XLg.tsx"
+        },
+        {
+          "id": "9XeCl2qUNE-",
+          "name": "DividerHorizontalIcon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__DividerHorizontal.tsx"
+        },
+        {
+          "id": "3epNxMaLGWR",
+          "name": "Path3Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Path3.tsx"
+        },
+        {
+          "id": "RoP54Ojdan1",
+          "name": "CombinedShapeIcon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__CombinedShape.tsx"
+        },
+        {
+          "id": "Aprn1Sf2ty",
+          "name": "Icon4Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Icon4.tsx"
+        },
+        {
+          "id": "wnkBG4x777",
+          "name": "Icon7Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Icon7.tsx"
+        },
+        {
+          "id": "GZDWO54jRE",
+          "name": "Icon10Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Icon10.tsx"
+        },
+        {
+          "id": "i5Uv0u0VyHT",
+          "name": "DashCircleFillIcon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__DashCircleFill.tsx"
+        },
+        {
+          "id": "QEFYuz0ULWC",
+          "name": "CheckboxsingledefaultIcon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Checkboxsingledefault.tsx"
+        },
+        {
+          "id": "h0O5OQ-QEaD",
+          "name": "ChevronRightIcon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__ChevronRight.tsx"
+        },
+        {
+          "id": "pcYbXYOH8go",
+          "name": "Line52Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Line52.tsx"
+        },
+        {
+          "id": "nri34yGUzn",
+          "name": "DividerVertical2Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__DividerVertical2.tsx"
+        },
+        {
+          "id": "MkKCu9eRrPT",
+          "name": "DividerHorizontal2Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__DividerHorizontal2.tsx"
+        },
+        {
+          "id": "8yStmcR6aRk",
+          "name": "ActiveIndicatorIcon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__ActiveIndicator.tsx"
+        },
+        {
+          "id": "6MmU0D3QmwB",
+          "name": "ActiveIndicator2Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__ActiveIndicator2.tsx"
+        },
+        {
+          "id": "fHjhfZsSDH7",
+          "name": "ActiveIndicator3Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__ActiveIndicator3.tsx"
+        },
+        {
+          "id": "AuhCPDFxjfa",
+          "name": "ChevronRight2Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__ChevronRight2.tsx"
+        },
+        {
+          "id": "Rl11WbRpAZF",
+          "name": "LineIcon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Line.tsx"
+        },
+        {
+          "id": "zwsKmdjnec2L",
+          "name": "TableborderhorizontalIcon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Tableborderhorizontal.tsx"
+        },
+        {
+          "id": "D_cVyFaAniRu",
+          "name": "TableborderverticalIcon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Tablebordervertical.tsx"
+        },
+        {
+          "id": "Y4kFOXcZoWNI",
+          "name": "Tablebordervertical2Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Tablebordervertical2.tsx"
+        },
+        {
+          "id": "mZyH_7PAB1_p",
+          "name": "Tableborderhorizontal2Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Tableborderhorizontal2.tsx"
+        },
+        {
+          "id": "A-OR9aC0xrHN",
+          "name": "Tableborderhorizontal3Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Tableborderhorizontal3.tsx"
+        },
+        {
+          "id": "ZaXizMNEiwLa",
+          "name": "Tableborderhorizontal4Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Tableborderhorizontal4.tsx"
+        },
+        {
+          "id": "uZqbocyjAgYI",
+          "name": "TagindicatorIcon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Tagindicator.tsx"
+        },
+        {
+          "id": "Lz23Hm0F7Oi",
+          "name": "Tableborderhorizontal5Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Tableborderhorizontal5.tsx"
+        },
+        {
+          "id": "EarUJSWco6P",
+          "name": "ChevronRight3Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__ChevronRight3.tsx"
+        },
+        {
+          "id": "CfNGeeJv-Vq",
+          "name": "Tableborderhorizontal6Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Tableborderhorizontal6.tsx"
+        },
+        {
+          "id": "cvpnVnNYSpS",
+          "name": "Line2Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Line2.tsx"
+        },
+        {
+          "id": "wFdAgt-MAnO",
+          "name": "Icon11Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Icon11.tsx"
+        },
+        {
+          "id": "aX3YFTxh-K0",
+          "name": "Icon12Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Icon12.tsx"
+        },
+        {
+          "id": "JSPiF11GguA",
+          "name": "DividerVertical3Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__DividerVertical3.tsx"
+        },
+        {
+          "id": "_Ezq5fZkqaG",
+          "name": "CheckIcon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Check.tsx"
+        },
+        {
+          "id": "GoHHQ_Nf8Hc",
+          "name": "IndeterminateIcon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Indeterminate.tsx"
+        },
+        {
+          "id": "WTGQtc0Orv",
+          "name": "Icon13Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Icon13.tsx"
+        },
+        {
+          "id": "Sae6eXYvAd",
+          "name": "Icon15Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Icon15.tsx"
+        },
+        {
+          "id": "VM13P2C7Dzq",
+          "name": "MaskIcon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask.tsx"
+        },
+        {
+          "id": "EiaIOeTIzbb",
+          "name": "Image18Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Image18.tsx"
+        },
+        {
+          "id": "fqwuN8SDnGW",
+          "name": "Mask3Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask3.tsx"
+        },
+        {
+          "id": "Pm8y-hVHOQ3",
+          "name": "Mask4Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask4.tsx"
+        },
+        {
+          "id": "_VLS2f7CHap",
+          "name": "ShapeIcon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Shape.tsx"
+        },
+        {
+          "id": "XoxdLaOqqR_",
+          "name": "Mask5Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask5.tsx"
+        },
+        {
+          "id": "9EyFVvDK_s8",
+          "name": "Mask6Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask6.tsx"
+        },
+        {
+          "id": "5CGn7ovdK3P",
+          "name": "Mask7Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask7.tsx"
+        },
+        {
+          "id": "YXg5XWp4K",
+          "name": "Mask8Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask8.tsx"
+        },
+        {
+          "id": "ATK5CmqIZF",
+          "name": "Mask9Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask9.tsx"
+        },
+        {
+          "id": "BYqxgmnDfFg",
+          "name": "Mask10Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask10.tsx"
+        },
+        {
+          "id": "wBLM6-aqQAZ",
+          "name": "Mask11Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask11.tsx"
+        },
+        {
+          "id": "lgfiRjXLsfk",
+          "name": "Mask12Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask12.tsx"
+        },
+        {
+          "id": "hDnWIvSfnjM",
+          "name": "Mask13Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask13.tsx"
+        },
+        {
+          "id": "qGCdj0aKFkJ",
+          "name": "Mask14Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask14.tsx"
+        },
+        {
+          "id": "nLkfpWNU6EQ",
+          "name": "Mask15Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask15.tsx"
+        },
+        {
+          "id": "PKHZDaqB7lO",
+          "name": "Mask16Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask16.tsx"
+        },
+        {
+          "id": "fv9X7XP1hiA",
+          "name": "Mask17Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask17.tsx"
+        },
+        {
+          "id": "sbLa6uh1CI9",
+          "name": "Mask18Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask18.tsx"
+        },
+        {
+          "id": "J1A3jXcM6JG",
+          "name": "Mask19Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask19.tsx"
+        },
+        {
+          "id": "qTLcFdYapWC",
+          "name": "Mask20Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask20.tsx"
+        },
+        {
+          "id": "2gG40OTllcK",
+          "name": "Mask21Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask21.tsx"
+        },
+        {
+          "id": "-UdaKYHhbL5",
+          "name": "ShadowIcon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Shadow.tsx"
+        },
+        {
+          "id": "juhZIeSBoZ3",
+          "name": "Background2Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Background2.tsx"
+        },
+        {
+          "id": "gT2GnfaDwb3",
+          "name": "Mask22Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask22.tsx"
+        },
+        {
+          "id": "Wg6c4ZytgFg",
+          "name": "Mask23Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask23.tsx"
+        },
+        {
+          "id": "hxKJqywdF9O",
+          "name": "Path4Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Path4.tsx"
+        },
+        {
+          "id": "fBZrQDGCgHF",
+          "name": "Shape3CopyIcon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Shape3Copy.tsx"
+        },
+        {
+          "id": "ikq-pou-bI8",
+          "name": "Mask24Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask24.tsx"
+        },
+        {
+          "id": "1Pmmo3WWvbp",
+          "name": "Mask25Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask25.tsx"
+        },
+        {
+          "id": "igG9l4diLLx",
+          "name": "OvalIcon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Oval.tsx"
+        },
+        {
+          "id": "8y47eppczQx",
+          "name": "Mask26Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask26.tsx"
+        },
+        {
+          "id": "4fqn0AOq5_W",
+          "name": "Mask27Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask27.tsx"
+        },
+        {
+          "id": "m1QebsyGrhg",
+          "name": "Mask28Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask28.tsx"
+        },
+        {
+          "id": "Bxo0DnF2ux3",
+          "name": "Mask29Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask29.tsx"
+        },
+        {
+          "id": "bdPUcAWs6na",
+          "name": "Mask30Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask30.tsx"
+        },
+        {
+          "id": "mgrFbhEL_CR",
+          "name": "Mask31Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask31.tsx"
+        },
+        {
+          "id": "2TKbf2PbduO",
+          "name": "Mask32Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask32.tsx"
+        },
+        {
+          "id": "NFvKOdbiazJ",
+          "name": "Oval2Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Oval2.tsx"
+        },
+        {
+          "id": "ijfgwIselY0",
+          "name": "Oval3Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Oval3.tsx"
+        },
+        {
+          "id": "axyZByrmOlq",
+          "name": "Oval4Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Oval4.tsx"
+        },
+        {
+          "id": "sLFOS1y71Z7",
+          "name": "Path15Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Path15.tsx"
+        },
+        {
+          "id": "X4jUAivV-eT",
+          "name": "Line3Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Line3.tsx"
+        },
+        {
+          "id": "rXzEwWBq6nK",
+          "name": "CircleIcon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Circle.tsx"
+        },
+        {
+          "id": "JsEjq8S6X49",
+          "name": "Mask33Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask33.tsx"
+        },
+        {
+          "id": "zT3Vcdtkt",
+          "name": "Mask34Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask34.tsx"
+        },
+        {
+          "id": "1ckfzMd9x6A",
+          "name": "Path6Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Path6.tsx"
+        },
+        {
+          "id": "9XCF1i_hMcD",
+          "name": "Path7Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Path7.tsx"
+        },
+        {
+          "id": "F5s1jUcO1eM",
+          "name": "GroupIcon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Group.tsx"
+        },
+        {
+          "id": "nDodMZyq5eE",
+          "name": "InternetExplorerIcon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__InternetExplorer.tsx"
+        },
+        {
+          "id": "xOx4MVvNwGW",
+          "name": "Shape2Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Shape2.tsx"
+        },
+        {
+          "id": "zeuGmqhO2VG",
+          "name": "Shape3Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Shape3.tsx"
+        },
+        {
+          "id": "WZEEZH38bSt",
+          "name": "Oval5Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Oval5.tsx"
+        },
+        {
+          "id": "Hy0Izink0J-",
+          "name": "Mask35Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask35.tsx"
+        },
+        {
+          "id": "5fJcuMEMhxa",
+          "name": "Mask36Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask36.tsx"
+        },
+        {
+          "id": "j-3xKpguUYu",
+          "name": "Line4Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Line4.tsx"
+        },
+        {
+          "id": "LVbIk8rQz7J",
+          "name": "Path8Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Path8.tsx"
+        },
+        {
+          "id": "0UeeZ5sUbakz",
+          "name": "Mask37Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask37.tsx"
+        },
+        {
+          "id": "IxQ8a_M1Bduz",
+          "name": "Oval6Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Oval6.tsx"
+        },
+        {
+          "id": "z6tzJgw3o26E",
+          "name": "Mask38Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask38.tsx"
+        },
+        {
+          "id": "TMLjeBAZXW4o",
+          "name": "Group4Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Group4.tsx"
+        },
+        {
+          "id": "oLBRZyQa-88m",
+          "name": "Group5Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Group5.tsx"
+        },
+        {
+          "id": "-bSF4cULYm3K",
+          "name": "Path9Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Path9.tsx"
+        },
+        {
+          "id": "qOg1JWyP8aSd",
+          "name": "Path10Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Path10.tsx"
+        },
+        {
+          "id": "GzZvvAjFLAnN",
+          "name": "Group6Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Group6.tsx"
+        },
+        {
+          "id": "nrbkh2yREhbf",
+          "name": "Path11Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Path11.tsx"
+        },
+        {
+          "id": "aBnmRNDvk5hC",
+          "name": "Path12Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Path12.tsx"
+        },
+        {
+          "id": "rvdhPCmEzlT8",
+          "name": "Group7Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Group7.tsx"
+        },
+        {
+          "id": "4K5ap0SRzI5N",
+          "name": "Path13Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Path13.tsx"
+        },
+        {
+          "id": "tZWIEUnmxmQg",
+          "name": "Group8Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Group8.tsx"
+        },
+        {
+          "id": "4-TWw5UFr4QB",
+          "name": "Path14Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Path14.tsx"
+        },
+        {
+          "id": "FQ6mhimHhKzd",
+          "name": "Group9Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Group9.tsx"
+        },
+        {
+          "id": "as2a49UTj21i",
+          "name": "Group10Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Group10.tsx"
+        },
+        {
+          "id": "MsMXp9mG6N5F",
+          "name": "Oval7Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Oval7.tsx"
+        },
+        {
+          "id": "xKumJ-3vD7C8",
+          "name": "Oval8Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Oval8.tsx"
+        },
+        {
+          "id": "bNlaafBOZxt0",
+          "name": "Group11Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Group11.tsx"
+        },
+        {
+          "id": "w4h7RIPqkZb8",
+          "name": "Shape4Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Shape4.tsx"
+        },
+        {
+          "id": "x45WSAaMZcF1",
+          "name": "Path16Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Path16.tsx"
+        },
+        {
+          "id": "PcTh9Xvx0Cf3",
+          "name": "Path17Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Path17.tsx"
+        },
+        {
+          "id": "MDQWH3jYvaxn",
+          "name": "Path18Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Path18.tsx"
+        },
+        {
+          "id": "jBBTKzubJ",
+          "name": "Path19Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Path19.tsx"
+        },
+        {
+          "id": "lIpyrRZUfJ",
+          "name": "Mask39Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask39.tsx"
+        },
+        {
+          "id": "r2nzYfpeaEo",
+          "name": "Mask40Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask40.tsx"
+        },
+        {
+          "id": "IiWjA6gXphQ",
+          "name": "Group12Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Group12.tsx"
+        },
+        {
+          "id": "99faezqlm3b",
+          "name": "Path20Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Path20.tsx"
+        },
+        {
+          "id": "ejBg5MlAxyF",
+          "name": "Group13Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Group13.tsx"
+        },
+        {
+          "id": "D6zKXG7GAca",
+          "name": "Path21Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Path21.tsx"
+        },
+        {
+          "id": "5wRtyXlknbO",
+          "name": "Mask41Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask41.tsx"
+        },
+        {
+          "id": "9Itk0X46wkC",
+          "name": "Group14Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Group14.tsx"
+        },
+        {
+          "id": "8vxTSJjGA80",
+          "name": "Path22Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Path22.tsx"
+        },
+        {
+          "id": "Z7s6lJy7ich",
+          "name": "Path23Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Path23.tsx"
+        },
+        {
+          "id": "8Lh3T4AuXZg",
+          "name": "Path24Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Path24.tsx"
+        },
+        {
+          "id": "95Ssh-Ccm9f",
+          "name": "Path25Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Path25.tsx"
+        },
+        {
+          "id": "pGQQReYymch",
+          "name": "Path26Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Path26.tsx"
+        },
+        {
+          "id": "28udtwbc18t",
+          "name": "Path27Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Path27.tsx"
+        },
+        {
+          "id": "-B1s9KO9Qja",
+          "name": "Group15Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Group15.tsx"
+        },
+        {
+          "id": "hTerhpsbOs5",
+          "name": "Path28Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Path28.tsx"
+        },
+        {
+          "id": "1ZKGJjErhDw",
+          "name": "Path29Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Path29.tsx"
+        },
+        {
+          "id": "L0VFnL_XPBC",
+          "name": "Group16Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Group16.tsx"
+        },
+        {
+          "id": "JRoINB84EAw",
+          "name": "Path30Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Path30.tsx"
+        },
+        {
+          "id": "m-y5Ts-NDjD",
+          "name": "Group17Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Group17.tsx"
+        },
+        {
+          "id": "wxzSoidSaFv",
+          "name": "Group18Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Group18.tsx"
+        },
+        {
+          "id": "hyvjg2rHQ97",
+          "name": "Group22Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Group22.tsx"
+        },
+        {
+          "id": "SdVxAiwvgUT",
+          "name": "Oval9Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Oval9.tsx"
+        },
+        {
+          "id": "-nfOhlI1BEt",
+          "name": "Group24Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Group24.tsx"
+        },
+        {
+          "id": "v4fxIyqDL14",
+          "name": "Shape5Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Shape5.tsx"
+        },
+        {
+          "id": "2h4BdHqL3RR",
+          "name": "Path31Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Path31.tsx"
+        },
+        {
+          "id": "xc2ZXOTU1iV",
+          "name": "Shape6Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Shape6.tsx"
+        },
+        {
+          "id": "vv5zNX-D-BQ",
+          "name": "Group27Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Group27.tsx"
+        },
+        {
+          "id": "dV0FJbmoy",
+          "name": "Path32Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Path32.tsx"
+        },
+        {
+          "id": "FxuOW0wq0M",
+          "name": "Mask42Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask42.tsx"
+        },
+        {
+          "id": "3OPTVmPkvMN",
+          "name": "BorderIcon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Border.tsx"
+        },
+        {
+          "id": "Suq5cadO7XA",
+          "name": "Line5Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Line5.tsx"
+        },
+        {
+          "id": "A0sV4Dq4iwa",
+          "name": "Line6Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Line6.tsx"
+        },
+        {
+          "id": "PxDtSafNxNc",
+          "name": "Ellipse9Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Ellipse9.tsx"
+        },
+        {
+          "id": "K4ztj6x93sg",
+          "name": "Ellipse10Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Ellipse10.tsx"
+        },
+        {
+          "id": "S8w9PkWxQ",
+          "name": "Mask43Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask43.tsx"
+        },
+        {
+          "id": "yjMrN5LPR3",
+          "name": "Mask44Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask44.tsx"
+        },
+        {
+          "id": "iamPAVBeN8d",
+          "name": "Mask45Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask45.tsx"
+        },
+        {
+          "id": "vqVb6mdGUtG",
+          "name": "Shape7Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Shape7.tsx"
+        },
+        {
+          "id": "iuxddQbeQu",
+          "name": "Mask46Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask46.tsx"
+        },
+        {
+          "id": "pfeHcshUii7",
+          "name": "Mask47Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask47.tsx"
+        },
+        {
+          "id": "0_a-wGkNQG4",
+          "name": "Shape8Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Shape8.tsx"
+        },
+        {
+          "id": "wMVKH9RBTMH",
+          "name": "Border2Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Border2.tsx"
+        },
+        {
+          "id": "Q0xCZSAlhwy",
+          "name": "Path33Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Path33.tsx"
+        },
+        {
+          "id": "oscpCwqUrZB",
+          "name": "Shape9Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Shape9.tsx"
+        },
+        {
+          "id": "xYUBtYKVWiK",
+          "name": "Mask48Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask48.tsx"
+        },
+        {
+          "id": "m0js9q_1h3o",
+          "name": "Mask49Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask49.tsx"
+        },
+        {
+          "id": "f5kney7yJ",
+          "name": "Mask50Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Mask50.tsx"
+        },
+        {
+          "id": "3Khd8XrR3tr",
+          "name": "Fill1Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Fill1.tsx"
+        },
+        {
+          "id": "oVNYSPJr6Us",
+          "name": "Fill105Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Fill105.tsx"
+        },
+        {
+          "id": "dLey7BPWZ4d",
+          "name": "Fill116Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Fill116.tsx"
+        },
+        {
+          "id": "Fv4S9xBEW5",
+          "name": "Icon18Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Icon18.tsx"
+        },
+        {
+          "id": "0cK10h_kft",
+          "name": "Icon19Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Icon19.tsx"
+        },
+        {
+          "id": "rXIVnyQ7KA",
+          "name": "Icon20Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Icon20.tsx"
+        },
+        {
+          "id": "7EX9shQBsv",
+          "name": "Icon21Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Icon21.tsx"
+        },
+        {
+          "id": "wzRGSqV0CA",
+          "name": "Icon22Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Icon22.tsx"
+        },
+        {
+          "id": "jjPyQHhLtQ",
+          "name": "AddIcon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Add.tsx"
+        },
+        {
+          "id": "4Po3uiQnik8",
+          "name": "DeviceHubIcon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__DeviceHub.tsx"
+        },
+        {
+          "id": "Hra-cTI_s",
+          "name": "Group29Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Group29.tsx"
+        },
+        {
+          "id": "mx48enuirr",
+          "name": "SettingsIcon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Settings.tsx"
+        },
+        {
+          "id": "bQcJgXZKSGY",
+          "name": "BlurOnIcon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__BlurOn.tsx"
+        },
+        {
+          "id": "fIWqBdD_Vcs",
+          "name": "CancelIcon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Cancel.tsx"
+        },
+        {
+          "id": "Dz2-NnCEs4Z",
+          "name": "SearchIcon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Search.tsx"
+        },
+        {
+          "id": "28qGRcgBF8O",
+          "name": "NotificationsIcon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Notifications.tsx"
+        },
+        {
+          "id": "P0FXFDHdpln",
+          "name": "ArrowDropDownIcon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__ArrowDropDown.tsx"
+        },
+        {
+          "id": "WAUl1jO6PZX",
+          "name": "HorizontalIcon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Horizontal.tsx"
+        },
+        {
+          "id": "sasyvq5kkYH",
+          "name": "Horizontal2Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Horizontal2.tsx"
+        },
+        {
+          "id": "msMKgGOxL",
+          "name": "IconIcon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Icon.tsx"
+        },
+        {
+          "id": "cRiIfGDQiCW",
+          "name": "Horizontal3Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Horizontal3.tsx"
+        },
+        {
+          "id": "QVEWgjasr4y",
+          "name": "Icon5Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Icon5.tsx"
+        },
+        {
+          "id": "GkhW16sGEpk",
+          "name": "Icon6Icon",
+          "moduleFilePath": "plasmic/fantaasta/icons/PlasmicIcon__Icon6.tsx"
         }
       ],
       "images": [
@@ -417,10 +1485,342 @@
           "id": "0P4lwVnms97C",
           "name": "mapbox.svg 2",
           "filePath": "../public/plasmic/fantaasta/images/mapboxsvg2.svg"
+        },
+        {
+          "id": "dchgv5gu_Q",
+          "name": "image",
+          "filePath": "../public/plasmic/fantaasta/images/image.jpeg"
+        },
+        {
+          "id": "qgt8rmGtMxm",
+          "name": "indicator",
+          "filePath": "../public/plasmic/fantaasta/images/indicator.svg"
+        },
+        {
+          "id": "jZQdC3YnpMq",
+          "name": "clever",
+          "filePath": "../public/plasmic/fantaasta/images/clever.svg"
+        },
+        {
+          "id": "gaE49TgXck",
+          "name": "search 1",
+          "filePath": "../public/plasmic/fantaasta/images/search1.svg"
+        },
+        {
+          "id": "UdyHMM9lRG",
+          "name": "Apple_logo_black 1",
+          "filePath": "../public/plasmic/fantaasta/images/appleLogoBlack1.svg"
+        },
+        {
+          "id": "_uvb22oYR",
+          "name": "image 2",
+          "filePath": "../public/plasmic/fantaasta/images/image2.jpeg"
+        },
+        {
+          "id": "GEKg0h6pXB",
+          "name": "image 3",
+          "filePath": "../public/plasmic/fantaasta/images/image3.jpeg"
+        },
+        {
+          "id": "UusDLJfG5l",
+          "name": "image 4",
+          "filePath": "../public/plasmic/fantaasta/images/image4.jpeg"
+        },
+        {
+          "id": "xfC0B8nn3O",
+          "name": "image 5",
+          "filePath": "../public/plasmic/fantaasta/images/image5.jpeg"
+        },
+        {
+          "id": "n-b-qrrdOw",
+          "name": "image 6",
+          "filePath": "../public/plasmic/fantaasta/images/image6.png"
+        },
+        {
+          "id": "sOCXkvijT6",
+          "name": "image 7",
+          "filePath": "../public/plasmic/fantaasta/images/image7.png"
+        },
+        {
+          "id": "DPjRaRGG0O",
+          "name": "image 8",
+          "filePath": "../public/plasmic/fantaasta/images/image8.png"
+        },
+        {
+          "id": "Q5L50im7Mc",
+          "name": "image 9",
+          "filePath": "../public/plasmic/fantaasta/images/image9.png"
+        },
+        {
+          "id": "8dFwTtieM_",
+          "name": "image 10",
+          "filePath": "../public/plasmic/fantaasta/images/image10.png"
+        },
+        {
+          "id": "QzGb3EhTXWC",
+          "name": "clever 2",
+          "filePath": "../public/plasmic/fantaasta/images/clever2.svg"
+        },
+        {
+          "id": "coUkOPSJVz1c",
+          "name": "indicator 2",
+          "filePath": "../public/plasmic/fantaasta/images/indicator2.svg"
+        },
+        {
+          "id": "-QJVanhXWL",
+          "name": "image 11",
+          "filePath": "../public/plasmic/fantaasta/images/image11.jpeg"
+        },
+        {
+          "id": "hSAgUjcMH0O",
+          "name": "indicator 3",
+          "filePath": "../public/plasmic/fantaasta/images/indicator3.svg"
+        },
+        {
+          "id": "V5oQqEbxl-R",
+          "name": "clever 3",
+          "filePath": "../public/plasmic/fantaasta/images/clever3.svg"
+        },
+        {
+          "id": "XNNaNzYOSh",
+          "name": "Bitmap",
+          "filePath": "../public/plasmic/fantaasta/images/bitmap.png"
+        },
+        {
+          "id": "O3EKRBTqQj",
+          "name": "download",
+          "filePath": "../public/plasmic/fantaasta/images/download.png"
+        },
+        {
+          "id": "AlgjBvtROO",
+          "name": "Image 12",
+          "filePath": "../public/plasmic/fantaasta/images/image12.png"
+        },
+        {
+          "id": "dym0kc6fqc",
+          "name": "Image 14",
+          "filePath": "../public/plasmic/fantaasta/images/image14.png"
+        },
+        {
+          "id": "mHBxNK5fun",
+          "name": "Image 15",
+          "filePath": "../public/plasmic/fantaasta/images/image15.png"
+        },
+        {
+          "id": "GOOwdO9Zmy",
+          "name": "Image 16",
+          "filePath": "../public/plasmic/fantaasta/images/image16.png"
+        },
+        {
+          "id": "NklzUO6Z_Z",
+          "name": "Image 17",
+          "filePath": "../public/plasmic/fantaasta/images/image17.png"
+        },
+        {
+          "id": "eGDiBK3F4O",
+          "name": "photo-1554250660-d8ba2d397fed",
+          "filePath": "../public/plasmic/fantaasta/images/photo1554250660D8Ba2D397Fed.png"
+        },
+        {
+          "id": "z27J6PLoQYQ",
+          "name": "Background",
+          "filePath": "../public/plasmic/fantaasta/images/background.svg"
+        },
+        {
+          "id": "7Bt3x3SNcd2",
+          "name": "Path 2",
+          "filePath": "../public/plasmic/fantaasta/images/path2.svg"
+        },
+        {
+          "id": "7lTSO_rCv3S",
+          "name": "Path 5",
+          "filePath": "../public/plasmic/fantaasta/images/path5.svg"
+        },
+        {
+          "id": "H5zN8vtmJe",
+          "name": "Online",
+          "filePath": "../public/plasmic/fantaasta/images/online.svg"
+        },
+        {
+          "id": "BhsKiIwolTC",
+          "name": "Graph",
+          "filePath": "../public/plasmic/fantaasta/images/graph.svg"
+        },
+        {
+          "id": "zDaDh3vgrJz",
+          "name": "opera",
+          "filePath": "../public/plasmic/fantaasta/images/opera.svg"
+        },
+        {
+          "id": "l-2QM2VsQGz",
+          "name": "Graph 2",
+          "filePath": "../public/plasmic/fantaasta/images/graph2.svg"
+        },
+        {
+          "id": "NXa0JN4LVBF",
+          "name": "Graph 3",
+          "filePath": "../public/plasmic/fantaasta/images/graph3.svg"
+        },
+        {
+          "id": "1jkYoUukUhn",
+          "name": "Graph 4",
+          "filePath": "../public/plasmic/fantaasta/images/graph4.svg"
+        },
+        {
+          "id": "Zm0ueOujrtl",
+          "name": "safari",
+          "filePath": "../public/plasmic/fantaasta/images/safari.svg"
+        },
+        {
+          "id": "9fzYbT5q7oO",
+          "name": "Graph 5",
+          "filePath": "../public/plasmic/fantaasta/images/graph5.svg"
+        },
+        {
+          "id": "0ZAICQ3Nzcd",
+          "name": "firefox",
+          "filePath": "../public/plasmic/fantaasta/images/firefox.svg"
+        },
+        {
+          "id": "C6d0phfEzkv",
+          "name": "Graph 6",
+          "filePath": "../public/plasmic/fantaasta/images/graph6.svg"
+        },
+        {
+          "id": "pffNtYqY5dU",
+          "name": "Group 2",
+          "filePath": "../public/plasmic/fantaasta/images/group2.svg"
+        },
+        {
+          "id": "imJBnwMsS4G",
+          "name": "Chart",
+          "filePath": "../public/plasmic/fantaasta/images/chart.svg"
+        },
+        {
+          "id": "iUqXvfhT5wb",
+          "name": "Chair4",
+          "filePath": "../public/plasmic/fantaasta/images/chair4.svg"
+        },
+        {
+          "id": "aFcx3N3BtOE",
+          "name": "LLeg",
+          "filePath": "../public/plasmic/fantaasta/images/lLeg.svg"
+        },
+        {
+          "id": "ZG0lHICKqbC",
+          "name": "LArm",
+          "filePath": "../public/plasmic/fantaasta/images/lArm.svg"
+        },
+        {
+          "id": "HAqhXthZc3z",
+          "name": "Group 21",
+          "filePath": "../public/plasmic/fantaasta/images/group21.svg"
+        },
+        {
+          "id": "X_pizoCy9H7",
+          "name": "Group 20",
+          "filePath": "../public/plasmic/fantaasta/images/group20.svg"
+        },
+        {
+          "id": "OrcjQg7MtL7",
+          "name": "Group 19",
+          "filePath": "../public/plasmic/fantaasta/images/group19.svg"
+        },
+        {
+          "id": "lwpcghQH5N4",
+          "name": "RArm",
+          "filePath": "../public/plasmic/fantaasta/images/rArm.svg"
+        },
+        {
+          "id": "uZ66q8tXPWr",
+          "name": "RLeg",
+          "filePath": "../public/plasmic/fantaasta/images/rLeg.svg"
+        },
+        {
+          "id": "T6uKHNJgCdO",
+          "name": "Group 3",
+          "filePath": "../public/plasmic/fantaasta/images/group3.svg"
+        },
+        {
+          "id": "JwN8p5NUWCJp",
+          "name": "Group 25",
+          "filePath": "../public/plasmic/fantaasta/images/group25.svg"
+        },
+        {
+          "id": "0HJLnn9SBIZ9",
+          "name": "Group 26",
+          "filePath": "../public/plasmic/fantaasta/images/group26.svg"
+        },
+        {
+          "id": "07hRj8wLId3C",
+          "name": "Cup",
+          "filePath": "../public/plasmic/fantaasta/images/cup.svg"
+        },
+        {
+          "id": "A2mWw8dyRqoN",
+          "name": "FacingBack Laptop3",
+          "filePath": "../public/plasmic/fantaasta/images/facingBackLaptop3.svg"
+        },
+        {
+          "id": "mr6BS6xaXWcZ",
+          "name": "Group 86",
+          "filePath": "../public/plasmic/fantaasta/images/group86.svg"
+        },
+        {
+          "id": "YyVEQWuoHVAs",
+          "name": "Group 85",
+          "filePath": "../public/plasmic/fantaasta/images/group85.svg"
+        },
+        {
+          "id": "mKLuVKuVE_r",
+          "name": "Group 23",
+          "filePath": "../public/plasmic/fantaasta/images/group23.svg"
+        },
+        {
+          "id": "j3ozLNqXTle",
+          "name": "Group 28",
+          "filePath": "../public/plasmic/fantaasta/images/group28.svg"
+        },
+        {
+          "id": "OdYUmg_GVC3",
+          "name": "Fill 5",
+          "filePath": "../public/plasmic/fantaasta/images/fill5.svg"
+        },
+        {
+          "id": "2rUCXm6Vt",
+          "name": "Immagine 2021-06-23 080210.png",
+          "filePath": "../public/plasmic/fantaasta/images/immagine20210623080210Png.png"
+        },
+        {
+          "id": "Dc85BDFgTB",
+          "name": "Avatar",
+          "filePath": "../public/plasmic/fantaasta/images/avatar.jpeg"
+        },
+        {
+          "id": "jb_hDaE6dt",
+          "name": "Avatar 3",
+          "filePath": "../public/plasmic/fantaasta/images/avatar3.png"
+        },
+        {
+          "id": "kjL6HqayYG",
+          "name": "Avatar 2",
+          "filePath": "../public/plasmic/fantaasta/images/avatar2.jpeg"
+        },
+        {
+          "id": "o1kuYHiw5",
+          "name": "Avatar 4",
+          "filePath": "../public/plasmic/fantaasta/images/avatar4.jpeg"
+        },
+        {
+          "id": "8zWGNYBcZc",
+          "name": "Avatar 5",
+          "filePath": "../public/plasmic/fantaasta/images/avatar5.png"
         }
       ],
       "codeComponents": [],
-      "projectApiToken": "jjcddq96D5fqG5BFueFJpscT51DuNNKbVofXsvaGC26z8qfMWGD56Nhp2dLXSYPntELZxgf2P5ElpoEz8g"
+      "projectApiToken": "jjcddq96D5fqG5BFueFJpscT51DuNNKbVofXsvaGC26z8qfMWGD56Nhp2dLXSYPntELZxgf2P5ElpoEz8g",
+      "indirect": false,
+      "globalContextsFilePath": ""
     }
   ],
   "globalVariants": {
@@ -433,9 +1833,10 @@
       }
     ]
   },
+  "wrapPagesWithGlobalContexts": true,
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.161",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.161/dist/plasmic.schema.json"
+  "cliVersion": "0.1.175",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.175/dist/plasmic.schema.json"
 }
